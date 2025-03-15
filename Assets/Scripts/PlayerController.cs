@@ -17,6 +17,6 @@ public class PlayerController : MonoBehaviour
     }
     void FixedUpdate()
     {
-        rb.linearVelocity = movementDirection.normalized * movementSpeed;
+        rb.linearVelocity = movementDirection.normalized * movementSpeed*Time.fixedDeltaTime;
     }
 }
