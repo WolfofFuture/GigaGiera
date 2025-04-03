@@ -28,12 +28,12 @@ public class Player : MonoBehaviour
         else if (moveDelta.x < 0)
             transform.localScale = new Vector3(-1, 1, 1);
 
-        hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(0, moveDelta.y), Mathf.Abs(moveDelta.y * Time.deltaTime), LayerMask.GetMask());//DODAÆ BLOKUJ¥CE MASKI W OBU
+        hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(0, moveDelta.y), Mathf.Abs(moveDelta.y * Time.deltaTime), LayerMask.GetMask("Actor","Blocking"));//DODAÆ BLOKUJ¥CE MASKI W OBU
         if (hit.collider == null)
         {
         transform.Translate(0,moveDelta.y * Time.deltaTime,0);
         }
-        hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(0, moveDelta.x), Mathf.Abs(moveDelta.x * Time.deltaTime), LayerMask.GetMask());
+        hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(moveDelta.x,0), Mathf.Abs(moveDelta.x * Time.deltaTime), LayerMask.GetMask("Actor", "Blocking"));
         if (hit.collider == null)
         {
             transform.Translate(moveDelta.x * Time.deltaTime,0, 0);
