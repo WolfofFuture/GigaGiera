@@ -41,6 +41,15 @@ TextureImporter:
   - first:
       213: -1703723753271250784
     second: nasze_tile_12
+  - first:
+      213: -4827355859387571827
+    second: nasze_tile_13
+  - first:
+      213: -2519009444233097197
+    second: nasze_tile_14
+  - first:
+      213: -3185722393853030937
+    second: nasze_tile_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -152,10 +161,10 @@ TextureImporter:
       name: nasze_tile_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 1265
-        width: 136
-        height: 135
+        x: 12
+        y: 440
+        width: 18
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,10 +183,10 @@ TextureImporter:
       name: nasze_tile_1
       rect:
         serializedVersion: 2
-        x: 174
-        y: 1265
-        width: 135
-        height: 135
+        x: 12
+        y: 407
+        width: 34
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,10 +205,10 @@ TextureImporter:
       name: nasze_tile_2
       rect:
         serializedVersion: 2
-        x: 330
-        y: 1265
-        width: 135
-        height: 135
+        x: 46
+        y: 407
+        width: 34
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,10 +227,10 @@ TextureImporter:
       name: nasze_tile_3
       rect:
         serializedVersion: 2
-        x: 486
-        y: 1265
-        width: 135
-        height: 135
+        x: 80
+        y: 407
+        width: 34
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,10 +249,10 @@ TextureImporter:
       name: nasze_tile_4
       rect:
         serializedVersion: 2
-        x: 642
-        y: 1265
-        width: 135
-        height: 135
+        x: 12
+        y: 372
+        width: 34
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -262,10 +271,10 @@ TextureImporter:
       name: nasze_tile_5
       rect:
         serializedVersion: 2
-        x: 798
-        y: 1265
-        width: 135
-        height: 135
+        x: 46
+        y: 372
+        width: 34
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,10 +293,10 @@ TextureImporter:
       name: nasze_tile_6
       rect:
         serializedVersion: 2
-        x: 954
-        y: 1265
-        width: 135
-        height: 135
+        x: 80
+        y: 372
+        width: 34
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -306,10 +315,10 @@ TextureImporter:
       name: nasze_tile_7
       rect:
         serializedVersion: 2
-        x: 51
-        y: 1136
-        width: 68
-        height: 68
+        x: 12
+        y: 336
+        width: 34
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -328,10 +337,10 @@ TextureImporter:
       name: nasze_tile_8
       rect:
         serializedVersion: 2
-        x: 174
-        y: 1117
-        width: 135
-        height: 135
+        x: 46
+        y: 336
+        width: 34
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -350,10 +359,10 @@ TextureImporter:
       name: nasze_tile_9
       rect:
         serializedVersion: 2
-        x: 330
-        y: 1117
-        width: 135
-        height: 135
+        x: 80
+        y: 336
+        width: 34
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -372,10 +381,10 @@ TextureImporter:
       name: nasze_tile_10
       rect:
         serializedVersion: 2
-        x: 954
-        y: 1117
-        width: 135
-        height: 135
+        x: 12
+        y: 300
+        width: 34
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -394,10 +403,10 @@ TextureImporter:
       name: nasze_tile_11
       rect:
         serializedVersion: 2
-        x: 51
-        y: 1015
-        width: 69
-        height: 68
+        x: 46
+        y: 300
+        width: 34
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -416,10 +425,10 @@ TextureImporter:
       name: nasze_tile_12
       rect:
         serializedVersion: 2
-        x: 51
-        y: 861
-        width: 69
-        height: 69
+        x: 80
+        y: 300
+        width: 34
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -430,6 +439,72 @@ TextureImporter:
       bones: []
       spriteID: 0a03fdae5482b58e0800000000000000
       internalID: -1703723753271250784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nasze_tile_13
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 300
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d81adcc1c69c10db0800000000000000
+      internalID: -4827355859387571827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nasze_tile_14
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 289
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 310d1aab14eaa0dd0800000000000000
+      internalID: -2519009444233097197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nasze_tile_15
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 282
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ed02698c5a0ac3d0800000000000000
+      internalID: -3185722393853030937
       vertices: []
       indices: 
       edges: []
@@ -453,6 +528,9 @@ TextureImporter:
       nasze_tile_10: 693532915440302826
       nasze_tile_11: 9190633541915664821
       nasze_tile_12: -1703723753271250784
+      nasze_tile_13: -4827355859387571827
+      nasze_tile_14: -2519009444233097197
+      nasze_tile_15: -3185722393853030937
       nasze_tile_2: -1026294664069383636
       nasze_tile_3: 1261270798857817513
       nasze_tile_4: 5255846190143415637
