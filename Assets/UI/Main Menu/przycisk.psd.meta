@@ -146,6 +146,30 @@ TextureImporter:
   - first:
       213: 7318120854955562721
     second: przycisk_47
+  - first:
+      213: -9175507841504725063
+    second: przycisk_48
+  - first:
+      213: 8679858442847055488
+    second: przycisk_49
+  - first:
+      213: -4357912300051437731
+    second: przycisk_50
+  - first:
+      213: 1991210494483203424
+    second: przycisk_51
+  - first:
+      213: 2561331094001827902
+    second: przycisk_52
+  - first:
+      213: 2807664528881660366
+    second: przycisk_53
+  - first:
+      213: 8016232580486945289
+    second: przycisk_54
+  - first:
+      213: 469275038809609205
+    second: przycisk_55
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -455,10 +479,10 @@ TextureImporter:
       name: przycisk_9
       rect:
         serializedVersion: 2
-        x: 453
-        y: 933
-        width: 216
-        height: 52
+        x: 270
+        y: 949
+        width: 34
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -477,8 +501,8 @@ TextureImporter:
       name: przycisk_10
       rect:
         serializedVersion: 2
-        x: 24
-        y: 895
+        x: 453
+        y: 933
         width: 216
         height: 52
       alignment: 0
@@ -499,9 +523,9 @@ TextureImporter:
       name: przycisk_11
       rect:
         serializedVersion: 2
-        x: 263
+        x: 24
         y: 895
-        width: 56
+        width: 216
         height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -521,10 +545,10 @@ TextureImporter:
       name: przycisk_12
       rect:
         serializedVersion: 2
-        x: 352
-        y: 903
-        width: 26
-        height: 36
+        x: 266
+        y: 895
+        width: 41
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -543,9 +567,9 @@ TextureImporter:
       name: przycisk_13
       rect:
         serializedVersion: 2
-        x: 377
+        x: 352
         y: 903
-        width: 12
+        width: 26
         height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -565,10 +589,10 @@ TextureImporter:
       name: przycisk_14
       rect:
         serializedVersion: 2
-        x: 535
-        y: 920
-        width: 19
-        height: 10
+        x: 377
+        y: 903
+        width: 12
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -587,9 +611,9 @@ TextureImporter:
       name: przycisk_15
       rect:
         serializedVersion: 2
-        x: 554
-        y: 918
-        width: 30
+        x: 535
+        y: 920
+        width: 19
         height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -609,10 +633,10 @@ TextureImporter:
       name: przycisk_16
       rect:
         serializedVersion: 2
-        x: 102
-        y: 881
-        width: 11
-        height: 11
+        x: 554
+        y: 918
+        width: 30
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -631,9 +655,9 @@ TextureImporter:
       name: przycisk_17
       rect:
         serializedVersion: 2
-        x: 112
+        x: 102
         y: 881
-        width: 10
+        width: 11
         height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -653,9 +677,9 @@ TextureImporter:
       name: przycisk_18
       rect:
         serializedVersion: 2
-        x: 123
+        x: 112
         y: 881
-        width: 8
+        width: 10
         height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -675,10 +699,10 @@ TextureImporter:
       name: przycisk_19
       rect:
         serializedVersion: 2
-        x: 130
+        x: 123
         y: 881
-        width: 7
-        height: 8
+        width: 8
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -697,10 +721,10 @@ TextureImporter:
       name: przycisk_20
       rect:
         serializedVersion: 2
-        x: 136
+        x: 130
         y: 881
-        width: 16
-        height: 10
+        width: 7
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -719,10 +743,10 @@ TextureImporter:
       name: przycisk_21
       rect:
         serializedVersion: 2
-        x: 151
+        x: 136
         y: 881
-        width: 8
-        height: 8
+        width: 16
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -741,10 +765,10 @@ TextureImporter:
       name: przycisk_22
       rect:
         serializedVersion: 2
-        x: 453
-        y: 840
-        width: 216
-        height: 52
+        x: 151
+        y: 881
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -763,9 +787,9 @@ TextureImporter:
       name: przycisk_23
       rect:
         serializedVersion: 2
-        x: 24
-        y: 824
-        width: 56
+        x: 453
+        y: 840
+        width: 216
         height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -785,7 +809,7 @@ TextureImporter:
       name: przycisk_24
       rect:
         serializedVersion: 2
-        x: 89
+        x: 24
         y: 824
         width: 56
         height: 52
@@ -807,7 +831,7 @@ TextureImporter:
       name: przycisk_25
       rect:
         serializedVersion: 2
-        x: 154
+        x: 89
         y: 824
         width: 56
         height: 52
@@ -829,10 +853,10 @@ TextureImporter:
       name: przycisk_26
       rect:
         serializedVersion: 2
-        x: 240
-        y: 830
-        width: 41
-        height: 37
+        x: 154
+        y: 824
+        width: 56
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -851,8 +875,8 @@ TextureImporter:
       name: przycisk_27
       rect:
         serializedVersion: 2
-        x: 290
-        y: 831
+        x: 240
+        y: 830
         width: 41
         height: 37
       alignment: 0
@@ -873,8 +897,8 @@ TextureImporter:
       name: przycisk_28
       rect:
         serializedVersion: 2
-        x: 340
-        y: 830
+        x: 290
+        y: 831
         width: 41
         height: 37
       alignment: 0
@@ -895,10 +919,10 @@ TextureImporter:
       name: przycisk_29
       rect:
         serializedVersion: 2
-        x: 537
-        y: 817
-        width: 12
-        height: 16
+        x: 340
+        y: 830
+        width: 41
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -917,10 +941,10 @@ TextureImporter:
       name: przycisk_30
       rect:
         serializedVersion: 2
-        x: 107
-        y: 809
-        width: 6
-        height: 13
+        x: 537
+        y: 817
+        width: 12
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -939,9 +963,9 @@ TextureImporter:
       name: przycisk_31
       rect:
         serializedVersion: 2
-        x: 113
+        x: 107
         y: 809
-        width: 15
+        width: 6
         height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -961,10 +985,10 @@ TextureImporter:
       name: przycisk_32
       rect:
         serializedVersion: 2
-        x: 245
-        y: 810
-        width: 7
-        height: 15
+        x: 113
+        y: 809
+        width: 15
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -983,10 +1007,10 @@ TextureImporter:
       name: przycisk_33
       rect:
         serializedVersion: 2
-        x: 297
-        y: 812
-        width: 11
-        height: 14
+        x: 245
+        y: 810
+        width: 7
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1005,10 +1029,10 @@ TextureImporter:
       name: przycisk_34
       rect:
         serializedVersion: 2
-        x: 340
-        y: 811
-        width: 10
-        height: 13
+        x: 297
+        y: 812
+        width: 11
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1027,10 +1051,10 @@ TextureImporter:
       name: przycisk_35
       rect:
         serializedVersion: 2
-        x: 549
-        y: 817
-        width: 11
-        height: 12
+        x: 340
+        y: 811
+        width: 10
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1049,7 +1073,7 @@ TextureImporter:
       name: przycisk_36
       rect:
         serializedVersion: 2
-        x: 559
+        x: 549
         y: 817
         width: 11
         height: 12
@@ -1071,7 +1095,7 @@ TextureImporter:
       name: przycisk_37
       rect:
         serializedVersion: 2
-        x: 569
+        x: 559
         y: 817
         width: 11
         height: 12
@@ -1093,9 +1117,9 @@ TextureImporter:
       name: przycisk_38
       rect:
         serializedVersion: 2
-        x: 579
+        x: 569
         y: 817
-        width: 7
+        width: 11
         height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1115,10 +1139,10 @@ TextureImporter:
       name: przycisk_39
       rect:
         serializedVersion: 2
-        x: 24
-        y: 723
-        width: 216
-        height: 52
+        x: 579
+        y: 817
+        width: 7
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1137,7 +1161,7 @@ TextureImporter:
       name: przycisk_40
       rect:
         serializedVersion: 2
-        x: 255
+        x: 24
         y: 723
         width: 216
         height: 52
@@ -1159,7 +1183,7 @@ TextureImporter:
       name: przycisk_41
       rect:
         serializedVersion: 2
-        x: 486
+        x: 255
         y: 723
         width: 216
         height: 52
@@ -1181,10 +1205,10 @@ TextureImporter:
       name: przycisk_42
       rect:
         serializedVersion: 2
-        x: 747
-        y: 539
-        width: 357
-        height: 252
+        x: 486
+        y: 723
+        width: 216
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1203,10 +1227,10 @@ TextureImporter:
       name: przycisk_43
       rect:
         serializedVersion: 2
-        x: 24
-        y: 644
-        width: 216
-        height: 52
+        x: 747
+        y: 539
+        width: 357
+        height: 252
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1225,7 +1249,7 @@ TextureImporter:
       name: przycisk_44
       rect:
         serializedVersion: 2
-        x: 255
+        x: 24
         y: 644
         width: 216
         height: 52
@@ -1247,8 +1271,8 @@ TextureImporter:
       name: przycisk_45
       rect:
         serializedVersion: 2
-        x: 486
-        y: 645
+        x: 255
+        y: 644
         width: 216
         height: 52
       alignment: 0
@@ -1269,8 +1293,8 @@ TextureImporter:
       name: przycisk_46
       rect:
         serializedVersion: 2
-        x: 24
-        y: 572
+        x: 486
+        y: 645
         width: 216
         height: 52
       alignment: 0
@@ -1291,7 +1315,7 @@ TextureImporter:
       name: przycisk_47
       rect:
         serializedVersion: 2
-        x: 255
+        x: 24
         y: 572
         width: 216
         height: 52
@@ -1305,6 +1329,182 @@ TextureImporter:
       bones: []
       spriteID: 1e6110ff4203f8560800000000000000
       internalID: 7318120854955562721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: przycisk_48
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 572
+        width: 216
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b7bc496b3c0aa080800000000000000
+      internalID: -9175507841504725063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: przycisk_49
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 493
+        width: 56
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08ee292144d057870800000000000000
+      internalID: 8679858442847055488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: przycisk_50
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 493
+        width: 56
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d57e0213ad59583c0800000000000000
+      internalID: -4357912300051437731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: przycisk_51
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 493
+        width: 56
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06583b4156332ab10800000000000000
+      internalID: 1991210494483203424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: przycisk_52
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 493
+        width: 56
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e30442a3f0dab8320800000000000000
+      internalID: 2561331094001827902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: przycisk_53
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 493
+        width: 56
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec1b47c6304d6f620800000000000000
+      internalID: 2807664528881660366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: przycisk_54
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 427
+        width: 56
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90a56d46f016f3f60800000000000000
+      internalID: 8016232580486945289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: przycisk_55
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 355
+        width: 56
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f354365923338600800000000000000
+      internalID: 469275038809609205
       vertices: []
       indices: 
       edges: []
