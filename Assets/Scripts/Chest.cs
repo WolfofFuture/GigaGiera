@@ -4,7 +4,7 @@ using UnityEngine;
 public class Chest : Collectable //Inheritence, The chest inherits from Collectable script which inherits the collidable and etc.
 {
     public Sprite emptyChest;
-    public int Cash = 5;
+    public int cashAmount = 5;
 
     protected override void OnCollect()
     {
@@ -13,7 +13,7 @@ public class Chest : Collectable //Inheritence, The chest inherits from Collecta
         {
             collected = true;
             GetComponent<SpriteRenderer>().sprite=emptyChest;
-            Debug.Log("Grant " + Cash + " Cash!");
+            GameManager.instance.ShowText("+" + cashAmount + " CASH!",25,Color.green,transform.position,Vector3.up * 25, 1.5f);
         }
 
 
