@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bluebrick1_0: 6358222421204929838
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -672,7 +672,29 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tile_photoshit_0: 6976404003862009696
+      tile_photoshit_1: -4126703371411339339
+      tile_photoshit_10: 8598625066082805060
+      tile_photoshit_11: 5258052698446410824
+      tile_photoshit_12: 1932264590239023544
+      tile_photoshit_13: -3592571659848386623
+      tile_photoshit_14: -3076789494478983477
+      tile_photoshit_15: 6064652627074797169
+      tile_photoshit_16: -943781324488329898
+      tile_photoshit_17: -5794782489591494426
+      tile_photoshit_18: 2898337098034579615
+      tile_photoshit_19: 2368532699932085456
+      tile_photoshit_2: 4402465023535853815
+      tile_photoshit_20: -3161518450965553831
+      tile_photoshit_21: 420009270415370922
+      tile_photoshit_3: 2220099064548398276
+      tile_photoshit_4: 8873748063494511721
+      tile_photoshit_5: -2964868340805183853
+      tile_photoshit_6: -2681388788966730633
+      tile_photoshit_7: 2662837357980554215
+      tile_photoshit_8: 2108694511654922911
+      tile_photoshit_9: 7442522333292267678
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

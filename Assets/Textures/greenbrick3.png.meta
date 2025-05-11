@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      greenbrick3_0: -5096550265289615360
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
