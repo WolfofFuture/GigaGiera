@@ -8,12 +8,14 @@ public abstract class Mover : Fighter
     private RaycastHit2D hit;
     protected float ySpeed = 0.75f;
     protected float xSpeed = 1.0f;
+    //AUDIO
+    private AudioSource audioSource;
 
     //Functions
     protected virtual void Start()
     {
         boxCollider = GetComponent<BoxCollider2D>();
-
+        audioSource = GetComponent<AudioSource>();
     }
 
     protected virtual void UpdateMotor(Vector3 input)
@@ -47,5 +49,18 @@ public abstract class Mover : Fighter
             // 
             transform.Translate(moveDelta.x * Time.deltaTime, 0, 0);
         }
+        //audio
+        if (input != Vector3.zero)
+        {
+            Debug.Log("Gracz siê porusza");
+            if (!audioSource.isPlaying)
+                audioSource.Play();
+        }
+        else
+        {
+            audioSource.Stop();
+        }
+
+
     }
 }
