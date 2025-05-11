@@ -217,9 +217,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 247212849}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88dcc902e683e72428f9d628a1ab0941, type: 3}
+  m_Script: {fileID: 11500000, guid: 9e49528d05bd0ce4eb90c0e1c99636ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitpoint: 10
+  maxHitpoint: 10
+  pushRecoverySpeed: 0.2
 --- !u!61 &247212853
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -416,9 +419,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2947071218641014dae5cea107fcc57d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookAt: {fileID: 247212851}
-  boundX: 0.3
-  boundY: 0.15
 --- !u!1 &525327885
 GameObject:
   m_ObjectHideFlags: 0
@@ -802,7 +802,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -11637,14 +11637,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1983820713}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 473dff786434d334abca54112707f3d5, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a2d689c717ee614d96095172ae4ad23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerSprites: []
   weaponSprites: []
   weaponPrices: 
-  player: {fileID: 0}
-  coins: 0
+  xpTable: 
+  player: {fileID: 247212852}
+  floatingTextManager: {fileID: 0}
+  cash: 0
+  experience: 0
 --- !u!4 &1983820715
 Transform:
   m_ObjectHideFlags: 0
