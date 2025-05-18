@@ -492,6 +492,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -3434,7 +3447,140 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SpriteSheet_0: 5546671543968653177
+      SpriteSheet_1: 8755591262435691780
+      SpriteSheet_10: -5540648042656198855
+      SpriteSheet_100: -7866031555861458757
+      SpriteSheet_101: 6783973438557096381
+      SpriteSheet_102: -221214031347197673
+      SpriteSheet_103: -7491613937437866971
+      SpriteSheet_104: 7093715425317752191
+      SpriteSheet_105: 792531038351565978
+      SpriteSheet_106: 7929823768701145548
+      SpriteSheet_107: -2354785544754498944
+      SpriteSheet_108: 6139310979476247574
+      SpriteSheet_109: 543463543827397990
+      SpriteSheet_11: 3929453942698372637
+      SpriteSheet_110: -6592721875813713672
+      SpriteSheet_111: -4881886091595114325
+      SpriteSheet_112: -7912813274520506195
+      SpriteSheet_113: 720741883187527302
+      SpriteSheet_114: 3819579681194510889
+      SpriteSheet_115: -3616014075654153681
+      SpriteSheet_116: 1317317968668436404
+      SpriteSheet_117: -6120387634488855516
+      SpriteSheet_118: 640638355575074940
+      SpriteSheet_119: 7214810665799466888
+      SpriteSheet_12: 8058879627694289943
+      SpriteSheet_120: 3800181639119787870
+      SpriteSheet_121: -5445997897813723297
+      SpriteSheet_122: -3402517079406010240
+      SpriteSheet_123: -5755905173179906151
+      SpriteSheet_124: 7043133548349567394
+      SpriteSheet_125: -9214683214358106073
+      SpriteSheet_126: -5263981999200424552
+      SpriteSheet_127: 5949010832896320232
+      SpriteSheet_128: -2799502422476937494
+      SpriteSheet_129: 3222232815831790375
+      SpriteSheet_13: 6833624519701456044
+      SpriteSheet_130: 2454006695083939952
+      SpriteSheet_131: -8763460402479013231
+      SpriteSheet_132: 5216005266871980692
+      SpriteSheet_14: 4050273695720440628
+      SpriteSheet_15: -8516189750247450741
+      SpriteSheet_16: -4768450242260759221
+      SpriteSheet_17: -5521112282276127969
+      SpriteSheet_18: -8541409857757731410
+      SpriteSheet_19: -3472991853938201931
+      SpriteSheet_2: -3459558614108198297
+      SpriteSheet_20: 6310945038506529798
+      SpriteSheet_21: 299985813260920670
+      SpriteSheet_22: 8784019252837020500
+      SpriteSheet_23: -5692808054993777421
+      SpriteSheet_24: -3647626148071368089
+      SpriteSheet_25: 3740191742173349062
+      SpriteSheet_26: -5489517133611239331
+      SpriteSheet_27: -1271462477897197946
+      SpriteSheet_28: 974577563860017414
+      SpriteSheet_29: 2486827473776425114
+      SpriteSheet_3: 659797372610145418
+      SpriteSheet_30: -6614553410548192088
+      SpriteSheet_31: 8361751297272463746
+      SpriteSheet_32: -4598120355091656921
+      SpriteSheet_33: 7099261525860559180
+      SpriteSheet_34: -8215722657267735165
+      SpriteSheet_35: 6025432222443554310
+      SpriteSheet_36: 8289768022458011462
+      SpriteSheet_37: 8679224743372824947
+      SpriteSheet_38: -4273276076692731511
+      SpriteSheet_39: -3031591476522573043
+      SpriteSheet_4: -689520407193891599
+      SpriteSheet_40: 6497019688765925324
+      SpriteSheet_41: 244501058832009928
+      SpriteSheet_42: 7219066547588084184
+      SpriteSheet_43: -1517539347721397750
+      SpriteSheet_44: -6298986058642862026
+      SpriteSheet_45: -6855937049084916964
+      SpriteSheet_46: -5974330689473217505
+      SpriteSheet_47: 8090335375369496866
+      SpriteSheet_48: 4797463210970005564
+      SpriteSheet_49: -6076800551345269519
+      SpriteSheet_5: 160890277334083914
+      SpriteSheet_50: -5692022439710868814
+      SpriteSheet_51: -735721280079296861
+      SpriteSheet_52: 8626295676608811214
+      SpriteSheet_53: -4395729614481908416
+      SpriteSheet_54: -3856703243772173698
+      SpriteSheet_55: 2573680409823022928
+      SpriteSheet_56: -2113894915680229263
+      SpriteSheet_57: -1569871411453203166
+      SpriteSheet_58: 7413646742071866149
+      SpriteSheet_59: 7851113030376596135
+      SpriteSheet_6: 1026407549584056185
+      SpriteSheet_60: -3141680586608123305
+      SpriteSheet_61: 3021200732435110644
+      SpriteSheet_62: 5169811298419766961
+      SpriteSheet_63: 1815293632669626553
+      SpriteSheet_64: 4403123471519957660
+      SpriteSheet_65: -740330472280341754
+      SpriteSheet_66: 574446148126647275
+      SpriteSheet_67: 1235874337418114886
+      SpriteSheet_68: 7434960351050355323
+      SpriteSheet_69: 824356400910527634
+      SpriteSheet_7: -3086720242725003937
+      SpriteSheet_70: 5513838114274322276
+      SpriteSheet_71: -3199715790774524361
+      SpriteSheet_72: 1914563275169840824
+      SpriteSheet_73: -4378996295949237452
+      SpriteSheet_74: 5457183550987407018
+      SpriteSheet_75: 6335360754331110017
+      SpriteSheet_76: 7222537069723327875
+      SpriteSheet_77: 2669869789316320289
+      SpriteSheet_78: -4401392294409562214
+      SpriteSheet_79: -1504178909458899807
+      SpriteSheet_8: -4556197565260342421
+      SpriteSheet_80: -1680910415198251487
+      SpriteSheet_81: 259971794018114871
+      SpriteSheet_82: -8967083802194223982
+      SpriteSheet_83: -332775548261697083
+      SpriteSheet_84: 4931685296756513552
+      SpriteSheet_85: -5332477682625526632
+      SpriteSheet_86: -7110964374204439647
+      SpriteSheet_87: -7446906405079736297
+      SpriteSheet_88: 4120251076616230861
+      SpriteSheet_89: 3075932930824612872
+      SpriteSheet_9: -2764029711273647405
+      SpriteSheet_90: -3336083728469882985
+      SpriteSheet_91: 237302907797614667
+      SpriteSheet_92: -4138009372153320744
+      SpriteSheet_93: 7633654532641064657
+      SpriteSheet_94: 5430743998967427626
+      SpriteSheet_95: -101211121952396709
+      SpriteSheet_96: 3664476683137694898
+      SpriteSheet_97: 2177870221934184097
+      SpriteSheet_98: -9016946094802586908
+      SpriteSheet_99: -1174045761442754080
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
