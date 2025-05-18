@@ -5,6 +5,20 @@ public class CameraMotor : MonoBehaviour
     public Transform LookAt;
     public float boundX = 0.15f;
     public float boundY = 0.05f;
+    private static CameraMotor instance; //so camera doesnt dissapear
+
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
+
 
     private void LateUpdate()
     {

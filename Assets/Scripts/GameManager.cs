@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    public string enterFromTag;
+    public bool canTeleport = true;
+
+
     private void Awake()
     {
         if (GameManager.instance != null)
@@ -15,7 +19,6 @@ public class GameManager : MonoBehaviour
 
         }
         instance = this;
-        SceneManager.sceneLoaded += LoadState;
         DontDestroyOnLoad(gameObject);
         
     }
@@ -75,4 +78,16 @@ public class GameManager : MonoBehaviour
 
         Debug.Log("LoadState");
     }
+
+    public void StartTeleportCooldown(float time)
+    {
+        canTeleport = false;
+        Invoke(nameof(ResetCooldown), time);
+    }
+
+    private void ResetCooldown()
+    {
+        canTeleport = true;
+    }
+
 }

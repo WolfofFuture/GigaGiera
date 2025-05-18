@@ -1,14 +1,26 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-   public void PlayGame()
+    public void PlayGame()
     {
-        SceneManager.LoadSceneAsync(1);
+        StartCoroutine(LoadGame());
+    }
 
+    private IEnumerator LoadGame()
+    {
+        // Load the Player scene first (additive)
+        AsyncOperation loadPlayer = SceneManager.LoadSceneAsync("Player", LoadSceneMode.Additive);
+        while (!loadPlayer.isDone) yield return null;
+
+        // Load the Main room scene (also additive)
+        AsyncOperation loadRoom = SceneManager.LoadSceneAsync("Main", LoadSceneMode.Additive);
+        while (!loadRoom.isDone) yield return null;
+
+        // Unload the menu scene to clean up
+        SceneManager.UnloadSceneAsync("MainMenu");
     }
 
     public void QuitGame()
