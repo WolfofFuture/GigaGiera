@@ -171,6 +171,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -759,7 +772,33 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SlimeWall1_0: -8803639374440214239
+      SlimeWall1_1: 1681437898096675333
+      SlimeWall1_10: -6877378682693806369
+      SlimeWall1_11: 1421696583082251541
+      SlimeWall1_12: -4294564279512932839
+      SlimeWall1_13: 425882868534814339
+      SlimeWall1_14: 355660204958460609
+      SlimeWall1_15: -8042383076490880144
+      SlimeWall1_16: -593073041679064244
+      SlimeWall1_17: -6517940783141840260
+      SlimeWall1_18: -7602661625558524278
+      SlimeWall1_19: -230331007239877238
+      SlimeWall1_2: 6255526419286456985
+      SlimeWall1_20: -5599124331208472489
+      SlimeWall1_21: 2956507332150422478
+      SlimeWall1_22: 1033133277276526550
+      SlimeWall1_23: -5401381405974019523
+      SlimeWall1_24: -5824015686414665587
+      SlimeWall1_25: 2941777806866373873
+      SlimeWall1_3: 5239500744646086974
+      SlimeWall1_4: -6951634627641970907
+      SlimeWall1_5: 7987056668731048125
+      SlimeWall1_6: 873272609157352216
+      SlimeWall1_7: -6888281196276153323
+      SlimeWall1_8: 7197664367468985928
+      SlimeWall1_9: -3801636047964359863
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

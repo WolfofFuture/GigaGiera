@@ -153,6 +153,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -609,7 +622,27 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Candelabra1_0: 4125376275630530080
+      Candelabra1_1: -4113823636150785536
+      Candelabra1_10: -5288776482820548151
+      Candelabra1_11: -8088495867861218663
+      Candelabra1_12: -5438009582412946402
+      Candelabra1_13: 8119595694656086006
+      Candelabra1_14: 1895481025135130289
+      Candelabra1_15: 5403832793699652590
+      Candelabra1_16: -774354254260785127
+      Candelabra1_17: 6309461978277076132
+      Candelabra1_18: -4970342576429696786
+      Candelabra1_19: 140028000098878355
+      Candelabra1_2: 3164390584860567641
+      Candelabra1_3: -2974466388476156314
+      Candelabra1_4: -8864761713860795053
+      Candelabra1_5: 7261896710514562704
+      Candelabra1_6: -4209624594979356517
+      Candelabra1_7: -2372715468268159193
+      Candelabra1_8: 1730914430983091535
+      Candelabra1_9: -5299438664857104032
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

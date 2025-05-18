@@ -138,6 +138,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -484,7 +497,22 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CursedMonster1_0: -6608458148156234256
+      CursedMonster1_1: 6435889295712005350
+      CursedMonster1_10: -5527643480087464330
+      CursedMonster1_11: 2679375943896909758
+      CursedMonster1_12: 2877773216750674625
+      CursedMonster1_13: -7162953904715179319
+      CursedMonster1_14: -2863211932283695769
+      CursedMonster1_2: 3425944680893386720
+      CursedMonster1_3: -9187798887589026522
+      CursedMonster1_4: 4964854148332713342
+      CursedMonster1_5: 6236891781132324838
+      CursedMonster1_6: -4986935501702629230
+      CursedMonster1_7: -4779661781373434563
+      CursedMonster1_8: 1684943392887206217
+      CursedMonster1_9: 140751422863185093
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -120,6 +120,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -334,7 +347,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cauldron1_0: 6574098755865412768
+      Cauldron1_1: 8067730041339916006
+      Cauldron1_2: 1520424275797809401
+      Cauldron1_3: 626963637482311330
+      Cauldron1_4: 8432404995475440958
+      Cauldron1_5: -6534882341164041818
+      Cauldron1_6: 6025644616267792260
+      Cauldron1_7: 6377081855725987470
+      Cauldron1_8: -6514354783731951139
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

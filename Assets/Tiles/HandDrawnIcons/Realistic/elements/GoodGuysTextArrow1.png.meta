@@ -120,6 +120,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -334,7 +347,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GoodGuysTextArrow1_0: -1069051518367385592
+      GoodGuysTextArrow1_1: -3265052213638433276
+      GoodGuysTextArrow1_2: -8261248465460165600
+      GoodGuysTextArrow1_3: -7688568001823622522
+      GoodGuysTextArrow1_4: 5908843025675658216
+      GoodGuysTextArrow1_5: -793298682838645579
+      GoodGuysTextArrow1_6: 8866591296113165578
+      GoodGuysTextArrow1_7: 8085335547084571215
+      GoodGuysTextArrow1_8: 4417509818489826351
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
