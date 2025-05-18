@@ -128,7 +128,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: items_0
+      name: red_sword
       rect:
         serializedVersion: 2
         x: 57
@@ -136,7 +136,7 @@ TextureImporter:
         width: 114
         height: 337
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -150,7 +150,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: items_1
+      name: lightblue_sword
       rect:
         serializedVersion: 2
         x: 260
@@ -158,7 +158,7 @@ TextureImporter:
         width: 114
         height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -172,7 +172,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: items_2
+      name: lavend_sword
       rect:
         serializedVersion: 2
         x: 463
@@ -180,7 +180,7 @@ TextureImporter:
         width: 114
         height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -194,7 +194,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: items_3
+      name: purple_sword
       rect:
         serializedVersion: 2
         x: 728
@@ -202,7 +202,7 @@ TextureImporter:
         width: 114
         height: 337
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -216,7 +216,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: items_4
+      name: blue_sword
       rect:
         serializedVersion: 2
         x: 980
@@ -224,7 +224,7 @@ TextureImporter:
         width: 114
         height: 337
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -238,7 +238,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: items_5
+      name: green_sword
       rect:
         serializedVersion: 2
         x: 1183
@@ -246,7 +246,7 @@ TextureImporter:
         width: 114
         height: 337
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -263,7 +263,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 70f3705455d56a44f8b29dcfb90d7161
     internalID: 0
     vertices: []
     indices: 
@@ -273,12 +273,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      items_0: 6761164967045977113
-      items_1: 5508725064705088119
-      items_2: -68751727340038015
-      items_3: 6099581493293703690
-      items_4: -5428206428529569624
-      items_5: -7833671090200325546
+      blue_sword: -5428206428529569624
+      green_sword: -7833671090200325546
+      lavend_sword: -68751727340038015
+      lightblue_sword: 5508725064705088119
+      purple_sword: 6099581493293703690
+      red_sword: 6761164967045977113
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
