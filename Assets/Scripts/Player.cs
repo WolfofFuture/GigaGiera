@@ -5,9 +5,15 @@ public class Player : Mover
     private static Player instance;
     private SpriteRenderer spriteRenderer;
 
+    //health
     public int maxHealth = 100;
     public int currentHealth;
     public HealthBar healthBar;
+
+    //inventory
+    public GameObject inventoryUI;
+    private bool isInventoryOpen = false;
+
 
     protected override void Start()
     {
@@ -38,6 +44,12 @@ public class Player : Mover
         {
             TakeDamage(20);
         }
+
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            ToggleInventory();
+        }
+
     }
 
     public void TakeDamage(int damage)
@@ -51,4 +63,17 @@ public class Player : Mover
         currentHealth += amount;
         healthBar.SetHealth(currentHealth);
     }
+
+    void ToggleInventory()
+    {
+        isInventoryOpen = !isInventoryOpen;
+
+        Transform infoPanel = inventoryUI.transform.Find("info_and_items");
+        if (infoPanel != null)
+            infoPanel.gameObject.SetActive(isInventoryOpen);
+
+        Time.timeScale = isInventoryOpen ? 0f : 1f;
+    }
+
+
 }
