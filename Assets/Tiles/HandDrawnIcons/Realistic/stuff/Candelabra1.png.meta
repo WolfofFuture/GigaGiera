@@ -1,0 +1,617 @@
+fileFormatVersion: 2
+guid: 5dd35182c3da9ac4eafa42a96e3d50d4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4125376275630530080
+    second: Candelabra1_0
+  - first:
+      213: -4113823636150785536
+    second: Candelabra1_1
+  - first:
+      213: 3164390584860567641
+    second: Candelabra1_2
+  - first:
+      213: -2974466388476156314
+    second: Candelabra1_3
+  - first:
+      213: -8864761713860795053
+    second: Candelabra1_4
+  - first:
+      213: 7261896710514562704
+    second: Candelabra1_5
+  - first:
+      213: -4209624594979356517
+    second: Candelabra1_6
+  - first:
+      213: -2372715468268159193
+    second: Candelabra1_7
+  - first:
+      213: 1730914430983091535
+    second: Candelabra1_8
+  - first:
+      213: -5299438664857104032
+    second: Candelabra1_9
+  - first:
+      213: -5288776482820548151
+    second: Candelabra1_10
+  - first:
+      213: -8088495867861218663
+    second: Candelabra1_11
+  - first:
+      213: -5438009582412946402
+    second: Candelabra1_12
+  - first:
+      213: 8119595694656086006
+    second: Candelabra1_13
+  - first:
+      213: 1895481025135130289
+    second: Candelabra1_14
+  - first:
+      213: 5403832793699652590
+    second: Candelabra1_15
+  - first:
+      213: -774354254260785127
+    second: Candelabra1_16
+  - first:
+      213: 6309461978277076132
+    second: Candelabra1_17
+  - first:
+      213: -4970342576429696786
+    second: Candelabra1_18
+  - first:
+      213: 140028000098878355
+    second: Candelabra1_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Candelabra1_0
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 869
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02e18c19dd7404930800000000000000
+      internalID: 4125376275630530080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candelabra1_1
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 831
+        width: 36
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00a60aae233c8e6c0800000000000000
+      internalID: -4113823636150785536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candelabra1_2
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 868
+        width: 41
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9586435a87c2aeb20800000000000000
+      internalID: 3164390584860567641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candelabra1_3
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 859
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6662a8e349298b6d0800000000000000
+      internalID: -2974466388476156314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candelabra1_4
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 809
+        width: 49
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35528d2503a0af480800000000000000
+      internalID: -8864761713860795053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candelabra1_5
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 824
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0965cc1459077c460800000000000000
+      internalID: 7261896710514562704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candelabra1_6
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 815
+        width: 38
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9002820cb86495c0800000000000000
+      internalID: -4209624594979356517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candelabra1_7
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 800
+        width: 71
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72f3dc05adb621fd0800000000000000
+      internalID: -2372715468268159193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candelabra1_8
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 772
+        width: 46
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4538531181750810800000000000000
+      internalID: 1730914430983091535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candelabra1_9
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 749
+        width: 91
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 061d838ac9c9476b0800000000000000
+      internalID: -5299438664857104032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candelabra1_10
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 109
+        width: 320
+        height: 712
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c99a0d5fcd7a96b0800000000000000
+      internalID: -5288776482820548151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candelabra1_11
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 779
+        width: 47
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99acae4ecd3efbf80800000000000000
+      internalID: -8088495867861218663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candelabra1_12
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 718
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e142b1bb81f4884b0800000000000000
+      internalID: -5438009582412946402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candelabra1_13
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 742
+        width: 57
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ff54cbc3499ea070800000000000000
+      internalID: 8119595694656086006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candelabra1_14
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 742
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b63cad13f91e4a10800000000000000
+      internalID: 1895481025135130289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candelabra1_15
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 731
+        width: 50
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee3131e8b454efa40800000000000000
+      internalID: 5403832793699652590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candelabra1_16
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 655
+        width: 60
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 910397098e0f045f0800000000000000
+      internalID: -774354254260785127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candelabra1_17
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 696
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4acd9038d36bf8750800000000000000
+      internalID: 6309461978277076132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candelabra1_18
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 679
+        width: 35
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee878efb2cbc50bb0800000000000000
+      internalID: -4970342576429696786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candelabra1_19
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 672
+        width: 55
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 393808469ba71f100800000000000000
+      internalID: 140028000098878355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

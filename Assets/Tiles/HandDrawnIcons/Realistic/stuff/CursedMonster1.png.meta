@@ -1,0 +1,492 @@
+fileFormatVersion: 2
+guid: 643aa92a4e583d34197eb10abe0bd6ae
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6608458148156234256
+    second: CursedMonster1_0
+  - first:
+      213: 6435889295712005350
+    second: CursedMonster1_1
+  - first:
+      213: 3425944680893386720
+    second: CursedMonster1_2
+  - first:
+      213: -9187798887589026522
+    second: CursedMonster1_3
+  - first:
+      213: 4964854148332713342
+    second: CursedMonster1_4
+  - first:
+      213: 6236891781132324838
+    second: CursedMonster1_5
+  - first:
+      213: -4986935501702629230
+    second: CursedMonster1_6
+  - first:
+      213: -4779661781373434563
+    second: CursedMonster1_7
+  - first:
+      213: 1684943392887206217
+    second: CursedMonster1_8
+  - first:
+      213: 140751422863185093
+    second: CursedMonster1_9
+  - first:
+      213: -5527643480087464330
+    second: CursedMonster1_10
+  - first:
+      213: 2679375943896909758
+    second: CursedMonster1_11
+  - first:
+      213: 2877773216750674625
+    second: CursedMonster1_12
+  - first:
+      213: -7162953904715179319
+    second: CursedMonster1_13
+  - first:
+      213: -2863211932283695769
+    second: CursedMonster1_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CursedMonster1_0
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 640
+        width: 69
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f5ac1ec35a0a44a0800000000000000
+      internalID: -6608458148156234256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CursedMonster1_1
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 640
+        width: 46
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ec27a4373fd05950800000000000000
+      internalID: 6435889295712005350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CursedMonster1_2
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 664
+        width: 70
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ef0acc29866b8f20800000000000000
+      internalID: 3425944680893386720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CursedMonster1_3
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 641
+        width: 104
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 625e68d37916e7080800000000000000
+      internalID: -9187798887589026522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CursedMonster1_4
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 623
+        width: 90
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e75fef00b84b6e440800000000000000
+      internalID: 4964854148332713342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CursedMonster1_5
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 531
+        width: 60
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ef02fcc704ed8650800000000000000
+      internalID: 6236891781132324838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CursedMonster1_6
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 392
+        width: 45
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 298fa374598dacab0800000000000000
+      internalID: -4986935501702629230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CursedMonster1_7
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 132
+        width: 419
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d35c9befeea3badb0800000000000000
+      internalID: -4779661781373434563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CursedMonster1_8
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 437
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 941feafa61f126710800000000000000
+      internalID: 1684943392887206217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CursedMonster1_9
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 272
+        width: 60
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c414616cac04f100800000000000000
+      internalID: 140751422863185093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CursedMonster1_10
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 240
+        width: 44
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 676f164aa8dd943b0800000000000000
+      internalID: -5527643480087464330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CursedMonster1_11
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 192
+        width: 43
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb7c3bb993e0f2520800000000000000
+      internalID: 2679375943896909758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CursedMonster1_12
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 186
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c2ae885e77efe720800000000000000
+      internalID: 2877773216750674625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CursedMonster1_13
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 228
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ca54f6ef53189c90800000000000000
+      internalID: -7162953904715179319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CursedMonster1_14
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 175
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76d0293eae3d348d0800000000000000
+      internalID: -2863211932283695769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

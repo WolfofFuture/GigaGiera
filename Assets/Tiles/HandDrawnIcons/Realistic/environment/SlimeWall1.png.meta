@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: 441fcf0ef8603324db6ad97c564a4e98
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8803639374440214239
+    second: SlimeWall1_0
+  - first:
+      213: 1681437898096675333
+    second: SlimeWall1_1
+  - first:
+      213: 6255526419286456985
+    second: SlimeWall1_2
+  - first:
+      213: 5239500744646086974
+    second: SlimeWall1_3
+  - first:
+      213: -6951634627641970907
+    second: SlimeWall1_4
+  - first:
+      213: 7987056668731048125
+    second: SlimeWall1_5
+  - first:
+      213: 873272609157352216
+    second: SlimeWall1_6
+  - first:
+      213: -6888281196276153323
+    second: SlimeWall1_7
+  - first:
+      213: 7197664367468985928
+    second: SlimeWall1_8
+  - first:
+      213: -3801636047964359863
+    second: SlimeWall1_9
+  - first:
+      213: -6877378682693806369
+    second: SlimeWall1_10
+  - first:
+      213: 1421696583082251541
+    second: SlimeWall1_11
+  - first:
+      213: -4294564279512932839
+    second: SlimeWall1_12
+  - first:
+      213: 425882868534814339
+    second: SlimeWall1_13
+  - first:
+      213: 355660204958460609
+    second: SlimeWall1_14
+  - first:
+      213: -8042383076490880144
+    second: SlimeWall1_15
+  - first:
+      213: -593073041679064244
+    second: SlimeWall1_16
+  - first:
+      213: -6517940783141840260
+    second: SlimeWall1_17
+  - first:
+      213: -7602661625558524278
+    second: SlimeWall1_18
+  - first:
+      213: -230331007239877238
+    second: SlimeWall1_19
+  - first:
+      213: -5599124331208472489
+    second: SlimeWall1_20
+  - first:
+      213: 2956507332150422478
+    second: SlimeWall1_21
+  - first:
+      213: 1033133277276526550
+    second: SlimeWall1_22
+  - first:
+      213: -5401381405974019523
+    second: SlimeWall1_23
+  - first:
+      213: -5824015686414665587
+    second: SlimeWall1_24
+  - first:
+      213: 2941777806866373873
+    second: SlimeWall1_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SlimeWall1_0
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 863
+        width: 79
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12159d3f1a033d580800000000000000
+      internalID: -8803639374440214239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeWall1_1
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 818
+        width: 68
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50a8ee31cdaa55710800000000000000
+      internalID: 1681437898096675333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeWall1_2
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 752
+        width: 79
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99af3a8922810d650800000000000000
+      internalID: 6255526419286456985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeWall1_3
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 798
+        width: 79
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e31560dca2276b840800000000000000
+      internalID: 5239500744646086974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeWall1_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 548
+        width: 117
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52f68133325d68f90800000000000000
+      internalID: -6951634627641970907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeWall1_5
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 565
+        width: 127
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db001a419b9b7de60800000000000000
+      internalID: 7987056668731048125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeWall1_6
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 678
+        width: 121
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81b07ecafcc7e1c00800000000000000
+      internalID: 873272609157352216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeWall1_7
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 571
+        width: 65
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51405f66fb8e760a0800000000000000
+      internalID: -6888281196276153323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeWall1_8
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 470
+        width: 158
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84eb97b7b9d33e360800000000000000
+      internalID: 7197664367468985928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeWall1_9
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 540
+        width: 84
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 943b3c30820ed3bc0800000000000000
+      internalID: -3801636047964359863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeWall1_10
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 595
+        width: 77
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd61138a684ae80a0800000000000000
+      internalID: -6877378682693806369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeWall1_11
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 414
+        width: 67
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51511058281eab310800000000000000
+      internalID: 1421696583082251541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeWall1_12
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 295
+        width: 162
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91edc869a84a664c0800000000000000
+      internalID: -4294564279512932839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeWall1_13
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 450
+        width: 55
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38621f6663a09e500800000000000000
+      internalID: 425882868534814339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeWall1_14
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 370
+        width: 154
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1caaa41721f8fe400800000000000000
+      internalID: 355660204958460609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeWall1_15
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 436
+        width: 60
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07bd52ac337b36090800000000000000
+      internalID: -8042383076490880144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeWall1_16
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 230
+        width: 141
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c43ebd8f53bf4c7f0800000000000000
+      internalID: -593073041679064244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeWall1_17
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 327
+        width: 94
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7a9cc9246f9b85a0800000000000000
+      internalID: -6517940783141840260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeWall1_18
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 282
+        width: 152
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8e171d388bed7690800000000000000
+      internalID: -7602661625558524278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeWall1_19
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 155
+        width: 136
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8d85b45b23bdccf0800000000000000
+      internalID: -230331007239877238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeWall1_20
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 212
+        width: 140
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7588211161aeb42b0800000000000000
+      internalID: -5599124331208472489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeWall1_21
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 165
+        width: 69
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecbe9ac11cf970920800000000000000
+      internalID: 2956507332150422478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeWall1_22
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 100
+        width: 68
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d7d3bded3d665e00800000000000000
+      internalID: 1033133277276526550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeWall1_23
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 118
+        width: 97
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d32c480aa307a05b0800000000000000
+      internalID: -5401381405974019523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeWall1_24
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 164
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8873f41790fc2fa0800000000000000
+      internalID: -5824015686414665587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeWall1_25
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 78
+        width: 71
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fcd562445b43d820800000000000000
+      internalID: 2941777806866373873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

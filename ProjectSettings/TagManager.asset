@@ -4,8 +4,7 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Up
-  - Down
+  - Note
   layers:
   - Default
   - TransparentFX
@@ -57,6 +56,9 @@ TagManager:
     locked: 0
   - name: Wall_side
     uniqueID: 4084101857
+    locked: 0
+  - name: environment
+    uniqueID: 39532085
     locked: 0
   m_RenderingLayers:
   - Default

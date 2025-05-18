@@ -1,0 +1,467 @@
+fileFormatVersion: 2
+guid: 28e5bfc7adf7c964e9ab15efe68283a1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3342823594454408509
+    second: FuturisticSign5_0
+  - first:
+      213: 2643542115487234283
+    second: FuturisticSign5_1
+  - first:
+      213: 9214614213289842234
+    second: FuturisticSign5_2
+  - first:
+      213: 1985030926277099575
+    second: FuturisticSign5_3
+  - first:
+      213: -8735042980641792382
+    second: FuturisticSign5_4
+  - first:
+      213: 4739289430589352669
+    second: FuturisticSign5_5
+  - first:
+      213: -7930593943916280527
+    second: FuturisticSign5_6
+  - first:
+      213: 2709121798829950118
+    second: FuturisticSign5_7
+  - first:
+      213: 346804708967644796
+    second: FuturisticSign5_8
+  - first:
+      213: 2682155892824392799
+    second: FuturisticSign5_9
+  - first:
+      213: -23394572854034680
+    second: FuturisticSign5_10
+  - first:
+      213: 1896565753435876554
+    second: FuturisticSign5_11
+  - first:
+      213: 8104699233854658620
+    second: FuturisticSign5_12
+  - first:
+      213: 2300625381826630872
+    second: FuturisticSign5_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FuturisticSign5_0
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 591
+        width: 63
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3ddf3e1958146e20800000000000000
+      internalID: 3342823594454408509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuturisticSign5_1
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 389
+        width: 153
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be8b6664c8fbfa420800000000000000
+      internalID: 2643542115487234283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuturisticSign5_2
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 632
+        width: 577
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a36186d4ec2e0ef70800000000000000
+      internalID: 9214614213289842234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuturisticSign5_3
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 382
+        width: 157
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73049ec3c1f3c8b10800000000000000
+      internalID: 1985030926277099575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuturisticSign5_4
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 397
+        width: 255
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28e931970b4e6c680800000000000000
+      internalID: -8735042980641792382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuturisticSign5_5
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 543
+        width: 117
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddaaa0690a655c140800000000000000
+      internalID: 4739289430589352669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuturisticSign5_6
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 391
+        width: 151
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 135810b73ded0f190800000000000000
+      internalID: -7930593943916280527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuturisticSign5_7
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 398
+        width: 136
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a4c6882cebb89520800000000000000
+      internalID: 2709121798829950118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuturisticSign5_8
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 568
+        width: 136
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7ef27c9b0910d400800000000000000
+      internalID: 346804708967644796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuturisticSign5_9
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 487
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f54c408e29ee83520800000000000000
+      internalID: 2682155892824392799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuturisticSign5_10
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 517
+        width: 59
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80ffc5b82c2ecaff0800000000000000
+      internalID: -23394572854034680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuturisticSign5_11
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 429
+        width: 50
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acc67ba1184f15a10800000000000000
+      internalID: 1896565753435876554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuturisticSign5_12
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 407
+        width: 238
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c38994d330da97070800000000000000
+      internalID: 8104699233854658620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuturisticSign5_13
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 307
+        width: 595
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d4160578967def10800000000000000
+      internalID: 2300625381826630872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
