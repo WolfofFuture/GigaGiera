@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.963, z: 0}
-  m_LocalScale: {x: 0.016, y: 0.016, z: 0.016}
+  m_LocalScale: {x: 0.025, y: 0.025, z: 0.025}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TankS1: {fileID: 8300000, guid: 4fc62b3ac2622ae41af4fd6831b33b49, type: 3}
-  speed: 0.5
+  speed: 12
 --- !u!82 &-4537933403462292195
 AudioSource:
   m_ObjectHideFlags: 0
