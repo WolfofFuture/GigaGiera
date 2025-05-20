@@ -6,8 +6,23 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
+        Debug.Log("[MainMenu] PLAY GAME klikniêty");
+
+        if (CollectibleManager.Instance != null)
+        {
+            Debug.Log("[MainMenu] Resetujê CollectibleManager");
+            CollectibleManager.Instance.ResetCollected();
+        }
+
+        if (InventoryManager.Instance != null)
+        {
+            Debug.Log("[MainMenu] Resetujê InventoryManager");
+            InventoryManager.Instance.ResetInventory();
+        }
+
         StartCoroutine(LoadGame());
     }
+
 
     private IEnumerator LoadGame()
     {

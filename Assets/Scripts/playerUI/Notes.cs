@@ -1,18 +1,33 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NotePickup : MonoBehaviour
+public class NoteCollectable : MonoBehaviour
 {
-    public string noteName; // eg. "note_1"
+    public string itemID; // ex. "note_1"
+    public string noteUIName; // ex. "note_1"
+    public string inventoryName; // ex. "note_1_col"
+
+    private void Start()
+    {
+        if (CollectibleManager.Instance != null && CollectibleManager.Instance.IsCollected(itemID))
+        {
+            gameObject.SetActive(false);
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.CompareTag("Player")) return;
 
+        // save as collected
+        if (CollectibleManager.Instance != null)
+            CollectibleManager.Instance.Collect(itemID);
+
+        // Show UI 
         GameObject noteUI = GameObject.Find("NoteUI");
         if (noteUI != null)
         {
-            Transform note = noteUI.transform.Find(noteName);
+            Transform note = noteUI.transform.Find(noteUIName);
             if (note != null)
             {
                 note.gameObject.SetActive(true);
@@ -30,7 +45,8 @@ public class NotePickup : MonoBehaviour
                 }
             }
         }
-        //show note in inventory
+
+        // Show note in inventory
         GameObject inventoryUI = GameObject.Find("InventoryUI");
         if (inventoryUI != null)
         {
@@ -42,7 +58,7 @@ public class NotePickup : MonoBehaviour
                 {
                     if (page.name.StartsWith("page"))
                     {
-                        Transform collectedNote = FindDeepChild(page, noteName + "_col");
+                        Transform collectedNote = FindDeepChild(page, inventoryName);
                         if (collectedNote != null)
                         {
                             collectedNote.gameObject.SetActive(true);
@@ -53,9 +69,9 @@ public class NotePickup : MonoBehaviour
             }
         }
 
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
-    //find note helper
+
     private Transform FindDeepChild(Transform parent, string name)
     {
         foreach (Transform child in parent)
@@ -70,6 +86,3 @@ public class NotePickup : MonoBehaviour
         return null;
     }
 }
-
-
-
