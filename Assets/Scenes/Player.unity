@@ -4489,7 +4489,9 @@ MonoBehaviour:
   enterFromTag: 
   canTeleport: 1
   playerSprites: []
-  weaponSprites: []
+  weaponSprites:
+  - {fileID: 6761164967045977113, guid: 7d8381a5d572f0c4da1c5e8b1b980d7c, type: 3}
+  - {fileID: 5508725064705088119, guid: 7d8381a5d572f0c4da1c5e8b1b980d7c, type: 3}
   weaponPrices: 
   xpTable: 
   player: {fileID: 2085893769}
