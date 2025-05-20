@@ -30598,7 +30598,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8951932472223804116, guid: 46e2f075a3597564ca88e2ae06eb00e2, type: 3}
       propertyPath: speed
-      value: 0.15
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8951932472223804116, guid: 46e2f075a3597564ca88e2ae06eb00e2, type: 3}
       propertyPath: player

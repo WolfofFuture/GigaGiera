@@ -48,6 +48,9 @@ TagManager:
   - name: Wall_bottom
     uniqueID: 2937659843
     locked: 0
+  - name: enviro_floor
+    uniqueID: 2444871703
+    locked: 0
   - name: Actor
     uniqueID: 3714418593
     locked: 0
