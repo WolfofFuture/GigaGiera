@@ -50,6 +50,11 @@ public class Player : Mover
             ToggleInventory();
         }
 
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            ToggleInvNotes();
+        }
+
     }
 
     public void TakeDamage(int damage)
@@ -72,6 +77,15 @@ public class Player : Mover
         if (infoPanel != null)
             infoPanel.gameObject.SetActive(isInventoryOpen);
 
+        Time.timeScale = isInventoryOpen ? 0f : 1f;
+    }
+    
+    void ToggleInvNotes()
+    {
+        isInventoryOpen = !isInventoryOpen;
+        Transform infoPanel = inventoryUI.transform.Find("collected_notes");
+        if (infoPanel != null)
+            infoPanel.gameObject.SetActive(isInventoryOpen);
         Time.timeScale = isInventoryOpen ? 0f : 1f;
     }
 
