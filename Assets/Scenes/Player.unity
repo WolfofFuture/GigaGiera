@@ -6688,7 +6688,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventoryParent: {fileID: 1833368576}
   itemSlots: []
-  speedPotionSprite: {fileID: 0}
+  itemIDs: []
 --- !u!4 &1005148180
 Transform:
   m_ObjectHideFlags: 0
@@ -13081,7 +13081,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -13218,8 +13218,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86dd788d6f9fe31438c496842dd897d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boostMultiplier: 2
-  boostDuration: 5
 --- !u!1 &2108177813
 GameObject:
   m_ObjectHideFlags: 0
