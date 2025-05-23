@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class MusicVolumeSlider : MonoBehaviour
 {
-    public MenuMusicPlayer musicPlayer; // <-- przypniemy to zaraz w Unity
+    public MenuMusicPlayer musicPlayer; // podpinamy w Inspectorze
     private Slider slider;
 
     void Start()
@@ -15,6 +15,6 @@ public class MusicVolumeSlider : MonoBehaviour
 
     void UpdateVolume(float value)
     {
-        musicPlayer.SetVolume(value); // wysy³amy g³oœnoœæ do MenuMusicPlayer
+        musicPlayer.SetVolume(value);
     }
 }
