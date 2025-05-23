@@ -16,7 +16,7 @@ TagManager:
   - 
   - Blocking
   - Actor
-  - 
+  - Enemy
   - 
   - 
   - 
@@ -62,6 +62,9 @@ TagManager:
     locked: 0
   - name: environment
     uniqueID: 39532085
+    locked: 0
+  - name: Enemy
+    uniqueID: 1763496183
     locked: 0
   m_RenderingLayers:
   - Default

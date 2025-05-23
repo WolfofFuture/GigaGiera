@@ -40,10 +40,10 @@ public class Player : Mover
         float y = Input.GetAxisRaw("Vertical");
         UpdateMotor(new Vector3(x, y, 0));
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            TakeDamage(20);
-        }
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    TakeDamage(20);
+        //}
 
         if (Input.GetKeyDown(KeyCode.I))
         {
