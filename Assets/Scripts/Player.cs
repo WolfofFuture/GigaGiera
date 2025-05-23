@@ -50,18 +50,17 @@ public class Player : Mover
             ToggleInventory();
         }
 
-<<<<<<< HEAD
+
         if (Input.GetKeyDown(KeyCode.P))
         {
             UseSpeedPotionIfAvailable();
         }
-=======
         if (Input.GetKeyDown(KeyCode.N))
         {
             ToggleInvNotes();
         }
 
->>>>>>> d2e3cc55bf03c4570b9f50afee25f6ae49db18e3
+
     }
 
     public void TakeDamage(int damage)
