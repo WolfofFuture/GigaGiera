@@ -32,6 +32,27 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Room5.unity
     guid: fdc312896c9e0644f92bfa9a019d7144
+  - enabled: 1
+    path: Assets/Scenes/JungleLevel/JunRoom5.unity
+    guid: ee36f5b1125eeeb40b8a80964e44e1ba
+  - enabled: 1
+    path: Assets/Scenes/JungleLevel/JunRoom6.unity
+    guid: 7390d947931726f49ac3bb8a72b2e297
+  - enabled: 1
+    path: Assets/Scenes/JungleLevel/JunRoom7.unity
+    guid: 289851cdceb8d8446967ddc3d34e241c
+  - enabled: 1
+    path: Assets/Scenes/JungleLevel/JunRoom4.unity
+    guid: f8769ee632ae5e64d8493752c13c8a8b
+  - enabled: 1
+    path: Assets/Scenes/JungleLevel/JunRoom3.unity
+    guid: d64f97471c2b1714685ebc0d3112e599
+  - enabled: 1
+    path: Assets/Scenes/JungleLevel/JunRoom2.unity
+    guid: af5091aabf8eb8c44bd625ad3859cd6b
+  - enabled: 1
+    path: Assets/Scenes/JungleLevel/JunRoom1.unity
+    guid: 5a3b05edb533e6c43bb7e11e0ba97df2
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
