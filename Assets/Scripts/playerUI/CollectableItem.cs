@@ -34,7 +34,8 @@ public class CollectableItem : MonoBehaviour
                 CollectibleManager.Instance.Collect(itemID);
             }
 
-            InventoryManager.Instance.AddItem(icon);
+            InventoryManager.Instance.AddItem(icon, itemID);
+
 
             if (pickupSound != null)
             {

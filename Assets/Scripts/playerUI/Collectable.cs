@@ -5,9 +5,13 @@ public class Collectable : Collidable
     public string itemID;
     protected bool collected;
 
+    private CollectablePickupSound pickupSound;
+
     protected override void Start()
     {
         base.Start();
+
+        pickupSound = GetComponent<CollectablePickupSound>();
 
         if (CollectibleManager.Instance != null && CollectibleManager.Instance.IsCollected(itemID))
         {
@@ -27,6 +31,13 @@ public class Collectable : Collidable
     protected virtual void OnCollect()
     {
         collected = true;
+
+        // Odtwórz dŸwiêk przy podniesieniu
+        if (pickupSound != null)
+        {
+            pickupSound.PlayPickupSound();
+        }
+
         CollectibleManager.Instance.Collect(itemID);
         gameObject.SetActive(false);
     }

@@ -50,11 +50,30 @@ public class Player : Mover
             ToggleInventory();
         }
 
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            UseSpeedPotionIfAvailable();
+        }
+
         if (Input.GetKeyDown(KeyCode.N))
         {
             ToggleInvNotes();
         }
 
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            InventoryManager inventory = InventoryManager.Instance;
+            if (inventory.HasItem("health_potion"))
+            {
+                Heal(30); // leczenie o 30 hp, mo¿esz zmieniæ
+                inventory.RemoveItem("health_potion");
+                Debug.Log("U¿yto mikstury zdrowia!");
+            }
+            else
+            {
+                Debug.Log("Nie masz mikstury zdrowia w ekwipunku!");
+            }
+        }
     }
 
     public void TakeDamage(int damage)
@@ -66,6 +85,8 @@ public class Player : Mover
     public void Heal(int amount)
     {
         currentHealth += amount;
+        if (currentHealth > maxHealth)
+            currentHealth = maxHealth;
         healthBar.SetHealth(currentHealth);
     }
 
@@ -79,7 +100,7 @@ public class Player : Mover
 
         Time.timeScale = isInventoryOpen ? 0f : 1f;
     }
-    
+
     void ToggleInvNotes()
     {
         isInventoryOpen = !isInventoryOpen;
@@ -89,5 +110,21 @@ public class Player : Mover
         Time.timeScale = isInventoryOpen ? 0f : 1f;
     }
 
+    void UseSpeedPotionIfAvailable()
+    {
+        if (InventoryManager.Instance.HasItem("speed_potion"))
+        {
+            InventoryManager.Instance.RemoveItem("speed_potion");
 
+            PlayerSpeedBoost speedBoost = GetComponent<PlayerSpeedBoost>();
+            if (speedBoost != null)
+            {
+                speedBoost.ApplySpeedBoost(2f, 5f); // 2x szybkoœci przez 5 sekund
+            }
+        }
+        else
+        {
+            Debug.Log("Nie masz mikstury prêdkoœci w ekwipunku!");
+        }
+    }
 }
