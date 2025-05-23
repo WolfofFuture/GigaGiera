@@ -6688,6 +6688,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventoryParent: {fileID: 1833368576}
   itemSlots: []
+  speedPotionSprite: {fileID: 0}
 --- !u!4 &1005148180
 Transform:
   m_ObjectHideFlags: 0
@@ -12924,6 +12925,7 @@ GameObject:
   - component: {fileID: 2085893768}
   - component: {fileID: 2085893773}
   - component: {fileID: 2085893775}
+  - component: {fileID: 2085893776}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -13043,6 +13045,8 @@ MonoBehaviour:
   hitpoint: 10
   maxHitpoint: 10
   pushRecoverySpeed: 0.2
+  ySpeed: 0.75
+  xSpeed: 1
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 425617715}
@@ -13202,6 +13206,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb9acd5542bd2d645b65a6739e225283, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2085893776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085893767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86dd788d6f9fe31438c496842dd897d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boostMultiplier: 2
+  boostDuration: 5
 --- !u!1 &2108177813
 GameObject:
   m_ObjectHideFlags: 0
