@@ -6,8 +6,9 @@ public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager Instance;
 
-    public Transform inventoryParent; //parent
+    public Transform inventoryParent; // parent panel ekwipunku
     public List<Image> itemSlots = new List<Image>();
+    public List<string> itemIDs = new List<string>(); // ID przedmiotów w slotach
 
     private void Awake()
     {
@@ -23,10 +24,10 @@ public class InventoryManager : MonoBehaviour
     private void Start()
     {
         itemSlots.Clear();
+        itemIDs.Clear();
 
         foreach (Transform frame in inventoryParent)
         {
-            // znajdŸ dok³adnie jedno dziecko typu Image
             foreach (Transform child in frame)
             {
                 Image icon = child.GetComponent<Image>();
@@ -35,20 +36,40 @@ public class InventoryManager : MonoBehaviour
                     icon.sprite = null;
                     icon.color = new Color(1, 1, 1, 0);
                     itemSlots.Add(icon);
+                    itemIDs.Add(null);
                 }
             }
         }
     }
 
-
-    public void AddItem(Sprite icon)
+    public void AddItem(Sprite icon, string itemID)
     {
-        foreach (Image slot in itemSlots)
+        for (int i = 0; i < itemSlots.Count; i++)
         {
-            if (slot.sprite == null)
+            if (itemSlots[i].sprite == null)
             {
-                slot.sprite = icon;
-                slot.color = Color.white;
+                itemSlots[i].sprite = icon;
+                itemSlots[i].color = Color.white;
+                itemIDs[i] = itemID;
+                return;
+            }
+        }
+    }
+
+    public bool HasItem(string itemID)
+    {
+        return itemIDs.Contains(itemID);
+    }
+
+    public void RemoveItem(string itemID)
+    {
+        for (int i = 0; i < itemIDs.Count; i++)
+        {
+            if (itemIDs[i] == itemID)
+            {
+                itemSlots[i].sprite = null;
+                itemSlots[i].color = new Color(1, 1, 1, 0);
+                itemIDs[i] = null;
                 return;
             }
         }
@@ -56,11 +77,11 @@ public class InventoryManager : MonoBehaviour
 
     public void ResetInventory()
     {
-        foreach (Image slot in itemSlots)
+        for (int i = 0; i < itemSlots.Count; i++)
         {
-            slot.sprite = null;
-            slot.color = new Color(1, 1, 1, 0);
+            itemSlots[i].sprite = null;
+            itemSlots[i].color = new Color(1, 1, 1, 0);
+            itemIDs[i] = null;
         }
     }
-
 }

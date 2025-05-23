@@ -89,5 +89,21 @@ public class Player : Mover
         Time.timeScale = isInventoryOpen ? 0f : 1f;
     }
 
+    void UseSpeedPotionIfAvailable()
+    {
+        if (InventoryManager.Instance.HasItem("speed_potion"))
+        {
+            InventoryManager.Instance.RemoveItem("speed_potion");
 
+            PlayerSpeedBoost speedBoost = GetComponent<PlayerSpeedBoost>();
+            if (speedBoost != null)
+            {
+                speedBoost.ApplySpeedBoost(2f, 5f); // 2x szybko�ci przez 5 sekund
+            }
+        }
+        else
+        {
+            Debug.Log("Nie masz mikstury pr�dko�ci w ekwipunku!");
+        }
+    }
 }
