@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Room6.unity
     guid: a228df6344fa0c24c894ab4344ba7ef8
   - enabled: 1
+    path: Assets/Scenes/Room7.unity
+    guid: ec25cbc60417c214a832cff373fb89dc
+  - enabled: 1
     path: Assets/Scenes/JungleLevel/JunRoom5.unity
     guid: ee36f5b1125eeeb40b8a80964e44e1ba
   - enabled: 1
