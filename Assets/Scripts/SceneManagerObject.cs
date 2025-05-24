@@ -12,6 +12,7 @@ public class SceneManagerObject : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+
         instance = this;
         DontDestroyOnLoad(gameObject);
 
@@ -25,12 +26,30 @@ public class SceneManagerObject : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // Przyk³ad: znajdŸ miksturê i w³¹cz j¹
-        GameObject potion = GameObject.Find("speed_potion"); // lub dok³adna nazwa mikstury w hierarchii
-        if (potion != null && !potion.activeSelf)
+        GameObject[] rootObjects = scene.GetRootGameObjects();
+
+        foreach (GameObject root in rootObjects)
         {
-            potion.SetActive(true);
-            Debug.Log("Mikstura w³¹czona po za³adowaniu sceny");
+            EnableCollectableItemsRecursive(root.transform);
+        }
+    }
+
+    private void EnableCollectableItemsRecursive(Transform parent)
+    {
+        foreach (Transform child in parent)
+        {
+            var collectable = child.GetComponent<CollectableItem>();
+            if (collectable != null && !child.gameObject.activeSelf)
+            {
+                child.gameObject.SetActive(true);
+                Debug.Log("W³¹czono collectable: " + child.name);
+            }
+
+            // Rekurencja dla dzieci
+            if (child.childCount > 0)
+            {
+                EnableCollectableItemsRecursive(child);
+            }
         }
     }
 }
