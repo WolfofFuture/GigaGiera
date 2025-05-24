@@ -6,12 +6,12 @@ public class Enemy : MonoBehaviour
     private int currentHealth;
 
     public int damageToPlayer = 10;
-    public float moveSpeed = 3f; 
+    public float moveSpeed = 3f;
 
     private Transform player;
     private bool playerInRoom = false;
 
-    private float attackRange = 0.1f; 
+    private float attackRange = 0.1f;
     private float attackCooldown = 1.7f;
     private float lastAttackTime;
 
@@ -19,14 +19,17 @@ public class Enemy : MonoBehaviour
     private bool isDead = false;
     public GameObject lootObjectOnScene;
 
-
     private Animator animator;
+
+    private AudioSource audioSource;
+    public AudioClip punchSound; // Przypisz w inspectorze dźwięk uderzenia
 
     void Start()
     {
         currentHealth = maxHealth;
         player = GameObject.FindGameObjectWithTag("Player").transform;
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
 
         if (CollectibleManager.Instance.IsCollected(enemyID))
         {
@@ -38,9 +41,7 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-        if (isDead) return;    
-        if (!playerInRoom) return;
-
+        if (isDead) return;
         if (!playerInRoom) return;
 
         Vector3 direction = (player.position - transform.position).normalized;
@@ -70,16 +71,20 @@ public class Enemy : MonoBehaviour
         if (playerScript != null)
         {
             playerScript.TakeDamage(damageToPlayer);
-            Debug.Log("Enemy zaatakowa� gracza za " + damageToPlayer + " dmg.");
+            Debug.Log("Enemy zaatakował gracza za " + damageToPlayer + " dmg.");
+
+            if (audioSource != null && punchSound != null)
+            {
+                audioSource.PlayOneShot(punchSound);
+            }
         }
     }
-
 
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         animator.SetTrigger("TakeHit");
-        Debug.Log("Enemy otrzyma� " + damage + " dmg.");
+        Debug.Log("Enemy otrzymał " + damage + " dmg.");
 
         if (currentHealth <= 0)
         {
@@ -87,7 +92,6 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    
     void Die()
     {
         if (isDead) return;
@@ -101,9 +105,8 @@ public class Enemy : MonoBehaviour
         if (col != null) col.enabled = false;
 
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
-        if (rb != null) rb.linearVelocity = Vector2.zero;
+        if (rb != null) rb.linearVelocity = Vector2.zero; // poprawione do .velocity
 
-        // Jeśli lootPrefab jest przypisany, twórz item
         if (lootObjectOnScene != null)
         {
             lootObjectOnScene.SetActive(true);
