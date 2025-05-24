@@ -27,9 +27,6 @@ public class GameManager : MonoBehaviour
         }
         Instance = this;
         DontDestroyOnLoad(gameObject);
-
-        // Opcjonalnie: zresetuj PlayerPrefs g³oœnoœci SFX jeœli potrzebujesz
-        // PlayerPrefs.SetFloat("SFXVolume", 1f);
     }
 
     private void Start()
@@ -44,15 +41,14 @@ public class GameManager : MonoBehaviour
 
         currentPlayer = Instantiate(playerPrefab, playerSpawnPoint.position, Quaternion.identity);
 
-        // Reset danych globalnych
         CollectibleManager.Instance.ResetCollected();
         InventoryManager.Instance.ResetInventory();
 
-        // ZnajdŸ wszystkie itemy i zainicjuj je wg stanu z CollectibleManagera
+        // *** ZMIANA: Zast¹piono przestarza³e FindObjectsOfType now¹ wersj¹ ***
         CollectableItem[] allCollectables = FindObjectsByType<CollectableItem>(FindObjectsSortMode.None);
         foreach (var collectable in allCollectables)
         {
-            collectable.InitializeCollectable();
+            collectable.ResetCollectable();
         }
 
         Player playerComp = currentPlayer.GetComponent<Player>();
@@ -81,6 +77,7 @@ public class GameManager : MonoBehaviour
         Debug.Log($"ShowText: {msg} at {position}");
     }
 
+    // *** NOWA METODA ***
     public void ResetGame()
     {
         // Wyzeruj doœwiadczenie
@@ -90,16 +87,18 @@ public class GameManager : MonoBehaviour
         canTeleport = true;
         enterFromTag = "";
 
+        // Reset inventory, collectables, zdrowie itp.
         if (InventoryManager.Instance != null)
             InventoryManager.Instance.ResetInventory();
 
         if (CollectibleManager.Instance != null)
             CollectibleManager.Instance.ResetCollected();
 
+        // Usuñ aktualnego gracza jeœli jest
         if (currentPlayer != null)
             Destroy(currentPlayer);
 
-        // Prze³aduj scenê MainMenu
+        // Prze³aduj scenê MainMenu na œwie¿o
         SceneManager.LoadScene("MainMenu");
     }
 }

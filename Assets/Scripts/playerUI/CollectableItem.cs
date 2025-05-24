@@ -16,21 +16,22 @@ public class CollectableItem : MonoBehaviour
 
         audioSource.volume = PlayerPrefs.GetFloat("SFXVolume", 1f);
 
-        // Usuwamy automatyczne wy³¹czanie tutaj
-        // Stan aktywnoœci bêdzie ustawiany z GameManagera lub CollectibleManagera
+        if (CollectibleManager.Instance != null && CollectibleManager.Instance.IsCollected(itemID))
+        {
+            gameObject.SetActive(false);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            if (!string.IsNullOrEmpty(itemID) && CollectibleManager.Instance != null)
+            if (!string.IsNullOrEmpty(itemID))
             {
                 CollectibleManager.Instance.Collect(itemID);
             }
 
-            if (InventoryManager.Instance != null)
-                InventoryManager.Instance.AddItem(icon, itemID);
+            InventoryManager.Instance.AddItem(icon, itemID);
 
             if (pickupSound != null)
             {
@@ -46,27 +47,6 @@ public class CollectableItem : MonoBehaviour
             if (sr != null) sr.enabled = false;
 
             Destroy(gameObject, 2f);
-        }
-    }
-
-    /// <summary>
-    /// Ustawia stan itemu na podstawie tego, czy zosta³ zebrany.
-    /// </summary>
-    public void InitializeCollectable()
-    {
-        if (CollectibleManager.Instance != null && CollectibleManager.Instance.IsCollected(itemID))
-        {
-            gameObject.SetActive(false);
-        }
-        else
-        {
-            gameObject.SetActive(true);
-
-            Collider2D col = GetComponent<Collider2D>();
-            if (col != null) col.enabled = true;
-
-            SpriteRenderer sr = GetComponent<SpriteRenderer>();
-            if (sr != null) sr.enabled = true;
         }
     }
 
