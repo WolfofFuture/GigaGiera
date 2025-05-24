@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 
 public class Enemy : Mover
 {
@@ -77,7 +77,7 @@ public class Enemy : Mover
         GameManager.Instance.ShowText("+" + xpValue + " xp", 30, Color.blue, transform.position, Vector3.up * 40, 1.0f);
     }
 }
-/*using UnityEngine;
+*//*using UnityEngine;
 
 public class Enemy : Mover
 {

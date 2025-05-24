@@ -8546,18 +8546,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a2d689c717ee614d96095172ae4ad23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerSpawnPoint: {fileID: 0}
+  playerPrefab: {fileID: 0}
+  experience: 0
   enterFromTag: 
   canTeleport: 1
-  playerSprites: []
-  weaponSprites:
-  - {fileID: 6761164967045977113, guid: 7d8381a5d572f0c4da1c5e8b1b980d7c, type: 3}
-  - {fileID: 5508725064705088119, guid: 7d8381a5d572f0c4da1c5e8b1b980d7c, type: 3}
-  weaponPrices: 
-  xpTable: 
-  player: {fileID: 2085893769}
-  floatingTextManager: {fileID: 0}
-  cash: 0
-  experience: 0
 --- !u!4 &1192447937
 Transform:
   m_ObjectHideFlags: 0
@@ -14558,7 +14551,7 @@ MonoBehaviour:
   pushRecoverySpeed: 0.2
   ySpeed: 0.75
   xSpeed: 1
-  deathWatcher: {fileID: 890998008}
+  canMove: 1
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 425617715}
