@@ -74,6 +74,10 @@ public class Player : Mover
 
         if (Input.GetKeyDown(KeyCode.Space))
             TakeDamage(20);
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    TakeDamage(20);
+        //}
 
         if (Input.GetKeyDown(KeyCode.I))
             ToggleInventory();
@@ -91,7 +95,7 @@ public class Player : Mover
             {
                 Heal(30);
                 inventory.RemoveItem("health_potion");
-                Debug.Log("U¿yto mikstury zdrowia!");
+                Debug.Log("Uï¿½yto mikstury zdrowia!");
             }
             else
             {
@@ -119,7 +123,7 @@ public class Player : Mover
 
     void Die()
     {
-        Debug.Log("Gracz zmar³!");
+        Debug.Log("Gracz zmarï¿½!");
         if (deathPanel != null)
             deathPanel.SetActive(true);
         canMove = false;
@@ -161,7 +165,7 @@ public class Player : Mover
         }
         else
         {
-            Debug.Log("Nie masz mikstury prêdkoœci!");
+            Debug.Log("Nie masz mikstury prï¿½dkoï¿½ci!");
         }
     }
 }
