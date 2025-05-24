@@ -241,6 +241,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: key_1
       objectReference: {fileID: 0}
+    - target: {fileID: 7297895535444785165, guid: b7601df3889c0eb4f802acb81228ec8a, type: 3}
+      propertyPath: pickupSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 97396f63070582844a500fee7290c681, type: 3}
     - target: {fileID: 8053784182130821995, guid: b7601df3889c0eb4f802acb81228ec8a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.9287899
@@ -25683,6 +25687,10 @@ PrefabInstance:
       propertyPath: itemID
       value: key_2
       objectReference: {fileID: 0}
+    - target: {fileID: 7297895535444785165, guid: b7601df3889c0eb4f802acb81228ec8a, type: 3}
+      propertyPath: pickupSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 97396f63070582844a500fee7290c681, type: 3}
     - target: {fileID: 8053784182130821995, guid: b7601df3889c0eb4f802acb81228ec8a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.08859756
