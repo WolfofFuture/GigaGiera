@@ -587,7 +587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62e9ad73cf988904a920a6413bf4c1bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetScene: Room3
+  targetScene: Room5
   myTag: Left
   destinationTag: Right
   cooldownTime: 1
