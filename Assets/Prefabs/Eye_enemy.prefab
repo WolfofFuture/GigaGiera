@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3068043556855862076}
   - component: {fileID: 5628790729773959155}
   - component: {fileID: 3358784582437806612}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Eye_enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77,8 +77,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 39532085
-  m_SortingLayer: 7
+  m_SortingLayerID: 1763496183
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 7441861488978599509, guid: dd255f029b1eb1347b77fb335d97ea38, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -203,3 +203,4 @@ MonoBehaviour:
   moveSpeed: 0.8
   enemyID: eye_0X
   lootObjectOnScene: {fileID: 0}
+  punchSound: {fileID: 0}
