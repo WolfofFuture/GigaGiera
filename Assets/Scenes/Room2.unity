@@ -153,6 +153,7 @@ MonoBehaviour:
   enemies:
   - {fileID: 1353487847}
   - {fileID: 1355981016}
+  - {fileID: 0}
   roomTrigger: {fileID: 34169307}
 --- !u!61 &34169307
 BoxCollider2D:
@@ -27514,6 +27515,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom
       objectReference: {fileID: 0}
+    - target: {fileID: 1651210275944897301, guid: a2343e4d4e34d234ebfdedc8a02051c0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8323200451018941109, guid: a2343e4d4e34d234ebfdedc8a02051c0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.8205987
@@ -27589,6 +27594,10 @@ PrefabInstance:
     - target: {fileID: 1651210275944897301, guid: a2343e4d4e34d234ebfdedc8a02051c0, type: 3}
       propertyPath: m_Name
       value: Mushroom (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651210275944897301, guid: a2343e4d4e34d234ebfdedc8a02051c0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8323200451018941109, guid: a2343e4d4e34d234ebfdedc8a02051c0, type: 3}
       propertyPath: m_LocalPosition.x
