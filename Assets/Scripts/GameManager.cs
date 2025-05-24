@@ -1,93 +1,103 @@
-using System.Collections.Generic;
-using NUnit.Framework;
 using UnityEngine;
+using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager instance;
-    public string enterFromTag;
-    public bool canTeleport = true;
+    public static GameManager Instance;
 
+    public Transform playerSpawnPoint;
+    public GameObject playerPrefab;
+
+    private GameObject currentPlayer;
+
+    public int experience = 0;
+
+    public Player player => currentPlayer != null ? currentPlayer.GetComponent<Player>() : null;
+
+    public string enterFromTag = "";
+    public bool canTeleport = true;
 
     private void Awake()
     {
-        if (GameManager.instance != null)
+        if (Instance != null)
         {
             Destroy(gameObject);
             return;
-
         }
-        instance = this;
+        Instance = this;
         DontDestroyOnLoad(gameObject);
-        
     }
 
-    // Resources
-    public List<Sprite> playerSprites;
-    public List<Sprite> weaponSprites;
-    public List<int> weaponPrices;
-    public List<int> xpTable;
-
-    // References
-    public Player player;
-    // public weapon itd...
-    public FloatingTextManager floatingTextManager;
-
-    //logic
-    public int cash;
-    public int experience;
-
-    public void ShowText(string msg, int fontSize, Color color, Vector3 position, Vector3 mention, float duration)
+    private void Start()
     {
-        floatingTextManager.Show(msg, fontSize, color, position, mention, duration);
+        RespawnPlayer();
     }
 
-    // Save State
-    /*
-     * INT preferedSkin
-     * INT cash
-     * INT experience
-     * INT weaponLevel
-     */
-    public void SaveState()
+    public void RespawnPlayer()
     {
-        string s = "";
+        if (currentPlayer != null)
+            Destroy(currentPlayer);
 
-        s += "0" + "|";
-        s += cash.ToString() + "|";
-        s += experience.ToString() + "|";
-        s += "0";
+        currentPlayer = Instantiate(playerPrefab, playerSpawnPoint.position, Quaternion.identity);
 
-        PlayerPrefs.SetString("SaveState", s);
+        CollectibleManager.Instance.ResetCollected();
+        InventoryManager.Instance.ResetInventory();
+
+        CollectableItem[] allCollectables = FindObjectsOfType<CollectableItem>();
+        foreach (var collectable in allCollectables)
+        {
+            collectable.ResetCollectable();
+        }
+
+        Player playerComp = currentPlayer.GetComponent<Player>();
+        if (playerComp != null)
+            playerComp.ResetPlayerState();
+
+        canTeleport = true;
+        enterFromTag = "";
     }
 
-    public void LoadState(Scene s, LoadSceneMode mode)
+    public void StartTeleportCooldown(float cooldownTime)
     {
-        if (!PlayerPrefs.HasKey("SaveState"))
-            return;
-
-        string[] data = PlayerPrefs.GetString("SaveState").Split('|');
-        //0|10|15|2
-
-        // Change player skin
-        cash = int.Parse(data[1]);
-        experience = int.Parse(data[2]);
-        // Change weapon level
-
-
-        Debug.Log("LoadState");
+        if (canTeleport)
+            StartCoroutine(TeleportCooldownCoroutine(cooldownTime));
     }
 
-    public void StartTeleportCooldown(float time)
+    private IEnumerator TeleportCooldownCoroutine(float cooldownTime)
     {
         canTeleport = false;
-        Invoke(nameof(ResetCooldown), time);
-    }
-
-    private void ResetCooldown()
-    {
+        yield return new WaitForSeconds(cooldownTime);
         canTeleport = true;
     }
 
+    public void ShowText(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration)
+    {
+        Debug.Log($"ShowText: {msg} at {position}");
+    }
+
+    // *** NOWA METODA ***
+    public void ResetGame()
+    {
+        // Wyzeruj doœwiadczenie
+        experience = 0;
+
+        // Reset teleportacji
+        canTeleport = true;
+        enterFromTag = "";
+
+        // Reset inventory, collectables, zdrowie itp.
+        if (InventoryManager.Instance != null)
+            InventoryManager.Instance.ResetInventory();
+
+        if (CollectibleManager.Instance != null)
+            CollectibleManager.Instance.ResetCollected();
+
+        // Usuñ aktualnego gracza jeœli jest
+        if (currentPlayer != null)
+            Destroy(currentPlayer);
+
+        // Prze³aduj scenê MainMenu na œwie¿o
+        SceneManager.LoadScene("MainMenu");
+    }
 }

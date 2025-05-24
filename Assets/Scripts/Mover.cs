@@ -2,16 +2,18 @@ using UnityEngine;
 
 public abstract class Mover : Fighter
 {
-    // FIELDS
     protected BoxCollider2D boxCollider; //before it was private
     private Vector3 moveDelta;
     private RaycastHit2D hit;
     public float ySpeed = 0.75f;
     public float xSpeed = 1.0f;
-    //AUDIO
+
+    // AUDIO
     private AudioSource audioSource;
 
-    //Functions
+    // Now public so Player mo¿e kontrolowaæ ruch
+    public bool canMove = true;
+
     protected virtual void Start()
     {
         boxCollider = GetComponent<BoxCollider2D>();
@@ -20,10 +22,17 @@ public abstract class Mover : Fighter
 
     protected virtual void UpdateMotor(Vector3 input)
     {
+        if (!canMove)
+        {
+            if (audioSource.isPlaying)
+                audioSource.Stop();
+            return; // Blokujemy ruch i dŸwiêk jeœli canMove jest false
+        }
+
         // Reset moveDelta
         moveDelta = new Vector3(input.x * xSpeed, input.y * ySpeed, 0);
 
-        // Swap sprite directrion
+        // Swap sprite direction
         if (moveDelta.x > 0)
             transform.localScale = Vector3.one;
         else if (moveDelta.x < 0)
@@ -39,20 +48,18 @@ public abstract class Mover : Fighter
         hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(0, moveDelta.y), Mathf.Abs(moveDelta.y * Time.deltaTime), LayerMask.GetMask("Actor", "Blocking"));
         if (hit.collider == null)
         {
-
             transform.Translate(0, moveDelta.y * Time.deltaTime, 0);
         }
 
         hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(moveDelta.x, 0), Mathf.Abs(moveDelta.x * Time.deltaTime), LayerMask.GetMask("Actor", "Blocking"));
         if (hit.collider == null)
         {
-            // 
             transform.Translate(moveDelta.x * Time.deltaTime, 0, 0);
         }
-        //audio
+
+        // audio
         if (input != Vector3.zero)
         {
-            Debug.Log("Gracz siê porusza");
             if (!audioSource.isPlaying)
                 audioSource.Play();
         }
@@ -60,7 +67,5 @@ public abstract class Mover : Fighter
         {
             audioSource.Stop();
         }
-
-
     }
 }

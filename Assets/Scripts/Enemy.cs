@@ -21,7 +21,7 @@ public class Enemy : Mover
     protected override void Start()
     {
         base.Start();
-        playerTransform = GameManager.instance.player.transform;
+        playerTransform = GameManager.Instance.player.transform;
         startingPosition = transform.position;
         hitbox = transform.GetChild(0).GetComponent<BoxCollider2D>();
     }
@@ -31,7 +31,7 @@ public class Enemy : Mover
         // Is the player in range
         if (Vector3.Distance(playerTransform.position, startingPosition) < chaseLength)
         {
-            if(Vector3.Distance(playerTransform.position, startingPosition) < triggerLength)
+            if (Vector3.Distance(playerTransform.position, startingPosition) < triggerLength)
                 chasing = true;
 
             if (chasing)
@@ -73,8 +73,7 @@ public class Enemy : Mover
     protected override void Death()
     {
         Destroy(gameObject);
-        GameManager.instance.experience += xpValue;
-        GameManager.instance.ShowText("+" + xpValue + " xp", 30, Color.blue, transform.position, Vector3.up * 40, 1.0f);
-        
+        GameManager.Instance.experience += xpValue;
+        GameManager.Instance.ShowText("+" + xpValue + " xp", 30, Color.blue, transform.position, Vector3.up * 40, 1.0f);
     }
 }
