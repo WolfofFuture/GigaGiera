@@ -14,7 +14,6 @@ public class CollectibleManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-
         Instance = this;
         DontDestroyOnLoad(gameObject);
 
@@ -56,6 +55,4 @@ public class CollectibleManager : MonoBehaviour
         collectedItems.Clear();
         PlayerPrefs.DeleteKey("CollectedItems");
     }
-
-
 }

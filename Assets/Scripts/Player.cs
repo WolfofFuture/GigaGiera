@@ -2,76 +2,104 @@ using UnityEngine;
 
 public class Player : Mover
 {
-    private static Player instance;
+    public static Player Instance { get; private set; }
     private SpriteRenderer spriteRenderer;
 
-    //health
     public int maxHealth = 100;
     public int currentHealth;
     public HealthBar healthBar;
 
-    //inventory
-    public GameObject inventoryUI;
+    public GameObject deathPanel;
+
+    [SerializeField] private GameObject inventoryUI;
     private bool isInventoryOpen = false;
 
+    private bool canMove = true;
 
     protected override void Start()
     {
-        if (instance != null)
+        if (Instance != null)
         {
             Destroy(gameObject);
             return;
         }
 
-        instance = this;
+        Instance = this;
         DontDestroyOnLoad(gameObject);
 
         base.Start();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        currentHealth = maxHealth;
 
+        if (inventoryUI == null)
+            Debug.LogWarning("inventoryUI NIE jest przypisany!");
+
+        ResetPlayerState();
+
+        if (deathPanel != null)
+            deathPanel.SetActive(false);
+    }
+
+    public void ResetPlayerState()
+    {
+        currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
         healthBar.SetHealth(currentHealth);
+
+        if (deathPanel != null)
+            deathPanel.SetActive(false);
+
+        Time.timeScale = 1f;
+        isInventoryOpen = false;
+        canMove = true;
     }
 
     private void Update()
     {
+        if (deathPanel != null && deathPanel.activeSelf)
+        {
+            canMove = false;
+            return;
+        }
+        else
+        {
+            canMove = true;
+        }
+
+        if (!canMove)
+            return;
+
         float x = Input.GetAxisRaw("Horizontal");
         float y = Input.GetAxisRaw("Vertical");
         UpdateMotor(new Vector3(x, y, 0));
 
+        if (Input.GetKeyDown(KeyCode.Space))
+            TakeDamage(20);
         //if (Input.GetKeyDown(KeyCode.Space))
         //{
         //    TakeDamage(20);
         //}
 
         if (Input.GetKeyDown(KeyCode.I))
-        {
             ToggleInventory();
-        }
 
         if (Input.GetKeyDown(KeyCode.P))
-        {
             UseSpeedPotionIfAvailable();
-        }
 
         if (Input.GetKeyDown(KeyCode.N))
-        {
             ToggleInvNotes();
-        }
 
         if (Input.GetKeyDown(KeyCode.O))
         {
             InventoryManager inventory = InventoryManager.Instance;
             if (inventory.HasItem("health_potion"))
             {
-                Heal(30); // leczenie o 30 hp, mo¿esz zmieniæ
+                Heal(30);
                 inventory.RemoveItem("health_potion");
-                Debug.Log("U¿yto mikstury zdrowia!");
+                Debug.Log("Uï¿½yto mikstury zdrowia!");
             }
             else
             {
-                Debug.Log("Nie masz mikstury zdrowia w ekwipunku!");
+                Debug.Log("Nie masz mikstury zdrowia!");
             }
         }
     }
@@ -80,6 +108,9 @@ public class Player : Mover
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
+
+        if (currentHealth <= 0)
+            Die();
     }
 
     public void Heal(int amount)
@@ -90,23 +121,35 @@ public class Player : Mover
         healthBar.SetHealth(currentHealth);
     }
 
+    void Die()
+    {
+        Debug.Log("Gracz zmarï¿½!");
+        if (deathPanel != null)
+            deathPanel.SetActive(true);
+        canMove = false;
+    }
+
     void ToggleInventory()
     {
         isInventoryOpen = !isInventoryOpen;
-
-        Transform infoPanel = inventoryUI.transform.Find("info_and_items");
-        if (infoPanel != null)
-            infoPanel.gameObject.SetActive(isInventoryOpen);
-
+        if (inventoryUI != null)
+        {
+            Transform infoPanel = inventoryUI.transform.Find("info_and_items");
+            if (infoPanel != null)
+                infoPanel.gameObject.SetActive(isInventoryOpen);
+        }
         Time.timeScale = isInventoryOpen ? 0f : 1f;
     }
 
     void ToggleInvNotes()
     {
         isInventoryOpen = !isInventoryOpen;
-        Transform infoPanel = inventoryUI.transform.Find("collected_notes");
-        if (infoPanel != null)
-            infoPanel.gameObject.SetActive(isInventoryOpen);
+        if (inventoryUI != null)
+        {
+            Transform infoPanel = inventoryUI.transform.Find("collected_notes");
+            if (infoPanel != null)
+                infoPanel.gameObject.SetActive(isInventoryOpen);
+        }
         Time.timeScale = isInventoryOpen ? 0f : 1f;
     }
 
@@ -118,13 +161,11 @@ public class Player : Mover
 
             PlayerSpeedBoost speedBoost = GetComponent<PlayerSpeedBoost>();
             if (speedBoost != null)
-            {
-                speedBoost.ApplySpeedBoost(2f, 5f); // 2x szybkoœci przez 5 sekund
-            }
+                speedBoost.ApplySpeedBoost(2f, 5f);
         }
         else
         {
-            Debug.Log("Nie masz mikstury prêdkoœci w ekwipunku!");
+            Debug.Log("Nie masz mikstury prï¿½dkoï¿½ci!");
         }
     }
 }

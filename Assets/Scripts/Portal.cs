@@ -13,20 +13,20 @@ public class Portal : MonoBehaviour
 
     private void Start()
     {
-        if (GameManager.instance != null && GameManager.instance.enterFromTag == myTag)
+        if (GameManager.Instance != null && GameManager.Instance.enterFromTag == myTag)
         {
             GameObject player = GameObject.FindGameObjectWithTag("Player");
             if (player != null)
             {
                 player.transform.position = transform.position;
-                GameManager.instance.StartTeleportCooldown(cooldownTime);
+                GameManager.Instance.StartTeleportCooldown(cooldownTime);
             }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (isTeleporting || !GameManager.instance.canTeleport)
+        if (isTeleporting || !GameManager.Instance.canTeleport)
             return;
 
         if (other.CompareTag("Player"))
@@ -38,8 +38,8 @@ public class Portal : MonoBehaviour
     private IEnumerator SwitchRoom()
     {
         isTeleporting = true;
-        GameManager.instance.enterFromTag = destinationTag;
-        GameManager.instance.StartTeleportCooldown(cooldownTime);
+        GameManager.Instance.enterFromTag = destinationTag;
+        GameManager.Instance.StartTeleportCooldown(cooldownTime);
 
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(targetScene, LoadSceneMode.Additive);
         if (asyncLoad == null)

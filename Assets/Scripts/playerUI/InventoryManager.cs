@@ -6,9 +6,9 @@ public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager Instance;
 
-    public Transform inventoryParent; // parent panel ekwipunku
+    public Transform inventoryParent;
     public List<Image> itemSlots = new List<Image>();
-    public List<string> itemIDs = new List<string>(); // ID przedmiotów w slotach
+    public List<string> itemIDs = new List<string>();
 
     private void Awake()
     {
@@ -17,7 +17,6 @@ public class InventoryManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-
         Instance = this;
     }
 

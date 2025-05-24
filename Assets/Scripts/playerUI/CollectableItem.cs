@@ -10,15 +10,12 @@ public class CollectableItem : MonoBehaviour
 
     private void Start()
     {
-        // Pobierz lub dodaj AudioSource
         audioSource = GetComponent<AudioSource>();
         if (audioSource == null)
             audioSource = gameObject.AddComponent<AudioSource>();
 
-        // Ustaw g³oœnoœæ z PlayerPrefs (z suwaka SFXVolumeManager)
         audioSource.volume = PlayerPrefs.GetFloat("SFXVolume", 1f);
 
-        // Jeœli przedmiot ju¿ by³ zebrany wczeœniej – ukryj go
         if (CollectibleManager.Instance != null && CollectibleManager.Instance.IsCollected(itemID))
         {
             gameObject.SetActive(false);
@@ -36,7 +33,6 @@ public class CollectableItem : MonoBehaviour
 
             InventoryManager.Instance.AddItem(icon, itemID);
 
-
             if (pickupSound != null)
             {
                 audioSource.clip = pickupSound;
@@ -44,14 +40,24 @@ public class CollectableItem : MonoBehaviour
                 audioSource.Play();
             }
 
-            // Natychmiastowe ukrycie obiektu (z mapy)
             Collider2D col = GetComponent<Collider2D>();
             if (col != null) col.enabled = false;
 
             SpriteRenderer sr = GetComponent<SpriteRenderer>();
             if (sr != null) sr.enabled = false;
 
-            Destroy(gameObject, 2f); // po 2 sekundach (¿eby dŸwiêk zd¹¿y³ siê odtworzyæ)
+            Destroy(gameObject, 2f);
         }
+    }
+
+    public void ResetCollectable()
+    {
+        gameObject.SetActive(true);
+
+        Collider2D col = GetComponent<Collider2D>();
+        if (col != null) col.enabled = true;
+
+        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+        if (sr != null) sr.enabled = true;
     }
 }
