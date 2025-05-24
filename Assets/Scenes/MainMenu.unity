@@ -4125,16 +4125,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a2d689c717ee614d96095172ae4ad23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerSpawnPoint: {fileID: 0}
+  playerPrefab: {fileID: 0}
+  experience: 0
   enterFromTag: 
   canTeleport: 1
-  playerSprites: []
-  weaponSprites: []
-  weaponPrices: 
-  xpTable: 
-  player: {fileID: 0}
-  floatingTextManager: {fileID: 0}
-  cash: 0
-  experience: 0
 --- !u!4 &1619188131
 Transform:
   m_ObjectHideFlags: 0

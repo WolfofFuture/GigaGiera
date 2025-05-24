@@ -15,11 +15,6 @@ public class RoomController : MonoBehaviour
         {
             portal.SetActive(false); // Portal wy³¹czony na start
         }
-
-        if (portalBlockedGraphic != null)
-        {
-            portalBlockedGraphic.SetActive(false); // Grafika blokady wy³¹czona na start
-        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -30,11 +25,12 @@ public class RoomController : MonoBehaviour
         {
             playerInside = true;
             ActivateEnemies();
-        }
 
-        if (portalBlockedGraphic != null)
-            portalBlockedGraphic.SetActive(true);
+            if (portalBlockedGraphic != null)
+                portalBlockedGraphic.SetActive(true);
+        }
     }
+
 
     void ActivateEnemies()
     {
