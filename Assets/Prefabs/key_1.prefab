@@ -78,7 +78,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 39532085
-  m_SortingLayer: 7
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -5225540622116197949, guid: 8f4db60b0cd885e4ebcc1e267acd0e21, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -149,8 +149,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45b7eaec40b2b84a9a7f334eaa31fef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemID: key_1
+  itemID: key_0X
   icon: {fileID: -5225540622116197949, guid: 8f4db60b0cd885e4ebcc1e267acd0e21, type: 3}
+  pickupSound: {fileID: 0}
 --- !u!114 &5613153676366820956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,7 +164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a492e0d81ec30b94a910329e5df10824, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickupAudioSource: {fileID: 3939666455612298804}
+  pickupClip: {fileID: 0}
 --- !u!1 &5444660783400614993
 GameObject:
   m_ObjectHideFlags: 0

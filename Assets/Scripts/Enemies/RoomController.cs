@@ -3,6 +3,7 @@ using UnityEngine;
 public class RoomController : MonoBehaviour
 {
     public GameObject portal;       // Portal, który bêdzie wy³¹czony/w³¹czony
+    public GameObject portalBlockedGraphic;
     public Enemy[] enemies;         // Przeciwnicy w pokoju
     public Collider2D roomTrigger;  // Trigger wejœcia gracza do pokoju
 
@@ -13,6 +14,11 @@ public class RoomController : MonoBehaviour
         if (portal != null)
         {
             portal.SetActive(false); // Portal wy³¹czony na start
+        }
+
+        if (portalBlockedGraphic != null)
+        {
+            portalBlockedGraphic.SetActive(false); // Grafika blokady wy³¹czona na start
         }
     }
 
@@ -25,6 +31,9 @@ public class RoomController : MonoBehaviour
             playerInside = true;
             ActivateEnemies();
         }
+
+        if (portalBlockedGraphic != null)
+            portalBlockedGraphic.SetActive(true);
     }
 
     void ActivateEnemies()
@@ -57,6 +66,9 @@ public class RoomController : MonoBehaviour
         {
             OpenPortal();
             playerInside = false;
+
+            if (portalBlockedGraphic != null)
+                portalBlockedGraphic.SetActive(false);
         }
     }
 

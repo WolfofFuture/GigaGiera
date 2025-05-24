@@ -60,4 +60,14 @@ public class CollectibleManager : MonoBehaviour
         collectedItems.Clear();
         PlayerPrefs.DeleteKey("CollectedItems");
     }
+
+    public void UseItem(string itemID)
+    {
+        if (collectedItems.Contains(itemID))
+        {
+            collectedItems.Remove(itemID);
+            SaveCollectedItems();
+        }
+    }
+
 }

@@ -43,13 +43,14 @@ public class InteractableObject : MonoBehaviour
 
         if (CollectibleManager.Instance != null && CollectibleManager.Instance.IsCollected(requiredItemID))
         {
-            Unlock();
+            Unlock();  // Odblokuj jeœli ju¿ by³ odblokowany
         }
         else
         {
             Lock();
         }
     }
+
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -165,12 +166,15 @@ public class InteractableObject : MonoBehaviour
     }
 
 
-
     private void Unlock()
     {
         isUnlocked = true;
+
         if (CollectibleManager.Instance != null)
-            CollectibleManager.Instance.Collect(requiredItemID);
+            CollectibleManager.Instance.UseItem(requiredItemID);  // U¿yj (usuñ) klucz
+
+        if (InventoryManager.Instance != null)
+            InventoryManager.Instance.RemoveItem(requiredItemID); // Usuñ z ekwipunku
 
         // Zmieñ sprite na openSprite
         if (spriteRenderer != null && openSprite != null)
@@ -184,6 +188,7 @@ public class InteractableObject : MonoBehaviour
 
         Debug.Log($"{gameObject.name} zosta³ odblokowany / zniszczony.");
     }
+
 
     private void Lock()
     {
