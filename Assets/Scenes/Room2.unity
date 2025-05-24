@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 34169307}
   - component: {fileID: 34169306}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: RoomController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -188,7 +188,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.050269365, y: 0.04589802}
+  m_Offset: {x: -0.050269365, y: 0.012469649}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -198,7 +198,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.3473616, y: 2.604249}
+  m_Size: {x: 3.3473616, y: 2.4905694}
   m_EdgeRadius: 0
 --- !u!4 &34169308
 Transform:
@@ -332,7 +332,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.20024438}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -342,7 +342,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 1.4004887}
   m_EdgeRadius: 0
 --- !u!4 &255189262
 Transform:
@@ -353,7 +353,7 @@ Transform:
   m_GameObject: {fileID: 255189259}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.003, y: -1.711, z: -0.013639561}
+  m_LocalPosition: {x: 0.003, y: -1.65, z: -0.013639561}
   m_LocalScale: {x: 0.56988037, y: 0.11313802, z: 0.89393}
   m_ConstrainProportionsScale: 0
   m_Children: []
