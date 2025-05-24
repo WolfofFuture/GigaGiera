@@ -77,8 +77,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1763496183
-  m_SortingLayer: 6
+  m_SortingLayerID: 39532085
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: -7008412969330441016, guid: f84c06efa9991bd49b5553f54f400348, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -203,4 +203,3 @@ MonoBehaviour:
   moveSpeed: 0.6
   enemyID: enemy_0X
   lootObjectOnScene: {fileID: 0}
-  punchSound: {fileID: 0}

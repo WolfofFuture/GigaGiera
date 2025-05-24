@@ -31,11 +31,6 @@ public class CollectibleManager : MonoBehaviour
         SaveCollectedItems();
     }
 
-    public IEnumerable<string> GetCollectedItems()
-    {
-        return collectedItems;
-    }
-
     private void SaveCollectedItems()
     {
         PlayerPrefs.SetString("CollectedItems", string.Join(",", collectedItems));

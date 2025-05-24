@@ -1,11 +1,11 @@
 using UnityEngine;
-using TMPro;
+using UnityEngine.UI;
 
 public class FloatingText
 {
     public bool active;
     public GameObject go;
-    public TMP_Text txt;
+    public Text txt;
     public Vector3 motion;
     public float duration;
     public float lastShown;
@@ -25,7 +25,7 @@ public class FloatingText
 
     public void UpdateFloatingText()
     {
-        if (!active)
+        if(!active) 
             return;
 
         if (Time.time - lastShown > duration)
@@ -33,4 +33,5 @@ public class FloatingText
 
         go.transform.position += motion * Time.deltaTime;
     }
+
 }
