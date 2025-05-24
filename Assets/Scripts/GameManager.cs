@@ -44,7 +44,8 @@ public class GameManager : MonoBehaviour
         CollectibleManager.Instance.ResetCollected();
         InventoryManager.Instance.ResetInventory();
 
-        CollectableItem[] allCollectables = FindObjectsOfType<CollectableItem>();
+        // *** ZMIANA: Zast¹piono przestarza³e FindObjectsOfType now¹ wersj¹ ***
+        CollectableItem[] allCollectables = FindObjectsByType<CollectableItem>(FindObjectsSortMode.None);
         foreach (var collectable in allCollectables)
         {
             collectable.ResetCollectable();

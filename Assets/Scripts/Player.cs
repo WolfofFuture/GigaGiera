@@ -14,8 +14,6 @@ public class Player : Mover
     [SerializeField] private GameObject inventoryUI;
     private bool isInventoryOpen = false;
 
-    private bool canMove = true;
-
     protected override void Start()
     {
         if (Instance != null)
@@ -50,7 +48,7 @@ public class Player : Mover
 
         Time.timeScale = 1f;
         isInventoryOpen = false;
-        canMove = true;
+        canMove = true; // użycie canMove z Mover
     }
 
     private void Update()
@@ -72,13 +70,6 @@ public class Player : Mover
         float y = Input.GetAxisRaw("Vertical");
         UpdateMotor(new Vector3(x, y, 0));
 
-        //if (Input.GetKeyDown(KeyCode.Space))
-        //    TakeDamage(20);
-        //if (Input.GetKeyDown(KeyCode.Space))
-        //{
-        //    TakeDamage(20);
-        //}
-
         if (Input.GetKeyDown(KeyCode.I))
             ToggleInventory();
 
@@ -95,7 +86,7 @@ public class Player : Mover
             {
                 Heal(30);
                 inventory.RemoveItem("health_potion");
-                Debug.Log("U�yto mikstury zdrowia!");
+                Debug.Log("Użyto mikstury zdrowia!");
             }
             else
             {
@@ -123,7 +114,7 @@ public class Player : Mover
 
     void Die()
     {
-        Debug.Log("Gracz zmar�!");
+        Debug.Log("Gracz zmarł!");
         if (deathPanel != null)
             deathPanel.SetActive(true);
         canMove = false;
@@ -165,7 +156,7 @@ public class Player : Mover
         }
         else
         {
-            Debug.Log("Nie masz mikstury pr�dko�ci!");
+            Debug.Log("Nie masz mikstury prędkości!");
         }
     }
 }
