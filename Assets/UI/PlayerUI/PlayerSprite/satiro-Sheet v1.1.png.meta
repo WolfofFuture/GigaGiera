@@ -1,0 +1,974 @@
+fileFormatVersion: 2
+guid: 753be145079b80d4ebaccddb01a02b17
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7751219071525288297
+    second: satiro-Sheet v1.1_0
+  - first:
+      213: -2809228643774045280
+    second: satiro-Sheet v1.1_1
+  - first:
+      213: 5098452441359303606
+    second: satiro-Sheet v1.1_2
+  - first:
+      213: -7858148026998855073
+    second: satiro-Sheet v1.1_3
+  - first:
+      213: -5451656731380038960
+    second: satiro-Sheet v1.1_4
+  - first:
+      213: -1092727325466002275
+    second: satiro-Sheet v1.1_5
+  - first:
+      213: 2827251138833111162
+    second: satiro-Sheet v1.1_6
+  - first:
+      213: -4244630165220924610
+    second: satiro-Sheet v1.1_7
+  - first:
+      213: 7692902487014450953
+    second: satiro-Sheet v1.1_8
+  - first:
+      213: 373959895375165562
+    second: satiro-Sheet v1.1_9
+  - first:
+      213: -1908918943226329372
+    second: satiro-Sheet v1.1_10
+  - first:
+      213: 1328237447766649780
+    second: satiro-Sheet v1.1_11
+  - first:
+      213: -5720904932379876136
+    second: satiro-Sheet v1.1_12
+  - first:
+      213: 3444854963725435246
+    second: satiro-Sheet v1.1_13
+  - first:
+      213: -4816617863048114565
+    second: satiro-Sheet v1.1_14
+  - first:
+      213: 2763688417475579659
+    second: satiro-Sheet v1.1_15
+  - first:
+      213: -1214719636342988140
+    second: satiro-Sheet v1.1_16
+  - first:
+      213: 914186538395792944
+    second: satiro-Sheet v1.1_17
+  - first:
+      213: 137699103760701525
+    second: satiro-Sheet v1.1_18
+  - first:
+      213: 8276014330734057266
+    second: satiro-Sheet v1.1_19
+  - first:
+      213: -2197683407539005745
+    second: satiro-Sheet v1.1_20
+  - first:
+      213: -3925375958757415530
+    second: satiro-Sheet v1.1_21
+  - first:
+      213: -5671847545203432123
+    second: satiro-Sheet v1.1_22
+  - first:
+      213: -7739548479223055607
+    second: satiro-Sheet v1.1_23
+  - first:
+      213: -2690414675476776394
+    second: satiro-Sheet v1.1_24
+  - first:
+      213: -4471406728318763338
+    second: satiro-Sheet v1.1_25
+  - first:
+      213: 6494386108182975924
+    second: satiro-Sheet v1.1_26
+  - first:
+      213: 2466900939361361404
+    second: satiro-Sheet v1.1_27
+  - first:
+      213: -8692339599976076098
+    second: satiro-Sheet v1.1_28
+  - first:
+      213: -7858886354126620006
+    second: satiro-Sheet v1.1_29
+  - first:
+      213: -8884097237527819120
+    second: satiro-Sheet v1.1_30
+  - first:
+      213: 2781800300522740575
+    second: satiro-Sheet v1.1_31
+  - first:
+      213: 3791639993546102096
+    second: satiro-Sheet v1.1_32
+  - first:
+      213: 4044788617937638984
+    second: satiro-Sheet v1.1_33
+  - first:
+      213: -2379543994563418164
+    second: satiro-Sheet v1.1_34
+  - first:
+      213: 41123774206982150
+    second: satiro-Sheet v1.1_35
+  - first:
+      213: -4068763970874539475
+    second: satiro-Sheet v1.1_36
+  - first:
+      213: -4153309117603532858
+    second: satiro-Sheet v1.1_37
+  - first:
+      213: -508077316666523551
+    second: satiro-Sheet v1.1_38
+  - first:
+      213: 7112863116879722814
+    second: satiro-Sheet v1.1_39
+  - first:
+      213: 3929876922662428266
+    second: satiro-Sheet v1.1_40
+  - first:
+      213: 5316822035179718802
+    second: satiro-Sheet v1.1_41
+  - first:
+      213: -7139427159582180840
+    second: satiro-Sheet v1.1_42
+  - first:
+      213: 4545048574092280427
+    second: satiro-Sheet v1.1_43
+  - first:
+      213: 6882372061013077628
+    second: satiro-Sheet v1.1_44
+  - first:
+      213: 5368650406353356059
+    second: satiro-Sheet v1.1_45
+  - first:
+      213: 5924820194454153032
+    second: satiro-Sheet v1.1_46
+  - first:
+      213: 9161378483487194867
+    second: satiro-Sheet v1.1_47
+  - first:
+      213: 8300765068421179809
+    second: satiro-Sheet v1.1_48
+  - first:
+      213: 4164816203915251958
+    second: satiro-Sheet v1.1_49
+  - first:
+      213: -2079180002640568385
+    second: satiro-Sheet v1.1_50
+  - first:
+      213: 6363309222094875897
+    second: satiro-Sheet v1.1_51
+  - first:
+      213: -3170127994971847490
+    second: satiro-Sheet v1.1_52
+  - first:
+      213: 2765147747820285598
+    second: satiro-Sheet v1.1_53
+  - first:
+      213: -6013088047962509475
+    second: satiro-Sheet v1.1_54
+  - first:
+      213: -6494103715992501850
+    second: satiro-Sheet v1.1_55
+  - first:
+      213: 7647059380086944144
+    second: satiro-Sheet v1.1_56
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: satiro-Sheet v1.1_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 229
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 796808972532e6490800000000000000
+      internalID: -7751219071525288297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satiro-Sheet v1.1_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 229
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a3eef2be6d9309d0800000000000000
+      internalID: -2809228643774045280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satiro-Sheet v1.1_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 229
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b3c17f8b7751c640800000000000000
+      internalID: 5098452441359303606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satiro-Sheet v1.1_3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 229
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5aeb42f00042f290800000000000000
+      internalID: -7858148026998855073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satiro-Sheet v1.1_4
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 229
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d2c9b04613d754b0800000000000000
+      internalID: -5451656731380038960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satiro-Sheet v1.1_5
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 229
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9c7c39794ad5d0f0800000000000000
+      internalID: -1092727325466002275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satiro-Sheet v1.1_6
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 197
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7857fc6ee96c3720800000000000000
+      internalID: 2827251138833111162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satiro-Sheet v1.1_7
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 197
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e33691f8a5b0815c0800000000000000
+      internalID: -4244630165220924610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satiro-Sheet v1.1_8
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 198
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 907273e9d0ea2ca60800000000000000
+      internalID: 7692902487014450953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satiro-Sheet v1.1_9
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 197
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7834142b82903500800000000000000
+      internalID: 373959895375165562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satiro-Sheet v1.1_10
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 197
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e60bf3c5582285e0800000000000000
+      internalID: -1908918943226329372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satiro-Sheet v1.1_11
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 197
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bba083ebe8de6210800000000000000
+      internalID: 1328237447766649780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satiro-Sheet v1.1_12
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 198
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d4a7bf46434b90b0800000000000000
+      internalID: -5720904932379876136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satiro-Sheet v1.1_13
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 197
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e61889f76559ecf20800000000000000
+      internalID: 3444854963725435246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satiro-Sheet v1.1_30
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 69
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09c0027e1a855b480800000000000000
+      internalID: -8884097237527819120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satiro-Sheet v1.1_31
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 69
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5b9bbc72a0fa9620800000000000000
+      internalID: 2781800300522740575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satiro-Sheet v1.1_47
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 37
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fe39211131c32f70800000000000000
+      internalID: 9161378483487194867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satiro-Sheet v1.1_48
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 37
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a92733b9dd323370800000000000000
+      internalID: 8300765068421179809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satiro-Sheet v1.1_49
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 37
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f0d82575466cc930800000000000000
+      internalID: 4164816203915251958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satiro-Sheet v1.1_50
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 37
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbf5386bdc44523e0800000000000000
+      internalID: -2079180002640568385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satiro-Sheet v1.1_14
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 69
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8039a5a1e9a144342b3fbb709887d647
+      internalID: -4816617863048114565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satiro-Sheet v1.1_15
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 69
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0875cfbb567ed9b4aad9d2e323f1ef5a
+      internalID: 2763688417475579659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satiro-Sheet v1.1_16
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 69
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc288cc3f57b194429a8c539f83db598
+      internalID: -1214719636342988140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satiro-Sheet v1.1_17
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 69
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3b16024f50d1ff45b9ef64e0264b02e
+      internalID: 914186538395792944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satiro-Sheet v1.1_18
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 69
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e7d220c6996d74094e18a695282271
+      internalID: 137699103760701525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satiro-Sheet v1.1_19
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 69
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 313291525e595cd4dae45bf16289ae85
+      internalID: 8276014330734057266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satiro-Sheet v1.1_20
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 69
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 030182a60511bcf458c725cf018bed30
+      internalID: -2197683407539005745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satiro-Sheet v1.1_21
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 69
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcf450ab08a38cc49b66e84300463328
+      internalID: -3925375958757415530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d7298d87239bb294595d47cef29f038a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      satiro-Sheet v1.1_0: -7751219071525288297
+      satiro-Sheet v1.1_1: -2809228643774045280
+      satiro-Sheet v1.1_10: -1908918943226329372
+      satiro-Sheet v1.1_11: 1328237447766649780
+      satiro-Sheet v1.1_12: -5720904932379876136
+      satiro-Sheet v1.1_13: 3444854963725435246
+      satiro-Sheet v1.1_14: -4816617863048114565
+      satiro-Sheet v1.1_15: 2763688417475579659
+      satiro-Sheet v1.1_16: -1214719636342988140
+      satiro-Sheet v1.1_17: 914186538395792944
+      satiro-Sheet v1.1_18: 137699103760701525
+      satiro-Sheet v1.1_19: 8276014330734057266
+      satiro-Sheet v1.1_2: 5098452441359303606
+      satiro-Sheet v1.1_20: -2197683407539005745
+      satiro-Sheet v1.1_21: -3925375958757415530
+      satiro-Sheet v1.1_22: -5671847545203432123
+      satiro-Sheet v1.1_23: -7739548479223055607
+      satiro-Sheet v1.1_24: -2690414675476776394
+      satiro-Sheet v1.1_25: -4471406728318763338
+      satiro-Sheet v1.1_26: 6494386108182975924
+      satiro-Sheet v1.1_27: 2466900939361361404
+      satiro-Sheet v1.1_28: -8692339599976076098
+      satiro-Sheet v1.1_29: -7858886354126620006
+      satiro-Sheet v1.1_3: -7858148026998855073
+      satiro-Sheet v1.1_30: -8884097237527819120
+      satiro-Sheet v1.1_31: 2781800300522740575
+      satiro-Sheet v1.1_32: 3791639993546102096
+      satiro-Sheet v1.1_33: 4044788617937638984
+      satiro-Sheet v1.1_34: -2379543994563418164
+      satiro-Sheet v1.1_35: 41123774206982150
+      satiro-Sheet v1.1_36: -4068763970874539475
+      satiro-Sheet v1.1_37: -4153309117603532858
+      satiro-Sheet v1.1_38: -508077316666523551
+      satiro-Sheet v1.1_39: 7112863116879722814
+      satiro-Sheet v1.1_4: -5451656731380038960
+      satiro-Sheet v1.1_40: 3929876922662428266
+      satiro-Sheet v1.1_41: 5316822035179718802
+      satiro-Sheet v1.1_42: -7139427159582180840
+      satiro-Sheet v1.1_43: 4545048574092280427
+      satiro-Sheet v1.1_44: 6882372061013077628
+      satiro-Sheet v1.1_45: 5368650406353356059
+      satiro-Sheet v1.1_46: 5924820194454153032
+      satiro-Sheet v1.1_47: 9161378483487194867
+      satiro-Sheet v1.1_48: 8300765068421179809
+      satiro-Sheet v1.1_49: 4164816203915251958
+      satiro-Sheet v1.1_5: -1092727325466002275
+      satiro-Sheet v1.1_50: -2079180002640568385
+      satiro-Sheet v1.1_51: 6363309222094875897
+      satiro-Sheet v1.1_52: -3170127994971847490
+      satiro-Sheet v1.1_53: 2765147747820285598
+      satiro-Sheet v1.1_54: -6013088047962509475
+      satiro-Sheet v1.1_55: -6494103715992501850
+      satiro-Sheet v1.1_56: 7647059380086944144
+      satiro-Sheet v1.1_6: 2827251138833111162
+      satiro-Sheet v1.1_7: -4244630165220924610
+      satiro-Sheet v1.1_8: 7692902487014450953
+      satiro-Sheet v1.1_9: 373959895375165562
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
