@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8980058880354526310}
   - component: {fileID: 3614818140827151180}
   - component: {fileID: 7720222656427689996}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Goblin_enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,3 +204,4 @@ MonoBehaviour:
   enemyID: enemy_0X
   lootObjectOnScene: {fileID: 0}
   punchSound: {fileID: 0}
+  lootID: 

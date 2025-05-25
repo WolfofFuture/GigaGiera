@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 576105397585781976}
   - component: {fileID: 101438638027108825}
   - component: {fileID: 1220521233194332346}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Skeleton_enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,3 +204,4 @@ MonoBehaviour:
   enemyID: skeleton_0X
   lootObjectOnScene: {fileID: 0}
   punchSound: {fileID: 0}
+  lootID: 
