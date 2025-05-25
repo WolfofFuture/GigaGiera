@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 
 public class Player : Mover
@@ -87,16 +88,18 @@ public class Player : Mover
         if (Input.GetKeyDown(KeyCode.O))
         {
             InventoryManager inventory = InventoryManager.Instance;
-            if (inventory.HasItem("health_potion"))
+            string match = inventory.itemIDs.FirstOrDefault(id => id.Contains("health_potion"));
+            if (match != null)
             {
                 Heal(30);
-                inventory.RemoveItem("health_potion");
-                Debug.Log("Użyto mikstury zdrowia!");
+                inventory.RemoveItem(match);
+                Debug.Log($"Użyto mikstury zdrowia: {match}");
             }
             else
             {
                 Debug.Log("Nie masz mikstury zdrowia!");
             }
+
         }
     }
 
@@ -153,17 +156,21 @@ public class Player : Mover
 
     void UseSpeedPotionIfAvailable()
     {
-        if (InventoryManager.Instance.HasItem("speed_potion"))
+        string match = InventoryManager.Instance.itemIDs.FirstOrDefault(id => id.Contains("speed_potion"));
+        if (match != null)
         {
-            InventoryManager.Instance.RemoveItem("speed_potion");
+            InventoryManager.Instance.RemoveItem(match);
 
             PlayerSpeedBoost speedBoost = GetComponent<PlayerSpeedBoost>();
             if (speedBoost != null)
                 speedBoost.ApplySpeedBoost(2f, 5f);
+
+            Debug.Log($"Użyto mikstury prędkości: {match}");
         }
         else
         {
             Debug.Log("Nie masz mikstury prędkości!");
         }
     }
+
 }

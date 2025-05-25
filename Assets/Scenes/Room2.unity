@@ -236,6 +236,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.013
       objectReference: {fileID: 0}
+    - target: {fileID: 7297895535444785165, guid: cf33e1ffaf71d3f4da343c7d4e637db9, type: 3}
+      propertyPath: itemID
+      value: health_potion_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7297895535444785165, guid: cf33e1ffaf71d3f4da343c7d4e637db9, type: 3}
+      propertyPath: saveID
+      value: health_potion_2
+      objectReference: {fileID: 0}
     - target: {fileID: 8053784182130821995, guid: cf33e1ffaf71d3f4da343c7d4e637db9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.010374546
