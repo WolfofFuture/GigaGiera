@@ -133,7 +133,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1220521233194332346, guid: e4b90dc700b99e04e891175a22f92d5b, type: 3}
       propertyPath: enemyID
-      value: skeleton_5X
+      value: enemy_03_6_jg
       objectReference: {fileID: 0}
     - target: {fileID: 1220521233194332346, guid: e4b90dc700b99e04e891175a22f92d5b, type: 3}
       propertyPath: maxHealth
@@ -414,7 +414,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1220521233194332346, guid: e4b90dc700b99e04e891175a22f92d5b, type: 3}
       propertyPath: enemyID
-      value: skeleton_4X
+      value: enemy_03_5_jg
       objectReference: {fileID: 0}
     - target: {fileID: 1220521233194332346, guid: e4b90dc700b99e04e891175a22f92d5b, type: 3}
       propertyPath: maxHealth
@@ -514,7 +514,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1220521233194332346, guid: e4b90dc700b99e04e891175a22f92d5b, type: 3}
       propertyPath: enemyID
-      value: skeleton_1X
+      value: enemy_03_2_jg
       objectReference: {fileID: 0}
     - target: {fileID: 1220521233194332346, guid: e4b90dc700b99e04e891175a22f92d5b, type: 3}
       propertyPath: maxHealth
@@ -65278,7 +65278,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1220521233194332346, guid: e4b90dc700b99e04e891175a22f92d5b, type: 3}
       propertyPath: enemyID
-      value: skeleton_2X
+      value: enemy_03_3_jg
       objectReference: {fileID: 0}
     - target: {fileID: 1220521233194332346, guid: e4b90dc700b99e04e891175a22f92d5b, type: 3}
       propertyPath: maxHealth
@@ -65443,7 +65443,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1220521233194332346, guid: e4b90dc700b99e04e891175a22f92d5b, type: 3}
       propertyPath: enemyID
-      value: skeleton_7X
+      value: enemy_03_8_jg
       objectReference: {fileID: 0}
     - target: {fileID: 1220521233194332346, guid: e4b90dc700b99e04e891175a22f92d5b, type: 3}
       propertyPath: maxHealth
@@ -65638,7 +65638,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1220521233194332346, guid: e4b90dc700b99e04e891175a22f92d5b, type: 3}
       propertyPath: enemyID
-      value: skeleton_3X
+      value: enemy_03_4_jg
       objectReference: {fileID: 0}
     - target: {fileID: 1220521233194332346, guid: e4b90dc700b99e04e891175a22f92d5b, type: 3}
       propertyPath: maxHealth
@@ -68202,6 +68202,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1220521233194332346, guid: e4b90dc700b99e04e891175a22f92d5b, type: 3}
+      propertyPath: enemyID
+      value: enemy_03_1_jg
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220521233194332346, guid: e4b90dc700b99e04e891175a22f92d5b, type: 3}
       propertyPath: maxHealth
       value: 30
       objectReference: {fileID: 0}
@@ -68291,7 +68295,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1220521233194332346, guid: e4b90dc700b99e04e891175a22f92d5b, type: 3}
       propertyPath: enemyID
-      value: skeleton_6X
+      value: enemy_03_7_jg
       objectReference: {fileID: 0}
     - target: {fileID: 1220521233194332346, guid: e4b90dc700b99e04e891175a22f92d5b, type: 3}
       propertyPath: maxHealth

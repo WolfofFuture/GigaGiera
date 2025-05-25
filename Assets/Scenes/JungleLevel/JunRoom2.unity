@@ -344,6 +344,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3358784582437806612, guid: 5c21be13916ea154aa4a46550a36efde, type: 3}
+      propertyPath: enemyID
+      value: enemy_02_3_jg
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358784582437806612, guid: 5c21be13916ea154aa4a46550a36efde, type: 3}
       propertyPath: damageToPlayer
       value: 10
       objectReference: {fileID: 0}
@@ -32863,6 +32867,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7720222656427689996, guid: befb733695cb17647aa80aea3ab9d6f0, type: 3}
+      propertyPath: enemyID
+      value: enemy_02_jg
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720222656427689996, guid: befb733695cb17647aa80aea3ab9d6f0, type: 3}
       propertyPath: damageToPlayer
       value: 15
       objectReference: {fileID: 0}
@@ -32945,7 +32953,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1220521233194332346, guid: e4b90dc700b99e04e891175a22f92d5b, type: 3}
       propertyPath: enemyID
-      value: skeleton_room2X
+      value: enemy_02_2_jg
       objectReference: {fileID: 0}
     - target: {fileID: 1220521233194332346, guid: e4b90dc700b99e04e891175a22f92d5b, type: 3}
       propertyPath: damageToPlayer
