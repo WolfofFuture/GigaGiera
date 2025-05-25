@@ -76,7 +76,7 @@ public class PlayerAttack : MonoBehaviour
             {
                 if (anim != null)
                 {
-                    anim.SetTrigger("swing");
+                    //anim.SetTrigger("swing");
                 }
 
                 Attack();

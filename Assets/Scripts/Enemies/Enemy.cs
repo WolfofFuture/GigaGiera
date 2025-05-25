@@ -80,11 +80,11 @@ public class Enemy : MonoBehaviour
         if (distance > attackRange)
         {
             transform.position += direction * moveSpeed * Time.deltaTime;
-            animator.SetBool("isRunning", true);
+            //animator.SetBool("isRunning", true);
         }
         else
         {
-            animator.SetBool("isRunning", false);
+            //animator.SetBool("isRunning", false);
 
             if (Time.time - lastAttackTime > attackCooldown)
             {
