@@ -18910,7 +18910,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7297895535444785165, guid: cf33e1ffaf71d3f4da343c7d4e637db9, type: 3}
       propertyPath: itemID
-      value: health_potion_1
+      value: health_potion_01
       objectReference: {fileID: 0}
     - target: {fileID: 7297895535444785165, guid: cf33e1ffaf71d3f4da343c7d4e637db9, type: 3}
       propertyPath: saveID

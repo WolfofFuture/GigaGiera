@@ -720,15 +720,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3917155064887209486, guid: 6d945b890611922498dc7f9282d5b949, type: 3}
       propertyPath: noteID
-      value: note_2_room
+      value: note_3_room
       objectReference: {fileID: 0}
     - target: {fileID: 3917155064887209486, guid: 6d945b890611922498dc7f9282d5b949, type: 3}
       propertyPath: noteUIName
-      value: note_2
+      value: note_3
       objectReference: {fileID: 0}
     - target: {fileID: 3917155064887209486, guid: 6d945b890611922498dc7f9282d5b949, type: 3}
       propertyPath: inventoryName
-      value: note_2_col
+      value: note_3_col
       objectReference: {fileID: 0}
     - target: {fileID: 5892513683805825914, guid: 6d945b890611922498dc7f9282d5b949, type: 3}
       propertyPath: m_LocalPosition.x
