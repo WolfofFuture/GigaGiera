@@ -5,13 +5,64 @@ public class PlayerAttack : MonoBehaviour
     public int damage = 10;
     public float attackRange = 1.5f;
 
-    void Update()
+    public float attackCooldown = 1f;
+    private float lastAttackTime = -Mathf.Infinity;
+
+    private CooldownBar cooldownBar;
+
+    void Start()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        GameObject playerUi = GameObject.Find("playerUi");
+        if (playerUi != null)
         {
-            Attack();
+            Transform cooldownBarTransform = playerUi.transform.Find("CooldownBar");
+            if (cooldownBarTransform != null)
+            {
+                cooldownBar = cooldownBarTransform.GetComponent<CooldownBar>();
+                if (cooldownBar == null)
+                {
+                    Debug.LogError("Brak skryptu CooldownBar na CooldownBar!");
+                }
+                else
+                {
+                    cooldownBar.SetCooldownProgress(1f); // pasek pe³ny na start
+                }
+            }
+            else
+            {
+                Debug.LogError("Nie znaleziono CooldownBar w playerUi!");
+            }
+        }
+        else
+        {
+            Debug.LogError("Nie znaleziono playerUi w scenie!");
         }
     }
+
+    void Update()
+    {
+        float timeSinceLastAttack = Time.time - lastAttackTime;
+        float progress = Mathf.Clamp01(timeSinceLastAttack / attackCooldown);
+
+        if (cooldownBar != null)
+        {
+            cooldownBar.SetCooldownProgress(progress);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (timeSinceLastAttack >= attackCooldown)
+            {
+                Attack();
+                lastAttackTime = Time.time;
+            }
+            else
+            {
+                Debug.Log("Cooldown active, cannot attack yet!");
+            }
+        }
+    }
+
 
     void Attack()
     {
@@ -26,11 +77,5 @@ public class PlayerAttack : MonoBehaviour
                 break;
             }
         }
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, attackRange);
     }
 }
