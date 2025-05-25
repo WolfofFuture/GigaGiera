@@ -1,23 +1,38 @@
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class PlayerAttack : MonoBehaviour
 {
     public int damage = 10;
     public float attackRange = 0.2f;
     public float attackCooldown = 1f;
+
+    public AudioClip swingSound; // dŸwiêk ataku, przypisz w Inspectorze
+    private AudioSource audioSource;
+
     private float lastAttackTime = -Mathf.Infinity;
 
     private CooldownBar cooldownBar;
     private Animator anim;
 
-    public LayerMask enemyLayer; // ustaw na "Enemy" w inspektorze
-
-    private Vector2 attackDirection = Vector2.right; // domyœlnie atak w prawo
-
     void Start()
     {
         anim = GetComponent<Animator>();
 
+        // Pobranie AudioSource i ustawienie g³oœnoœci z PlayerPrefs
+        audioSource = GetComponent<AudioSource>();
+        audioSource.playOnAwake = false;
+        audioSource.volume = PlayerPrefs.GetFloat("SFXVolume", 1f);
+        audioSource.enabled = audioSource.volume > 0f;
+
+        // Je¿eli jest komponent SFXVolumeSetter – przypisz
+        SFXVolumeSetter sfxSetter = GetComponent<SFXVolumeSetter>();
+        if (sfxSetter == null)
+        {
+            sfxSetter = gameObject.AddComponent<SFXVolumeSetter>();
+        }
+
+        // Cooldown bar
         GameObject playerUi = GameObject.Find("playerUi");
         if (playerUi != null)
         {
@@ -25,8 +40,23 @@ public class PlayerAttack : MonoBehaviour
             if (cooldownBarTransform != null)
             {
                 cooldownBar = cooldownBarTransform.GetComponent<CooldownBar>();
-                cooldownBar?.SetCooldownProgress(1f);
+                if (cooldownBar != null)
+                {
+                    cooldownBar.SetCooldownProgress(1f);
+                }
+                else
+                {
+                    Debug.LogError("Brak skryptu CooldownBar na CooldownBar!");
+                }
             }
+            else
+            {
+                Debug.LogError("Nie znaleziono CooldownBar w playerUi!");
+            }
+        }
+        else
+        {
+            Debug.LogError("Nie znaleziono playerUi w scenie!");
         }
     }
 
@@ -34,31 +64,34 @@ public class PlayerAttack : MonoBehaviour
     {
         float timeSinceLastAttack = Time.time - lastAttackTime;
         float progress = Mathf.Clamp01(timeSinceLastAttack / attackCooldown);
-        cooldownBar?.SetCooldownProgress(progress);
 
-        // Ruch kierunku ataku (mo¿esz to powi¹zaæ z ruchem gracza)
-        if (Input.GetKey(KeyCode.W)) attackDirection = Vector2.up;
-        if (Input.GetKey(KeyCode.S)) attackDirection = Vector2.down;
-        if (Input.GetKey(KeyCode.A)) attackDirection = Vector2.left;
-        if (Input.GetKey(KeyCode.D)) attackDirection = Vector2.right;
+        if (cooldownBar != null)
+        {
+            cooldownBar.SetCooldownProgress(progress);
+        }
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (timeSinceLastAttack >= attackCooldown)
             {
-                anim?.SetTrigger("swing");
+                if (anim != null)
+                {
+                    anim.SetTrigger("swing");
+                }
+
                 Attack();
                 lastAttackTime = Time.time;
+            }
+            else
+            {
+                Debug.Log("Cooldown active, cannot attack yet!");
             }
         }
     }
 
     void Attack()
     {
-        Vector2 attackOrigin = (Vector2)transform.position + attackDirection.normalized * attackRange;
-
-        Collider2D[] hits = Physics2D.OverlapCircleAll(attackOrigin, attackRange, enemyLayer);
-
+        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, attackRange);
         foreach (var hit in hits)
         {
             Enemy enemy = hit.GetComponent<Enemy>();
@@ -66,18 +99,23 @@ public class PlayerAttack : MonoBehaviour
             {
                 enemy.TakeDamage(damage);
                 Debug.Log("Gracz zaatakowa³ potwora za " + damage + " dmg.");
-                break;
+
+                break; // tylko pierwszy trafiony wróg
             }
         }
 
-        // Debug gizmo (widzisz w Scene)
-        Debug.DrawLine(transform.position, attackOrigin, Color.red, 0.2f);
+        // DŸwiêk ataku zaczynaj¹cy siê od 0.2 sekundy
+        if (swingSound != null && audioSource != null && audioSource.enabled)
+        {
+            audioSource.clip = swingSound;
+            audioSource.time = 0.2f;
+            audioSource.Play();
+        }
     }
 
     void OnDrawGizmosSelected()
     {
-        Vector2 attackOrigin = (Vector2)transform.position + attackDirection.normalized * attackRange;
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(attackOrigin, attackRange);
+        Gizmos.DrawWireSphere(transform.position, attackRange);
     }
 }
