@@ -41,8 +41,8 @@ public class GameManager : MonoBehaviour
 
         currentPlayer = Instantiate(playerPrefab, playerSpawnPoint.position, Quaternion.identity);
 
-        CollectibleManager.Instance.ResetCollected();
-        InventoryManager.Instance.ResetInventory();
+        //GameStateManager.Instance.ResetCollected();
+        //InventoryManager.Instance.ResetInventory();
 
         // *** ZMIANA: Zast¹piono przestarza³e FindObjectsOfType now¹ wersj¹ ***
         CollectableItem[] allCollectables = FindObjectsByType<CollectableItem>(FindObjectsSortMode.None);
@@ -91,8 +91,8 @@ public class GameManager : MonoBehaviour
         if (InventoryManager.Instance != null)
             InventoryManager.Instance.ResetInventory();
 
-        if (CollectibleManager.Instance != null)
-            CollectibleManager.Instance.ResetCollected();
+        //if (CollectibleManager.Instance != null)
+        //    CollectibleManager.Instance.ResetCollected();
 
         // Usuñ aktualnego gracza jeœli jest
         if (currentPlayer != null)

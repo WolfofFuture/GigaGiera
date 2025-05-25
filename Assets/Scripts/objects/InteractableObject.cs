@@ -20,6 +20,10 @@ public class InteractableObject : MonoBehaviour
     [Header("Collider rodzica (fizyczny)")]
     public Collider2D parentCollider; // Fizyczny collider na rodzicu
 
+    [Header("Unikalny identyfikator tego obiektu (np. 'door_1')")]
+    public string uniqueID;
+
+
     private Collider2D col; // Trigger collider (dziecka z tym skryptem)
     private bool isUnlocked = false;
 
@@ -32,8 +36,6 @@ public class InteractableObject : MonoBehaviour
         if (col == null)
             Debug.LogError($"{gameObject.name}: Brak Collider2D!");
 
-        if (CollectibleManager.Instance == null)
-            Debug.LogError("CollectibleManager.Instance jest null!");
 
         // Ustaw sprite pocz¹tkowy
         if (spriteRenderer != null && closedSprite != null)
@@ -41,14 +43,15 @@ public class InteractableObject : MonoBehaviour
             spriteRenderer.sprite = closedSprite;
         }
 
-        if (CollectibleManager.Instance != null && CollectibleManager.Instance.IsCollected(requiredItemID))
+        if (GameStateManager.Instance.IsObjectDestroyed(uniqueID))
         {
-            Unlock();  // Odblokuj jeœli ju¿ by³ odblokowany
+            Unlock();
         }
         else
         {
             Lock();
         }
+
     }
 
 
@@ -98,16 +101,11 @@ public class InteractableObject : MonoBehaviour
 
         if (objectType == ObjectType.DestructibleBox)
         {
-            if (CollectibleManager.Instance == null)
-            {
-                Debug.LogError("TryInteract: CollectibleManager.Instance jest null!");
-                return;
-            }
-
-            foreach (string collectedItem in CollectibleManager.Instance.GetCollectedItems())
+            foreach (string collectedItem in GameStateManager.Instance.inventoryItems)
             {
                 if (collectedItem.StartsWith("bomb_"))
                 {
+                    requiredItemID = collectedItem; // zapamiêtaj, którego u¿ywamy
                     hasRequiredItem = true;
                     break;
                 }
@@ -118,16 +116,11 @@ public class InteractableObject : MonoBehaviour
         }
         else if (objectType == ObjectType.Door)
         {
-            if (CollectibleManager.Instance == null)
-            {
-                Debug.LogError("TryInteract: CollectibleManager.Instance jest null!");
-                return;
-            }
-
-            foreach (string collectedItem in CollectibleManager.Instance.GetCollectedItems())
+            foreach (string collectedItem in GameStateManager.Instance.inventoryItems)
             {
                 if (collectedItem.StartsWith("key_"))
                 {
+                    requiredItemID = collectedItem; // zapamiêtaj, którego u¿ywamy
                     hasRequiredItem = true;
                     break;
                 }
@@ -138,18 +131,14 @@ public class InteractableObject : MonoBehaviour
         }
         else
         {
-            if (CollectibleManager.Instance == null)
-            {
-                Debug.LogError("TryInteract: CollectibleManager.Instance jest null!");
-                return;
-            }
-
-            hasRequiredItem = CollectibleManager.Instance.IsCollected(requiredItemID);
+            hasRequiredItem = GameStateManager.Instance.IsCollected(requiredItemID);
         }
 
         if (hasRequiredItem)
         {
-            Unlock();
+            Unlock(); // w œrodku: UseItem i RemoveItem
+            GameStateManager.Instance.MarkObjectDestroyed(uniqueID);
+
         }
         else
         {
@@ -160,18 +149,19 @@ public class InteractableObject : MonoBehaviour
             }
             else
             {
-                Debug.LogError("floatingTextManager jest null - nie mogê wyœwietliæ komunikatu o s³aboœci.");
+                Debug.LogError("floatingTextManager jest null – nie mogê wyœwietliæ komunikatu o s³aboœci.");
             }
         }
     }
+
 
 
     private void Unlock()
     {
         isUnlocked = true;
 
-        if (CollectibleManager.Instance != null)
-            CollectibleManager.Instance.UseItem(requiredItemID);  // U¿yj (usuñ) klucz
+        if (GameStateManager.Instance != null)
+            GameStateManager.Instance.UseItem(requiredItemID);  // U¿yj (usuñ) klucz
 
         if (InventoryManager.Instance != null)
             InventoryManager.Instance.RemoveItem(requiredItemID); // Usuñ z ekwipunku

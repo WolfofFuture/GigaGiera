@@ -13,7 +13,7 @@ public class Collectable : Collidable
 
         pickupSound = GetComponent<CollectablePickupSound>();
 
-        if (CollectibleManager.Instance != null && CollectibleManager.Instance.IsCollected(itemID))
+        if (GameStateManager.Instance != null && GameStateManager.Instance.IsCollected(itemID))
         {
             gameObject.SetActive(false);
             collected = true;
@@ -38,7 +38,7 @@ public class Collectable : Collidable
             pickupSound.PlayPickupSound();
         }
 
-        CollectibleManager.Instance.Collect(itemID);
+        GameStateManager.Instance.IsCollected(itemID);
         gameObject.SetActive(false);
     }
 }

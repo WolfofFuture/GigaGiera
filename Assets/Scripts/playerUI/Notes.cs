@@ -9,7 +9,7 @@ public class NoteCollectable : MonoBehaviour
 
     private void Start()
     {
-        if (CollectibleManager.Instance != null && CollectibleManager.Instance.IsCollected(itemID))
+        if (GameStateManager.Instance != null && GameStateManager.Instance.IsCollected(itemID))
         {
             gameObject.SetActive(false);
         }
@@ -20,8 +20,8 @@ public class NoteCollectable : MonoBehaviour
         if (!other.CompareTag("Player")) return;
 
         // save as collected
-        if (CollectibleManager.Instance != null)
-            CollectibleManager.Instance.Collect(itemID);
+        if (GameStateManager.Instance != null)
+            GameStateManager.Instance.IsCollected(itemID);
 
         // Show UI 
         GameObject noteUI = GameObject.Find("NoteUI");

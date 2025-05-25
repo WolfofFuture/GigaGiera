@@ -16,7 +16,7 @@ public class CollectableItem : MonoBehaviour
 
         audioSource.volume = PlayerPrefs.GetFloat("SFXVolume", 1f);
 
-        if (CollectibleManager.Instance != null && CollectibleManager.Instance.IsCollected(itemID))
+        if (GameStateManager.Instance != null && GameStateManager.Instance.IsCollected(itemID))
         {
             gameObject.SetActive(false);
         }
@@ -28,8 +28,9 @@ public class CollectableItem : MonoBehaviour
         {
             if (!string.IsNullOrEmpty(itemID))
             {
-                CollectibleManager.Instance.Collect(itemID);
+                GameStateManager.Instance.CollectItem(itemID);
             }
+
 
             InventoryManager.Instance.AddItem(icon, itemID);
 

@@ -31,11 +31,10 @@ public class Enemy : MonoBehaviour
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
 
-        if (CollectibleManager.Instance.IsCollected(enemyID))
+        if (GameStateManager.Instance.IsEnemyDefeated(enemyID))
         {
-            Debug.Log($"Enemy {enemyID} został już zabity, usuwam go.");
+            Debug.Log($"[GameState] Przeciwnik {enemyID} już pokonany. Usuwam.");
             Destroy(gameObject);
-            return;
         }
     }
 
@@ -99,7 +98,8 @@ public class Enemy : MonoBehaviour
         isDead = true;
         animator.SetTrigger("Death");
         Debug.Log("Enemy zginął.");
-        CollectibleManager.Instance.Collect(enemyID);
+        GameStateManager.Instance.MarkEnemyDefeated(enemyID);
+
 
         Collider2D col = GetComponent<Collider2D>();
         if (col != null) col.enabled = false;

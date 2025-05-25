@@ -8,10 +8,10 @@ public class MainMenu : MonoBehaviour
     {
         Debug.Log("[MainMenu] PLAY GAME klikniêty");
 
-        if (CollectibleManager.Instance != null)
+        if (GameStateManager.Instance != null)
         {
             Debug.Log("[MainMenu] Resetujê CollectibleManager");
-            CollectibleManager.Instance.ResetCollected();
+            //GameStateManager.Instance.ResetCollected();
         }
 
         if (InventoryManager.Instance != null)
