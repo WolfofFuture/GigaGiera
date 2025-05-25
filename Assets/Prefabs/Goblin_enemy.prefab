@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8980058880354526310}
   - component: {fileID: 3614818140827151180}
   - component: {fileID: 7720222656427689996}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Goblin_enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1763496183
-  m_SortingLayer: 6
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: -7008412969330441016, guid: f84c06efa9991bd49b5553f54f400348, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

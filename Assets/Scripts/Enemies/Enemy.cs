@@ -63,6 +63,16 @@ public class Enemy : MonoBehaviour
     {
         if (isDead) return;
         if (!playerInRoom) return;
+        Vector3 scale = transform.localScale;
+        if (player.position.x > transform.position.x)
+        {
+            scale.x = Mathf.Abs(scale.x); // patrzy w prawo
+        }
+        else
+        {
+            scale.x = -Mathf.Abs(scale.x); // patrzy w lewo
+        }
+        transform.localScale = scale;
 
         Vector3 direction = (player.position - transform.position).normalized;
         float distance = Vector3.Distance(transform.position, player.position);
@@ -83,6 +93,7 @@ public class Enemy : MonoBehaviour
                 animator.SetTrigger("Attack");
             }
         }
+        
     }
 
     void AttackPlayer()

@@ -206,6 +206,7 @@ MonoBehaviour:
   moveSpeed: 0.3
   enemyID: 
   lootObjectOnScene: {fileID: 0}
+  flip: 1
   punchSound: {fileID: 8300000, guid: 6857cc7c01cba034ba283554734097b2, type: 3}
   lootID: 
 --- !u!82 &4266621428356336590
