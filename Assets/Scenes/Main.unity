@@ -26808,6 +26808,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HeartPickup
       objectReference: {fileID: 0}
+    - target: {fileID: 8760731957075980002, guid: b12194464dcabf444bed39eae2f60b8a, type: 3}
+      propertyPath: heartID
+      value: heart_01
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

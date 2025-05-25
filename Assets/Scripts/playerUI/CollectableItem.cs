@@ -2,7 +2,12 @@ using UnityEngine;
 
 public class CollectableItem : MonoBehaviour
 {
+    [Header("ID do zapisu stanu (np. enemy_01_loot)")]
+    public string saveID;
+
+    [Header("ID do u¿ywania w grze (np. key_1, bomb_2)")]
     public string itemID;
+
     public Sprite icon;
 
     public AudioClip pickupSound;
@@ -30,6 +35,14 @@ public class CollectableItem : MonoBehaviour
             {
                 GameStateManager.Instance.CollectItem(itemID);
             }
+
+            if (!string.IsNullOrEmpty(saveID))
+            {
+                GameStateManager.Instance.MarkObjectDestroyed(saveID);
+                Debug.Log($"[GameState] Zebrano loot {saveID}, ukrywam przy powrocie do sceny.");
+            }
+
+
 
 
             InventoryManager.Instance.AddItem(icon, itemID);

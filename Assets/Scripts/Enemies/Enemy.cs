@@ -24,6 +24,10 @@ public class Enemy : MonoBehaviour
     private AudioSource audioSource;
     public AudioClip punchSound; // Przypisz w inspectorze dźwięk uderzenia
 
+    [Header("Unikalny identyfikator lootu (opcjonalnie taki sam jak enemyID + '_loot')")]
+    public string lootID;
+
+
     void Start()
     {
         currentHealth = maxHealth;
@@ -33,10 +37,27 @@ public class Enemy : MonoBehaviour
 
         if (GameStateManager.Instance.IsEnemyDefeated(enemyID))
         {
-            Debug.Log($"[GameState] Przeciwnik {enemyID} już pokonany. Usuwam.");
+            Debug.Log($"[GameState] Przeciwnik {enemyID} już pokonany.");
+
+            if (lootObjectOnScene != null)
+            {
+                if (!string.IsNullOrEmpty(lootID) && !GameStateManager.Instance.IsObjectDestroyed(lootID))
+                {
+                    lootObjectOnScene.SetActive(true);
+                    Debug.Log($"[GameState] Loot {lootID} nie został zebrany — pokazuję.");
+                }
+                else
+                {
+                    lootObjectOnScene.SetActive(false);
+                    Debug.Log($"[GameState] Loot {lootID} został zebrany — nie pokazuję.");
+                }
+            }
+
             Destroy(gameObject);
+            return;
         }
     }
+
 
     void Update()
     {

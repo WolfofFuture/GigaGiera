@@ -21,7 +21,7 @@ public class NoteCollectable : MonoBehaviour
 
         // save as collected
         if (GameStateManager.Instance != null)
-            GameStateManager.Instance.IsCollected(itemID);
+            GameStateManager.Instance.CollectItem(itemID);
 
         // Show UI 
         GameObject noteUI = GameObject.Find("NoteUI");
