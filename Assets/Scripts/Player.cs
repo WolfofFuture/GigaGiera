@@ -8,11 +8,14 @@ public class Player : Mover
     public int maxHealth = 100;
     public int currentHealth;
     public HealthBar healthBar;
+    public Animator animator;
 
     public GameObject deathPanel;
 
     [SerializeField] private GameObject inventoryUI;
     private bool isInventoryOpen = false;
+    private float horizontalMove;
+    private float verticalMove;
 
     protected override void Start()
     {
@@ -66,9 +69,11 @@ public class Player : Mover
         if (!canMove)
             return;
 
-        float x = Input.GetAxisRaw("Horizontal");
-        float y = Input.GetAxisRaw("Vertical");
-        UpdateMotor(new Vector3(x, y, 0));
+        horizontalMove = Input.GetAxisRaw("Horizontal");
+        verticalMove = Input.GetAxisRaw("Vertical");
+        animator.SetFloat("X Speed",Mathf.Abs(horizontalMove));
+        animator.SetFloat("Y Speed", Mathf.Abs(verticalMove));
+        UpdateMotor(new Vector3(horizontalMove, verticalMove, 0));
 
         if (Input.GetKeyDown(KeyCode.I))
             ToggleInventory();
@@ -102,6 +107,7 @@ public class Player : Mover
 
         if (currentHealth <= 0)
             Die();
+        animator.SetTrigger("TakeDamage");
     }
 
     public void Heal(int amount)
@@ -117,6 +123,7 @@ public class Player : Mover
         Debug.Log("Gracz zmarł!");
         if (deathPanel != null)
             deathPanel.SetActive(true);
+            animator.SetTrigger("Death");
         canMove = false;
     }
 
