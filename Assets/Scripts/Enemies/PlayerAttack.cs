@@ -9,9 +9,12 @@ public class PlayerAttack : MonoBehaviour
     private float lastAttackTime = -Mathf.Infinity;
 
     private CooldownBar cooldownBar;
+    private Animator anim; 
 
     void Start()
     {
+        anim = GetComponent<Animator>(); // tutaj aniamtor ok?
+
         GameObject playerUi = GameObject.Find("playerUi");
         if (playerUi != null)
         {
@@ -25,7 +28,7 @@ public class PlayerAttack : MonoBehaviour
                 }
                 else
                 {
-                    cooldownBar.SetCooldownProgress(1f); // pasek pe³ny na start
+                    cooldownBar.SetCooldownProgress(1f); 
                 }
             }
             else
@@ -53,6 +56,11 @@ public class PlayerAttack : MonoBehaviour
         {
             if (timeSinceLastAttack >= attackCooldown)
             {
+                if (anim != null)
+                {
+                    anim.SetTrigger("swing"); //uruchomia animacje na spacji
+                }
+
                 Attack();
                 lastAttackTime = Time.time;
             }
@@ -62,7 +70,6 @@ public class PlayerAttack : MonoBehaviour
             }
         }
     }
-
 
     void Attack()
     {
