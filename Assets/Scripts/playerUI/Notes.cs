@@ -1,16 +1,23 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class NoteCollectable : MonoBehaviour
 {
-    public string itemID; // ex. "note_1"
-    public string noteUIName; // ex. "note_1"
-    public string inventoryName; // ex. "note_1_col"
+    [Header("Unikalny ID do zapisu (np. note_enemy1)")]
+    public string noteID; // odpowiednik lootID
+
+    [Header("UI ID notatki")]
+    public string noteUIName;
+
+    [Header("ID notatki w inventory UI")]
+    public string inventoryName;
 
     private void Start()
     {
-        if (GameStateManager.Instance != null && GameStateManager.Instance.IsCollected(itemID))
+        // Jeśli została już zebrana — ukryj
+        if (!string.IsNullOrEmpty(noteID) && GameStateManager.Instance.IsObjectDestroyed(noteID))
         {
+            Debug.Log($"[GameState] Notatka {noteID} została już zebrana — ukrywam.");
             gameObject.SetActive(false);
         }
     }
@@ -19,11 +26,14 @@ public class NoteCollectable : MonoBehaviour
     {
         if (!other.CompareTag("Player")) return;
 
-        // save as collected
-        if (GameStateManager.Instance != null)
-            GameStateManager.Instance.CollectItem(itemID);
+        // 🔹 Zapisz jako zebrana
+        if (!string.IsNullOrEmpty(noteID))
+        {
+            GameStateManager.Instance.MarkObjectDestroyed(noteID);
+            Debug.Log($"[GameState] Notatka {noteID} została zebrana — zapisana w stanie.");
+        }
 
-        // Show UI 
+        // 🔹 Pokaż treść notatki (UI)
         GameObject noteUI = GameObject.Find("NoteUI");
         if (noteUI != null)
         {
@@ -46,7 +56,7 @@ public class NoteCollectable : MonoBehaviour
             }
         }
 
-        // Show note in inventory
+        // 🔹 Odsłoń w inventory
         GameObject inventoryUI = GameObject.Find("InventoryUI");
         if (inventoryUI != null)
         {

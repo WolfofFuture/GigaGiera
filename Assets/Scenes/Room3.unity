@@ -235,6 +235,14 @@ PrefabInstance:
       value: note_2
       objectReference: {fileID: 0}
     - target: {fileID: 3917155064887209486, guid: 6d945b890611922498dc7f9282d5b949, type: 3}
+      propertyPath: noteID
+      value: note_enemy_3_loot
+      objectReference: {fileID: 0}
+    - target: {fileID: 3917155064887209486, guid: 6d945b890611922498dc7f9282d5b949, type: 3}
+      propertyPath: saveID
+      value: note_from_enemy_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3917155064887209486, guid: 6d945b890611922498dc7f9282d5b949, type: 3}
       propertyPath: noteUIName
       value: note_2
       objectReference: {fileID: 0}
@@ -28838,6 +28846,14 @@ PrefabInstance:
     - target: {fileID: 5973329636852388969, guid: befb733695cb17647aa80aea3ab9d6f0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720222656427689996, guid: befb733695cb17647aa80aea3ab9d6f0, type: 3}
+      propertyPath: lootID
+      value: note_enemy_3_loot
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720222656427689996, guid: befb733695cb17647aa80aea3ab9d6f0, type: 3}
+      propertyPath: enemyID
+      value: enemy_03
       objectReference: {fileID: 0}
     - target: {fileID: 7720222656427689996, guid: befb733695cb17647aa80aea3ab9d6f0, type: 3}
       propertyPath: lootObjectOnScene

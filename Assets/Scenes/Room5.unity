@@ -1149,12 +1149,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8499083818849016539, guid: a2343e4d4e34d234ebfdedc8a02051c0, type: 3}
+      propertyPath: lootID
+      value: enemy_05_loot
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499083818849016539, guid: a2343e4d4e34d234ebfdedc8a02051c0, type: 3}
       propertyPath: enemyID
-      value: mush_3
+      value: mush_5
       objectReference: {fileID: 0}
     - target: {fileID: 8499083818849016539, guid: a2343e4d4e34d234ebfdedc8a02051c0, type: 3}
       propertyPath: maxHealth
       value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499083818849016539, guid: a2343e4d4e34d234ebfdedc8a02051c0, type: 3}
+      propertyPath: moveSpeed
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 8499083818849016539, guid: a2343e4d4e34d234ebfdedc8a02051c0, type: 3}
       propertyPath: lootObjectOnScene
@@ -48566,6 +48574,10 @@ PrefabInstance:
     - target: {fileID: 3953821783885919207, guid: 295367121ff377a419bbf718171c0e7c, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6749915937029256311, guid: 295367121ff377a419bbf718171c0e7c, type: 3}
+      propertyPath: saveID
+      value: enemy_05_loot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

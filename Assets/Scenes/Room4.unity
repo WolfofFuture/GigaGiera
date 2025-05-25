@@ -249,6 +249,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3358784582437806612, guid: 5c21be13916ea154aa4a46550a36efde, type: 3}
+      propertyPath: lootID
+      value: eye_04_1_loot
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358784582437806612, guid: 5c21be13916ea154aa4a46550a36efde, type: 3}
+      propertyPath: enemyID
+      value: eye_04_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358784582437806612, guid: 5c21be13916ea154aa4a46550a36efde, type: 3}
       propertyPath: lootObjectOnScene
       value: 
       objectReference: {fileID: 1728260515}
@@ -1407,6 +1415,10 @@ PrefabInstance:
     - target: {fileID: 1830028577602108909, guid: 5c21be13916ea154aa4a46550a36efde, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358784582437806612, guid: 5c21be13916ea154aa4a46550a36efde, type: 3}
+      propertyPath: enemyID
+      value: eye_04_2
       objectReference: {fileID: 0}
     - target: {fileID: 6700174613043950900, guid: 5c21be13916ea154aa4a46550a36efde, type: 3}
       propertyPath: m_Name
@@ -36054,6 +36066,10 @@ PrefabInstance:
     - target: {fileID: 6749915937029256311, guid: 295367121ff377a419bbf718171c0e7c, type: 3}
       propertyPath: itemID
       value: bomb_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 6749915937029256311, guid: 295367121ff377a419bbf718171c0e7c, type: 3}
+      propertyPath: saveID
+      value: eye_04_1_loot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
