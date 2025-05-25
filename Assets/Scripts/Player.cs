@@ -44,6 +44,15 @@ public class Player : Mover
     public void ResetPlayerState()
     {
         currentHealth = maxHealth;
+
+        // ✅ Dodane przypisanie healthBar, jeśli null
+        if (healthBar == null)
+        {
+            healthBar = FindObjectOfType<HealthBar>();
+            if (healthBar == null)
+                Debug.LogWarning("Nie znaleziono HealthBar w scenie!");
+        }
+
         healthBar.SetMaxHealth(maxHealth);
         healthBar.SetHealth(currentHealth);
 
@@ -52,7 +61,7 @@ public class Player : Mover
 
         Time.timeScale = 1f;
         isInventoryOpen = false;
-        canMove = true; // użycie canMove z Mover
+        canMove = true;
     }
 
     private void Update()
@@ -72,7 +81,7 @@ public class Player : Mover
 
         horizontalMove = Input.GetAxisRaw("Horizontal");
         verticalMove = Input.GetAxisRaw("Vertical");
-        animator.SetFloat("X Speed",Mathf.Abs(horizontalMove));
+        animator.SetFloat("X Speed", Mathf.Abs(horizontalMove));
         animator.SetFloat("Y Speed", Mathf.Abs(verticalMove));
         UpdateMotor(new Vector3(horizontalMove, verticalMove, 0));
 
@@ -99,7 +108,6 @@ public class Player : Mover
             {
                 Debug.Log("Nie masz mikstury zdrowia!");
             }
-
         }
     }
 
@@ -110,6 +118,7 @@ public class Player : Mover
 
         if (currentHealth <= 0)
             Die();
+
         animator.SetTrigger("TakeDamage");
     }
 
@@ -118,6 +127,7 @@ public class Player : Mover
         currentHealth += amount;
         if (currentHealth > maxHealth)
             currentHealth = maxHealth;
+
         healthBar.SetHealth(currentHealth);
     }
 
@@ -126,7 +136,8 @@ public class Player : Mover
         Debug.Log("Gracz zmarł!");
         if (deathPanel != null)
             deathPanel.SetActive(true);
-            animator.SetTrigger("Death");
+
+        animator.SetTrigger("Death");
         canMove = false;
     }
 
@@ -172,5 +183,4 @@ public class Player : Mover
             Debug.Log("Nie masz mikstury prędkości!");
         }
     }
-
 }
