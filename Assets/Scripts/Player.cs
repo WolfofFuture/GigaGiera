@@ -144,24 +144,36 @@ public class Player : Mover
     void ToggleInventory()
     {
         isInventoryOpen = !isInventoryOpen;
+
         if (inventoryUI != null)
         {
+            // Włącz cały panel ekwipunku
+            inventoryUI.SetActive(isInventoryOpen);
+
+            // (opcjonalnie) podpanel info_and_items
             Transform infoPanel = inventoryUI.transform.Find("info_and_items");
             if (infoPanel != null)
                 infoPanel.gameObject.SetActive(isInventoryOpen);
         }
+
         Time.timeScale = isInventoryOpen ? 0f : 1f;
     }
 
     void ToggleInvNotes()
     {
         isInventoryOpen = !isInventoryOpen;
+
         if (inventoryUI != null)
         {
-            Transform infoPanel = inventoryUI.transform.Find("collected_notes");
-            if (infoPanel != null)
-                infoPanel.gameObject.SetActive(isInventoryOpen);
+            // Włącz cały panel ekwipunku
+            inventoryUI.SetActive(isInventoryOpen);
+
+            // (opcjonalnie) podpanel collected_notes
+            Transform notesPanel = inventoryUI.transform.Find("collected_notes");
+            if (notesPanel != null)
+                notesPanel.gameObject.SetActive(isInventoryOpen);
         }
+
         Time.timeScale = isInventoryOpen ? 0f : 1f;
     }
 
