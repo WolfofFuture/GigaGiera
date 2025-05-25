@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CameraMotor : MonoBehaviour
 {
@@ -19,41 +19,30 @@ public class CameraMotor : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-
     private void LateUpdate()
     {
+        if (LookAt == null) return; // 🛡️ zapobiegamy błędowi MissingReferenceException
+
         Vector3 delta = Vector3.zero;
 
-        // This is to check if we're inside the bounds on the X axis
         float deltaX = LookAt.position.x - transform.position.x;
         if (deltaX > boundX || deltaX < -boundX)
         {
-            if (transform.position.x < LookAt.position.x)
-            {
-                delta.x = deltaX - boundX;
-            }
-            else
-            {
-                delta.x = deltaX + boundX;
-            }
-
+            delta.x = transform.position.x < LookAt.position.x ? deltaX - boundX : deltaX + boundX;
         }
 
-        // This is to check if we're inside the bounds on the Y axis
         float deltaY = LookAt.position.y - transform.position.y;
         if (deltaY > boundY || deltaY < -boundY)
-            {
-                if (transform.position.y < LookAt.position.y)
-                {
-                    delta.y = deltaY - boundY;
-                }
-                else
-                {
-                    delta.y = deltaY + boundY;
-                }
-
-            }
+        {
+            delta.y = transform.position.y < LookAt.position.y ? deltaY - boundY : deltaY + boundY;
+        }
 
         transform.position += new Vector3(delta.x, delta.y, 0);
+    }
+
+    // 🧭 Metoda do ustawienia celu śledzenia (np. z GameManagera)
+    public void SetTarget(Transform newTarget)
+    {
+        LookAt = newTarget;
     }
 }

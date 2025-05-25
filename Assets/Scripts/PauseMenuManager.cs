@@ -50,6 +50,8 @@ public class PauseMenuManager : MonoBehaviour
     public void QuitToMainMenu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("MainMenu");
+        SessionManager.Instance.QuitToMainMenu();
     }
+
+
 }

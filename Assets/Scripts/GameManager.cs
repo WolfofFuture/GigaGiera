@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
 
@@ -29,35 +29,32 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    private void Start()
-    {
-        RespawnPlayer();
-    }
-
     public void RespawnPlayer()
     {
-        if (currentPlayer != null)
-            Destroy(currentPlayer);
+        currentPlayer = GameObject.FindGameObjectWithTag("Player");
 
-        currentPlayer = Instantiate(playerPrefab, playerSpawnPoint.position, Quaternion.identity);
-
-        //GameStateManager.Instance.ResetCollected();
-        //InventoryManager.Instance.ResetInventory();
-
-        // *** ZMIANA: Zast¹piono przestarza³e FindObjectsOfType now¹ wersj¹ ***
-        CollectableItem[] allCollectables = FindObjectsByType<CollectableItem>(FindObjectsSortMode.None);
-        foreach (var collectable in allCollectables)
+        if (currentPlayer == null)
         {
-            collectable.ResetCollectable();
+            Debug.LogError("[GameManager] Nie znaleziono gracza!");
+            return;
         }
 
         Player playerComp = currentPlayer.GetComponent<Player>();
         if (playerComp != null)
             playerComp.ResetPlayerState();
 
+        // ðŸ“· ustaw kamerze nowy cel
+        CameraMotor cam = FindObjectOfType<CameraMotor>();
+        if (cam != null)
+            cam.SetTarget(currentPlayer.transform);
+
         canTeleport = true;
         enterFromTag = "";
     }
+
+
+
+
 
     public void StartTeleportCooldown(float cooldownTime)
     {
@@ -80,7 +77,7 @@ public class GameManager : MonoBehaviour
     // *** NOWA METODA ***
     public void ResetGame()
     {
-        // Wyzeruj doœwiadczenie
+        // Wyzeruj doÅ›wiadczenie
         experience = 0;
 
         // Reset teleportacji
@@ -94,11 +91,11 @@ public class GameManager : MonoBehaviour
         //if (CollectibleManager.Instance != null)
         //    CollectibleManager.Instance.ResetCollected();
 
-        // Usuñ aktualnego gracza jeœli jest
+        // UsuÅ„ aktualnego gracza jeÅ›li jest
         if (currentPlayer != null)
             Destroy(currentPlayer);
 
-        // Prze³aduj scenê MainMenu na œwie¿o
+        // PrzeÅ‚aduj scenÄ™ MainMenu na Å›wieÅ¼o
         SceneManager.LoadScene("MainMenu");
     }
 }

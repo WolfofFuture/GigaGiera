@@ -1,37 +1,30 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
+
+    public Button continueButton;
+
+    private void Start()
+    {
+        if (continueButton != null)
+            continueButton.interactable = SessionManager.Instance != null && SessionManager.Instance.IsSessionActive();
+    }
+
     public void PlayGame()
     {
-        Debug.Log("[MainMenu] PLAY GAME klikniêty");
-
-        if (GameStateManager.Instance != null)
-        {
-            Debug.Log("[MainMenu] Resetujê CollectibleManager");
-            //GameStateManager.Instance.ResetCollected();
-        }
-
-        if (InventoryManager.Instance != null)
-        {
-            Debug.Log("[MainMenu] Resetujê InventoryManager");
-            InventoryManager.Instance.ResetInventory();
-        }
-
-        if (Player.Instance != null)
-        {
-            Debug.Log("[MainMenu] Resetujê stan gracza");
-            Player.Instance.ResetPlayerState();
-        }
-        else
-        {
-            Debug.LogWarning("[MainMenu] Player.Instance jest null przy próbie resetu stanu gracza");
-        }
-
-        StartCoroutine(LoadGame());
+        SessionManager.Instance.StartNewGame();
     }
+
+    public void ContinueGame()
+    {
+        SessionManager.Instance.ContinueGame();
+    }
+
+
 
     private IEnumerator LoadGame()
     {
