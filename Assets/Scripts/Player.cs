@@ -45,7 +45,6 @@ public class Player : Mover
     {
         currentHealth = maxHealth;
 
-        // ✅ Dodane przypisanie healthBar, jeśli null
         if (healthBar == null)
         {
             healthBar = FindObjectOfType<HealthBar>();
@@ -97,16 +96,23 @@ public class Player : Mover
         if (Input.GetKeyDown(KeyCode.O))
         {
             InventoryManager inventory = InventoryManager.Instance;
-            string match = inventory.itemIDs.FirstOrDefault(id => id.Contains("health_potion"));
-            if (match != null)
+            if (inventory != null && inventory.itemIDs != null)
             {
-                Heal(30);
-                inventory.RemoveItem(match);
-                Debug.Log($"Użyto mikstury zdrowia: {match}");
+                string match = inventory.itemIDs.FirstOrDefault(id => id != null && id.Contains("health_potion"));
+                if (match != null)
+                {
+                    Heal(30);
+                    inventory.RemoveItem(match);
+                    Debug.Log($"Użyto mikstury zdrowia: {match}");
+                }
+                else
+                {
+                    Debug.Log("Nie masz mikstury zdrowia!");
+                }
             }
             else
             {
-                Debug.Log("Nie masz mikstury zdrowia!");
+                Debug.LogWarning("InventoryManager lub itemIDs jest null!");
             }
         }
     }
@@ -147,10 +153,8 @@ public class Player : Mover
 
         if (inventoryUI != null)
         {
-            // Włącz cały panel ekwipunku
             inventoryUI.SetActive(isInventoryOpen);
 
-            // (opcjonalnie) podpanel info_and_items
             Transform infoPanel = inventoryUI.transform.Find("info_and_items");
             if (infoPanel != null)
                 infoPanel.gameObject.SetActive(isInventoryOpen);
@@ -165,10 +169,8 @@ public class Player : Mover
 
         if (inventoryUI != null)
         {
-            // Włącz cały panel ekwipunku
             inventoryUI.SetActive(isInventoryOpen);
 
-            // (opcjonalnie) podpanel collected_notes
             Transform notesPanel = inventoryUI.transform.Find("collected_notes");
             if (notesPanel != null)
                 notesPanel.gameObject.SetActive(isInventoryOpen);
@@ -179,7 +181,15 @@ public class Player : Mover
 
     void UseSpeedPotionIfAvailable()
     {
-        string match = InventoryManager.Instance.itemIDs.FirstOrDefault(id => id.Contains("speed_potion"));
+        if (InventoryManager.Instance == null || InventoryManager.Instance.itemIDs == null)
+        {
+            Debug.LogWarning("InventoryManager.Instance lub itemIDs jest null!");
+            return;
+        }
+
+        string match = InventoryManager.Instance.itemIDs
+            .FirstOrDefault(id => id != null && id.Contains("speed_potion"));
+
         if (match != null)
         {
             InventoryManager.Instance.RemoveItem(match);
