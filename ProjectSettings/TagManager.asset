@@ -53,6 +53,9 @@ TagManager:
   - name: environment
     uniqueID: 39532085
     locked: 0
+  - name: Wall_bottom
+    uniqueID: 2937659843
+    locked: 0
   - name: Weapon
     uniqueID: 3237212243
     locked: 0
@@ -62,9 +65,6 @@ TagManager:
   - name: Enemy
     uniqueID: 1763496183
     locked: 0
-  - name: Wall_bottom
-    uniqueID: 2937659843
-    locked: 0
   - name: Wall_top
     uniqueID: 2348511073
     locked: 0
@@ -73,6 +73,9 @@ TagManager:
     locked: 0
   - name: doors
     uniqueID: 2788738249
+    locked: 0
+  - name: BossRoom
+    uniqueID: 2711138363
     locked: 0
   m_RenderingLayers:
   - Default
