@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8499083818849016539}
   - component: {fileID: 4266621428356336590}
   - component: {fileID: 8523397603039634659}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Mushroom_enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1763496183
-  m_SortingLayer: 6
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 4723107735738678597, guid: f8b30c2afe165d645b54d500a9c30862, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -327,7 +327,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9030445270622620702}
   - component: {fileID: 500035609300385624}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: AudioSource
   m_TagString: Untagged
   m_Icon: {fileID: 0}

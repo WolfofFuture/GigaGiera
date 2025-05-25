@@ -3840,6 +3840,9 @@ MonoBehaviour:
   damage: 10
   attackRange: 1.5
   attackCooldown: 1
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!95 &448430115
 Animator:
   serializedVersion: 7
@@ -15250,8 +15253,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
-  attackRange: 20
+  attackRange: 0.12
   attackCooldown: 1
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!114 &2085893778
 MonoBehaviour:
   m_ObjectHideFlags: 0
