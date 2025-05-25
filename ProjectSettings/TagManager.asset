@@ -50,11 +50,14 @@ TagManager:
   - name: enviro_floor
     uniqueID: 2444871703
     locked: 0
-  - name: environment
-    uniqueID: 39532085
-    locked: 0
   - name: Wall_bottom
     uniqueID: 2937659843
+    locked: 0
+  - name: Wall_top
+    uniqueID: 2348511073
+    locked: 0
+  - name: environment
+    uniqueID: 39532085
     locked: 0
   - name: Weapon
     uniqueID: 3237212243
@@ -64,9 +67,6 @@ TagManager:
     locked: 0
   - name: Enemy
     uniqueID: 1763496183
-    locked: 0
-  - name: Wall_top
-    uniqueID: 2348511073
     locked: 0
   - name: Wall_side
     uniqueID: 4084101857
