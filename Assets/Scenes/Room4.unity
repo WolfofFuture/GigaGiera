@@ -667,7 +667,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -210865439
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -1340,6 +1340,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 295367121ff377a419bbf718171c0e7c, type: 3}
+--- !u!1 &602163548 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3953821783885919207, guid: 295367121ff377a419bbf718171c0e7c, type: 3}
+  m_PrefabInstance: {fileID: 602163547}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &616408039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1493,6 +1498,10 @@ PrefabInstance:
       propertyPath: enemyID
       value: eye_04_2
       objectReference: {fileID: 0}
+    - target: {fileID: 3358784582437806612, guid: 5c21be13916ea154aa4a46550a36efde, type: 3}
+      propertyPath: lootObjectOnScene
+      value: 
+      objectReference: {fileID: 602163548}
     - target: {fileID: 6700174613043950900, guid: 5c21be13916ea154aa4a46550a36efde, type: 3}
       propertyPath: m_Name
       value: Eye_enemy
@@ -34530,7 +34539,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -210865439
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -35014,7 +35023,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1946456223
-  m_SortingLayer: 6
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}

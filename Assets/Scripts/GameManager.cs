@@ -13,6 +13,9 @@ public class GameManager : MonoBehaviour
 
     public int experience = 0;
 
+    public Vector3? spawnOverridePosition = null;
+
+
     public Player player => currentPlayer != null ? currentPlayer.GetComponent<Player>() : null;
 
     public string enterFromTag = "";
@@ -50,6 +53,14 @@ public class GameManager : MonoBehaviour
 
         canTeleport = true;
         enterFromTag = "";
+
+        if (spawnOverridePosition != null)
+        {
+            currentPlayer.transform.position = spawnOverridePosition.Value;
+            Debug.Log($"[GameManager] Przeniesiono gracza do pozycji: {spawnOverridePosition.Value}");
+            spawnOverridePosition = null;
+        }
+
     }
 
 
