@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Note
   - PlayerSpawn
+  - Weapon
   layers:
   - Default
   - TransparentFX
@@ -14,7 +15,7 @@ TagManager:
   - Water
   - UI
   - 
-  - 
+  - Weapon
   - Blocking
   - Actor
   - Enemy
@@ -54,6 +55,9 @@ TagManager:
     locked: 0
   - name: environment
     uniqueID: 39532085
+    locked: 0
+  - name: Weapon
+    uniqueID: 3237212243
     locked: 0
   - name: Actor
     uniqueID: 3714418593
