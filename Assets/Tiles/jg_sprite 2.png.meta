@@ -435,6 +435,50 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: jung_open_door
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 62
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb18cc73fbbe254388c1704b6bd5cfc
+      internalID: 12627891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jung_door
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef70dd1f599edf241b9ca5755f539013
+      internalID: 3275611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -463,6 +507,8 @@ TextureImporter:
       jg_sprite 2_7: 1622052621
       jg_sprite 2_8: 724010052
       jg_sprite 2_9: 1633877519
+      jung_door: 3275611
+      jung_open_door: 12627891
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

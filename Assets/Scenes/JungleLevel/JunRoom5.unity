@@ -383,8 +383,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1357307453
-  m_SortingLayer: 3
+  m_SortingLayerID: -1946456223
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -2765,7 +2765,7 @@ Transform:
   m_GameObject: {fileID: 741469374}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.65, y: -0.092, z: -0.013639561}
+  m_LocalPosition: {x: -1.496, y: -0.092, z: -0.013639561}
   m_LocalScale: {x: 0.56988037, y: 0.11313802, z: 0.89393}
   m_ConstrainProportionsScale: 0
   m_Children: []
