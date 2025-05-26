@@ -6108,7 +6108,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3917155064887209486, guid: 6d945b890611922498dc7f9282d5b949, type: 3}
       propertyPath: noteID
-      value: note_7_room
+      value: note_2_room
       objectReference: {fileID: 0}
     - target: {fileID: 3917155064887209486, guid: 6d945b890611922498dc7f9282d5b949, type: 3}
       propertyPath: noteUIName
