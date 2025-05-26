@@ -260,7 +260,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1946456223
-  m_SortingLayer: 8
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -46338,6 +46338,17 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &559924493 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5680598141739907184, guid: 7c4fd387ec21b9e418c8954ab4e642ed, type: 3}
+  m_PrefabInstance: {fileID: 5674752311049662675}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c8b2e8ba23da0540903907742d2147d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &715526039
 GameObject:
   m_ObjectHideFlags: 0
@@ -81282,7 +81293,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1946456223
-  m_SortingLayer: 8
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -82342,7 +82353,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -82373,9 +82384,7 @@ MonoBehaviour:
   portal: {fileID: 217848594}
   portalBlockedGraphic: {fileID: 715526039}
   enemies:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 559924493}
   roomTrigger: {fileID: 1818142665}
 --- !u!4 &1818142667
 Transform:
@@ -82386,7 +82395,7 @@ Transform:
   m_GameObject: {fileID: 1818142664}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.023, y: 0.072, z: 0.03972848}
+  m_LocalPosition: {x: 0.023, y: 3.641, z: 0.03972848}
   m_LocalScale: {x: 2.8407829, y: 2.4139297, z: 1.1775266}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -82513,7 +82522,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 39532085
-  m_SortingLayer: 3
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -5686072591557249704, guid: c88e7a867967fad48aa987a48f04fb23, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -85135,6 +85144,18 @@ PrefabInstance:
     - target: {fileID: 2452100524885002068, guid: 7c4fd387ec21b9e418c8954ab4e642ed, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5680598141739907184, guid: 7c4fd387ec21b9e418c8954ab4e642ed, type: 3}
+      propertyPath: maxHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5680598141739907184, guid: 7c4fd387ec21b9e418c8954ab4e642ed, type: 3}
+      propertyPath: moveSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5680598141739907184, guid: 7c4fd387ec21b9e418c8954ab4e642ed, type: 3}
+      propertyPath: damageToPlayer
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
