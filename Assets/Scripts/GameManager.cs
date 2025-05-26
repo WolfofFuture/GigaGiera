@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     public string enterFromTag = "";
     public bool canTeleport = true;
 
-    private void Awake()
+    void Awake()
     {
         if (Instance != null)
         {
@@ -30,7 +30,19 @@ public class GameManager : MonoBehaviour
         }
         Instance = this;
         DontDestroyOnLoad(gameObject);
+
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Po załadowaniu każdej sceny respawnuj gracza, jeśli jest aktywny
+        if (scene.name != "MainMenu" && currentPlayer == null)
+        {
+            RespawnPlayer();
+        }
+    }
+
 
     public void RespawnPlayer()
     {

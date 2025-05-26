@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -49,7 +50,18 @@ public class TeleportOnDoorUnlock : MonoBehaviour
             GameManager.Instance.spawnOverridePosition = spawnPosition;
         }
 
-        SceneManager.LoadScene("Player", LoadSceneMode.Single); // czyœci wszystko
-        SceneManager.LoadSceneAsync(targetScene, LoadSceneMode.Additive);
+        SceneManager.LoadScene("Player", LoadSceneMode.Single);
+        StartCoroutine(LoadTargetSceneAsync());
     }
+
+    private IEnumerator LoadTargetSceneAsync()
+    {
+        AsyncOperation loadOp = SceneManager.LoadSceneAsync(targetScene, LoadSceneMode.Additive);
+        while (!loadOp.isDone)
+            yield return null;
+
+        // Po za³adowaniu sceny respawnuj gracza
+        GameManager.Instance.RespawnPlayer();
+    }
+
 }
