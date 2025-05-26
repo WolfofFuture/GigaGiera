@@ -269,6 +269,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!1001 &317053769
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -445,6 +446,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &403758026
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 --- !u!1 &334511172
@@ -632,6 +635,9 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &458961048
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -642,6 +648,7 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
     - target: {fileID: 2451879518531741582, guid: 2fb0979a5f6f5ea43bae56745d8898a8, type: 3}
@@ -711,6 +718,8 @@ PrefabInstance:
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     - target: {fileID: 1753233635778663273, guid: c0cdf9851da454247b51efc3f2ea7b6b, type: 3}
       propertyPath: m_Name
       value: Portal_Epilogue
@@ -764,6 +773,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -773,7 +785,11 @@ PrefabInstance:
     m_AddedComponents: []
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SourcePrefab: {fileID: 100100000, guid: 2fb0979a5f6f5ea43bae56745d8898a8, type: 3}
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: c0cdf9851da454247b51efc3f2ea7b6b, type: 3}
+>>>>>>> Stashed changes
 =======
   m_SourcePrefab: {fileID: 100100000, guid: c0cdf9851da454247b51efc3f2ea7b6b, type: 3}
 >>>>>>> Stashed changes
@@ -47293,6 +47309,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!1001 &756208232
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47608,6 +47625,8 @@ Transform:
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 --- !u!1 &751801212
 GameObject:
   m_ObjectHideFlags: 0
@@ -47743,6 +47762,9 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -87704,6 +87726,7 @@ SceneRoots:
   - {fileID: 5674752311049662675}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
   - {fileID: 403758026}
   - {fileID: 1242242132}
@@ -87712,6 +87735,9 @@ SceneRoots:
   - {fileID: 320372805}
   - {fileID: 1374559415}
   - {fileID: 700757687}
+>>>>>>> Stashed changes
+=======
+  - {fileID: 400503456}
 >>>>>>> Stashed changes
 =======
   - {fileID: 400503456}
