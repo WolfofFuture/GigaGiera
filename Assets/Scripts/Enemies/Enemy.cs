@@ -22,7 +22,7 @@ public class Enemy : MonoBehaviour
     private Animator animator;
 
     private AudioSource audioSource;
-    public AudioClip punchSound; // Przypisz w inspectorze dźwięk uderzenia
+    public AudioClip punchSound; 
 
     [Header("Unikalny identyfikator lootu (opcjonalnie taki sam jak enemyID + '_loot')")]
     public string lootID;
@@ -80,11 +80,10 @@ public class Enemy : MonoBehaviour
         if (distance > attackRange)
         {
             transform.position += direction * moveSpeed * Time.deltaTime;
-            //animator.SetBool("isRunning", true);
+         
         }
         else
         {
-            //animator.SetBool("isRunning", false);
 
             if (Time.time - lastAttackTime > attackCooldown)
             {
