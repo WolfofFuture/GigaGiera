@@ -70,7 +70,7 @@ public class SessionManager : MonoBehaviour
         SceneManager.LoadScene("Player", LoadSceneMode.Single);
         yield return null;
 
-        AsyncOperation loadMain = SceneManager.LoadSceneAsync("JunRoom1", LoadSceneMode.Additive);
+        AsyncOperation loadMain = SceneManager.LoadSceneAsync("Main", LoadSceneMode.Additive);
         while (!loadMain.isDone) yield return null;
 
         yield return new WaitForSeconds(0.2f); // krótki delay na inicjalizację spawn pointa

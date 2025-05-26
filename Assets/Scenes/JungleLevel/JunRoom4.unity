@@ -33632,7 +33632,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3917155064887209486, guid: 6d945b890611922498dc7f9282d5b949, type: 3}
       propertyPath: noteID
-      value: note_jung3
+      value: note_jung4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3917155064887209486, guid: 6d945b890611922498dc7f9282d5b949, type: 3}
+      propertyPath: noteUIName
+      value: note_5
       objectReference: {fileID: 0}
     - target: {fileID: 3917155064887209486, guid: 6d945b890611922498dc7f9282d5b949, type: 3}
       propertyPath: inventoryName
