@@ -31831,6 +31831,10 @@ PrefabInstance:
       value: note1
       objectReference: {fileID: 0}
     - target: {fileID: 3917155064887209486, guid: 6d945b890611922498dc7f9282d5b949, type: 3}
+      propertyPath: noteID
+      value: note_1_room
+      objectReference: {fileID: 0}
+    - target: {fileID: 3917155064887209486, guid: 6d945b890611922498dc7f9282d5b949, type: 3}
       propertyPath: saveID
       value: note_1
       objectReference: {fileID: 0}
