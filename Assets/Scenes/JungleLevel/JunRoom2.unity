@@ -4473,7 +4473,7 @@ PrefabInstance:
       objectReference: {fileID: 176421327, guid: ff42e60516092a1489603b15a89201ad, type: 3}
     - target: {fileID: 6093767082661031840, guid: f73961348e864b14b998f0ce9d544855, type: 3}
       propertyPath: requiredItemID
-      value: key_05_jg
+      value: key_04_jg
       objectReference: {fileID: 0}
     - target: {fileID: 7913836516585728564, guid: f73961348e864b14b998f0ce9d544855, type: 3}
       propertyPath: m_Name
@@ -4619,7 +4619,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &786493196
 MonoBehaviour:
   m_ObjectHideFlags: 0

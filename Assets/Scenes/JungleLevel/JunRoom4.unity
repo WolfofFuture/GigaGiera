@@ -28910,6 +28910,10 @@ PrefabInstance:
       propertyPath: saveID
       value: enemy_04_1_jg_loot
       objectReference: {fileID: 0}
+    - target: {fileID: 6749915937029256311, guid: 295367121ff377a419bbf718171c0e7c, type: 3}
+      propertyPath: itemID
+      value: bomb_04_1_jg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

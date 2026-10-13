@@ -27,10 +27,39 @@ public class CollectableItem : MonoBehaviour
         }
     }
 
+    private bool collected = false;
+    private float lastFullMessageTime = -10f;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
+        TryCollect(other);
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        TryCollect(other);
+    }
+
+    private void TryCollect(Collider2D other)
+    {
+        if (collected) return;
+
         if (other.CompareTag("Player"))
         {
+            if (InventoryManager.Instance != null && !InventoryManager.Instance.HasFreeSlot())
+            {
+                if (Time.time - lastFullMessageTime > 2f)
+                {
+                    lastFullMessageTime = Time.time;
+                    FloatingTextManager ftm = FindAnyObjectByType<FloatingTextManager>();
+                    if (ftm != null)
+                        ftm.Show("Inventory full", 24, Color.red, transform.position + Vector3.up * 1.5f, Vector3.up * 0.5f, 2f);
+                }
+                return;
+            }
+
+            collected = true;
+
             if (!string.IsNullOrEmpty(itemID))
             {
                 GameStateManager.Instance.CollectItem(itemID);

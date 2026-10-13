@@ -22,6 +22,11 @@ public class Enemy : MonoBehaviour
     private Animator animator;
 
     private AudioSource audioSource;
+
+    [Header("Czy potwor moze przechodzic przez sciany (np. latajacy)")]
+    public bool ignoreWalls = false;
+    private Collider2D bodyCollider;
+    private int wallMask;
     public AudioClip punchSound; 
 
     [Header("Unikalny identyfikator lootu (opcjonalnie taki sam jak enemyID + '_loot')")]
@@ -33,6 +38,8 @@ public class Enemy : MonoBehaviour
         currentHealth = maxHealth;
         player = GameObject.FindGameObjectWithTag("Player").transform;
         animator = GetComponent<Animator>();
+        bodyCollider = GetComponent<Collider2D>();
+        wallMask = LayerMask.GetMask("Blocking");
         audioSource = GetComponent<AudioSource>();
 
         if (GameStateManager.Instance.IsEnemyDefeated(enemyID))
@@ -79,7 +86,7 @@ public class Enemy : MonoBehaviour
 
         if (distance > attackRange)
         {
-            transform.position += direction * moveSpeed * Time.deltaTime;
+            MoveTowards(direction * moveSpeed * Time.deltaTime);
          
         }
         else
@@ -93,6 +100,38 @@ public class Enemy : MonoBehaviour
             }
         }
         
+    }
+
+    void MoveTowards(Vector3 step)
+    {
+        if (ignoreWalls || bodyCollider == null)
+        {
+            transform.position += step;
+            return;
+        }
+
+        Physics2D.SyncTransforms();
+        if (!IsBlocked(new Vector2(step.x, 0f)))
+            transform.position += new Vector3(step.x, 0f, 0f);
+
+        Physics2D.SyncTransforms();
+        if (!IsBlocked(new Vector2(0f, step.y)))
+            transform.position += new Vector3(0f, step.y, 0f);
+
+        transform.position += new Vector3(0f, 0f, step.z);
+    }
+
+    bool IsBlocked(Vector2 move)
+    {
+        if (move == Vector2.zero)
+            return false;
+
+        Bounds bounds = bodyCollider.bounds;
+
+        if (Physics2D.OverlapBox(bounds.center, bounds.size, 0f, wallMask) != null)
+            return false;
+
+        return Physics2D.OverlapBox((Vector2)bounds.center + move, bounds.size, 0f, wallMask) != null;
     }
 
     void AttackPlayer()

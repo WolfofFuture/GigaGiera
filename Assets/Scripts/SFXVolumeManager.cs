@@ -20,7 +20,7 @@ public class SFXVolumeManager : MonoBehaviour
         sfxSlider.onValueChanged.AddListener(OnSFXVolumeChanged);
 
         // ZnajdŸ wszystkich przeciwników z komponentem SFXVolumeSetter i dodaj ich AudioSource
-        SFXVolumeSetter[] enemySFXs = FindObjectsOfType<SFXVolumeSetter>();
+        SFXVolumeSetter[] enemySFXs = FindObjectsByType<SFXVolumeSetter>();
         foreach (var sfxSetter in enemySFXs)
         {
             if (sfxSetter.AudioSourceComponent != null)

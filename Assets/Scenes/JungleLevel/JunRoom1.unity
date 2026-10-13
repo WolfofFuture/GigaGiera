@@ -3251,7 +3251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetScene: JunRoom2
   myTag: 1
-  destinationTag: 1
+  destinationTag: Down
   cooldownTime: 1
 --- !u!1001 &681462698
 PrefabInstance:

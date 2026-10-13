@@ -62,7 +62,7 @@ PrefabInstance:
       objectReference: {fileID: 12627891, guid: c88e7a867967fad48aa987a48f04fb23, type: 3}
     - target: {fileID: 6093767082661031840, guid: f73961348e864b14b998f0ce9d544855, type: 3}
       propertyPath: requiredItemID
-      value: key_11
+      value: key_21
       objectReference: {fileID: 0}
     - target: {fileID: 7913836516585728564, guid: f73961348e864b14b998f0ce9d544855, type: 3}
       propertyPath: m_Name

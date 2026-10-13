@@ -242,7 +242,7 @@ PrefabInstance:
       objectReference: {fileID: 2010876675, guid: 70f7f207e52b78d4eb53ed115ca7c25d, type: 3}
     - target: {fileID: 6093767082661031840, guid: f73961348e864b14b998f0ce9d544855, type: 3}
       propertyPath: requiredItemID
-      value: key_05
+      value: key_03
       objectReference: {fileID: 0}
     - target: {fileID: 7913836516585728564, guid: f73961348e864b14b998f0ce9d544855, type: 3}
       propertyPath: m_Name
@@ -48833,6 +48833,10 @@ PrefabInstance:
     - target: {fileID: 6749915937029256311, guid: 295367121ff377a419bbf718171c0e7c, type: 3}
       propertyPath: saveID
       value: enemy_05_loot
+      objectReference: {fileID: 0}
+    - target: {fileID: 6749915937029256311, guid: 295367121ff377a419bbf718171c0e7c, type: 3}
+      propertyPath: itemID
+      value: bomb_05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

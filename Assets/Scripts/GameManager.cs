@@ -59,7 +59,7 @@ public class GameManager : MonoBehaviour
             playerComp.ResetPlayerState();
 
         // 📷 ustaw kamerze nowy cel
-        CameraMotor cam = FindObjectOfType<CameraMotor>();
+        CameraMotor cam = FindAnyObjectByType<CameraMotor>();
         if (cam != null)
             cam.SetTarget(currentPlayer.transform);
 

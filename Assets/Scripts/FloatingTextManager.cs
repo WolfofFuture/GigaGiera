@@ -63,6 +63,15 @@ public class FloatingTextManager : MonoBehaviour
 
 
 
+    public void HideAll()
+    {
+        foreach (var ft in floatingTexts)
+        {
+            if (ft.active)
+                ft.Hide();
+        }
+    }
+
     private FloatingText GetFloatingText()
     {
         FloatingText txt = floatingTexts.Find(t => !t.active);

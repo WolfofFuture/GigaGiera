@@ -3052,7 +3052,6 @@ GameObject:
   - component: {fileID: 332929560}
   - component: {fileID: 332929559}
   - component: {fileID: 332929558}
-  - component: {fileID: 332929562}
   m_Layer: 5
   m_Name: PausePanel
   m_TagString: Untagged
@@ -3145,19 +3144,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &332929562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 332929557}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6d6efba17fcc7449ae02ee4272d9421, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pausePanel: {fileID: 332929557}
 --- !u!1 &370836545
 GameObject:
   m_ObjectHideFlags: 0
@@ -3839,7 +3825,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de8ef7e1941bf2a4ba498864ba09cfe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 100
+  damage: 10
   attackRange: 0.12
   attackCooldown: 1
   swingSound: {fileID: 8300000, guid: 722d7843e4a03bc4b90beef7c1e26be9, type: 3}
@@ -11498,7 +11484,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 332929562}
+      - m_Target: {fileID: 292569664}
         m_TargetAssemblyTypeName: PauseMenuManager, Assembly-CSharp
         m_MethodName: OnResumeButton
         m_Mode: 1
@@ -12691,7 +12677,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 332929562}
+      - m_Target: {fileID: 292569664}
         m_TargetAssemblyTypeName: PauseMenuManager, Assembly-CSharp
         m_MethodName: QuitToMainMenu
         m_Mode: 1
@@ -15004,7 +14990,6 @@ GameObject:
   - component: {fileID: 2085893773}
   - component: {fileID: 2085893775}
   - component: {fileID: 2085893776}
-  - component: {fileID: 2085893777}
   - component: {fileID: 2085893778}
   - component: {fileID: 2085893779}
   - component: {fileID: 2085893780}
@@ -15306,22 +15291,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86dd788d6f9fe31438c496842dd897d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2085893777
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2085893767}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de8ef7e1941bf2a4ba498864ba09cfe6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  attackRange: 0
-  attackCooldown: 1
-  swingSound: {fileID: 0}
 --- !u!114 &2085893778
 MonoBehaviour:
   m_ObjectHideFlags: 0

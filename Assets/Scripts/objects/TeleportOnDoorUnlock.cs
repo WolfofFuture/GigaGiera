@@ -50,18 +50,25 @@ public class TeleportOnDoorUnlock : MonoBehaviour
             GameManager.Instance.spawnOverridePosition = spawnPosition;
         }
 
-        SceneManager.LoadScene("Player", LoadSceneMode.Single);
-        StartCoroutine(LoadTargetSceneAsync());
+        StartCoroutine(LoadTargetScene());
     }
 
-    private IEnumerator LoadTargetSceneAsync()
+    private IEnumerator LoadTargetScene()
     {
         AsyncOperation loadOp = SceneManager.LoadSceneAsync(targetScene, LoadSceneMode.Additive);
         while (!loadOp.isDone)
             yield return null;
 
-        // Po za³adowaniu sceny respawnuj gracza
-        GameManager.Instance.RespawnPlayer();
-    }
+        Scene loaded = SceneManager.GetSceneByName(targetScene);
+        SceneManager.SetActiveScene(loaded);
 
+        GameManager.Instance.RespawnPlayer();
+
+        for (int i = SceneManager.sceneCount - 1; i >= 0; i--)
+        {
+            Scene s = SceneManager.GetSceneAt(i);
+            if (s.name != "Player" && s.name != targetScene)
+                SceneManager.UnloadSceneAsync(s);
+        }
+    }
 }

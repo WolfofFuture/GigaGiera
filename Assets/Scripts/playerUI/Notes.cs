@@ -41,7 +41,7 @@ public class NoteCollectable : MonoBehaviour
             if (note != null)
             {
                 note.gameObject.SetActive(true);
-                Time.timeScale = 0f;
+                PauseLock.Set("note", true);
 
                 Button closeButton = note.GetComponentInChildren<Button>();
                 if (closeButton != null)
@@ -50,14 +50,16 @@ public class NoteCollectable : MonoBehaviour
                     closeButton.onClick.AddListener(() =>
                     {
                         note.gameObject.SetActive(false);
-                        Time.timeScale = 1f;
+                        PauseLock.Set("note", false);
                     });
                 }
             }
         }
 
         // 🔹 Odsłoń w inventory
-        GameObject inventoryUI = GameObject.Find("InventoryUI");
+        GameObject inventoryUI = Player.Instance != null ? Player.Instance.InventoryUI : null;
+        if (inventoryUI == null)
+            inventoryUI = GameObject.Find("InventoryUI");
         if (inventoryUI != null)
         {
             Transform collectedNotes = inventoryUI.transform.Find("collected_notes");

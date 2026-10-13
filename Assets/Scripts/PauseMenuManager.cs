@@ -13,7 +13,7 @@ public class PauseMenuManager : MonoBehaviour
         if (pausePanel != null)
             pausePanel.SetActive(false);
 
-        Time.timeScale = 1f;
+        PauseLock.Clear();
     }
 
     void Update()
@@ -36,7 +36,7 @@ public class PauseMenuManager : MonoBehaviour
         if (pausePanel != null)
             pausePanel.SetActive(isPaused);
 
-        Time.timeScale = isPaused ? 0f : 1f;
+        PauseLock.Set("pause", isPaused);
     }
 
     public void OnResumeButton()
@@ -44,12 +44,12 @@ public class PauseMenuManager : MonoBehaviour
         isPaused = false;
         if (pausePanel != null)
             pausePanel.SetActive(false);
-        Time.timeScale = 1f;
+        PauseLock.Set("pause", false);
     }
 
     public void QuitToMainMenu()
     {
-        Time.timeScale = 1f;
+        PauseLock.Clear();
         SessionManager.Instance.QuitToMainMenu();
     }
 

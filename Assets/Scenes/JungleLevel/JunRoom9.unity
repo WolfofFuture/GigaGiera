@@ -8484,7 +8484,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2042804265445855659, guid: 67af75c40cc48b340b42dc22c5278c94, type: 3}
       propertyPath: requiredItemID
-      value: key_9_jg
+      value: key_05_jg
       objectReference: {fileID: 0}
     - target: {fileID: 2673888198084285503, guid: 67af75c40cc48b340b42dc22c5278c94, type: 3}
       propertyPath: m_Name

@@ -17,8 +17,8 @@ public class TankAI : MonoBehaviour
 
     void Start()
     {
-        // Zmieniamy FindObjectOfType na FindFirstObjectByType - nowa, zalecana metoda
-        playerScript = Object.FindFirstObjectByType<Player>();
+        // Szukamy gracza w scenie
+        playerScript = Object.FindAnyObjectByType<Player>();
         if (playerScript != null)
         {
             player = playerScript.transform;

@@ -28,11 +28,13 @@ public class InteractableObject : MonoBehaviour
     private bool isUnlocked = false;
 
     private bool playerNearby = false;
+    private string configuredItemID;
     private FloatingTextManager floatingTextManager;
 
     private void Awake()
     {
         col = GetComponent<Collider2D>();
+        configuredItemID = requiredItemID;
         if (col == null)
             Debug.LogError($"{gameObject.name}: Brak Collider2D!");
 
@@ -43,9 +45,9 @@ public class InteractableObject : MonoBehaviour
             spriteRenderer.sprite = closedSprite;
         }
 
-        if (GameStateManager.Instance.IsObjectDestroyed(uniqueID))
+        if (GameStateManager.Instance != null && GameStateManager.Instance.IsObjectDestroyed(uniqueID))
         {
-            Unlock();
+            Unlock(false);
         }
         else
         {
@@ -59,7 +61,7 @@ public class InteractableObject : MonoBehaviour
     {
         if (floatingTextManager == null)
         {
-            floatingTextManager = FindObjectOfType<FloatingTextManager>();
+            floatingTextManager = FindAnyObjectByType<FloatingTextManager>();
             if (floatingTextManager == null)
             {
                 Debug.LogError("Nie znaleziono FloatingTextManager w OnTriggerEnter2D!");
@@ -71,7 +73,7 @@ public class InteractableObject : MonoBehaviour
         {
             playerNearby = true;
             floatingTextManager.Show("Press E to interact", 24, Color.white,
-                transform.position + Vector3.up * 1.5f, Vector3.up * 0.5f, 2f);
+                transform.position + Vector3.up * 1.5f, Vector3.zero, 60f);
             Debug.Log($"{gameObject.name}: Wyœwietlam komunikat 'Press E to interact'");
         }
     }
@@ -81,8 +83,15 @@ public class InteractableObject : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerNearby = false;
+            HideNearbyText();
             Debug.Log($"{gameObject.name}: Gracz opuœci³ trigger.");
         }
+    }
+
+    private void OnDestroy()
+    {
+        if (playerNearby)
+            HideNearbyText();
     }
 
     private void Update()
@@ -101,14 +110,11 @@ public class InteractableObject : MonoBehaviour
 
         if (objectType == ObjectType.DestructibleBox)
         {
-            foreach (string collectedItem in GameStateManager.Instance.inventoryItems)
+            string found = FindItem("bomb_");
+            if (found != null)
             {
-                if (collectedItem.StartsWith("bomb_"))
-                {
-                    requiredItemID = collectedItem; // zapamiêtaj, którego u¿ywamy
-                    hasRequiredItem = true;
-                    break;
-                }
+                requiredItemID = found;
+                hasRequiredItem = true;
             }
 
             if (!hasRequiredItem)
@@ -116,14 +122,11 @@ public class InteractableObject : MonoBehaviour
         }
         else if (objectType == ObjectType.Door)
         {
-            foreach (string collectedItem in GameStateManager.Instance.inventoryItems)
+            string found = FindItem("key_");
+            if (found != null)
             {
-                if (collectedItem.StartsWith("key_"))
-                {
-                    requiredItemID = collectedItem; // zapamiêtaj, którego u¿ywamy
-                    hasRequiredItem = true;
-                    break;
-                }
+                requiredItemID = found;
+                hasRequiredItem = true;
             }
 
             if (!hasRequiredItem)
@@ -136,7 +139,7 @@ public class InteractableObject : MonoBehaviour
 
         if (hasRequiredItem)
         {
-            Unlock(); // w œrodku: UseItem i RemoveItem
+            Unlock(true); // w œrodku: UseItem i RemoveItem
             GameStateManager.Instance.MarkObjectDestroyed(uniqueID);
 
         }
@@ -156,14 +159,53 @@ public class InteractableObject : MonoBehaviour
 
 
 
-    private void Unlock()
+    private string FindItem(string prefix)
+    {
+        if (!string.IsNullOrEmpty(configuredItemID) && HasInInventory(configuredItemID))
+            return configuredItemID;
+
+        if (InventoryManager.Instance != null && InventoryManager.Instance.itemIDs != null)
+        {
+            foreach (string id in InventoryManager.Instance.itemIDs)
+            {
+                if (id != null && id.StartsWith(prefix))
+                    return id;
+            }
+            return null;
+        }
+
+        foreach (string id in GameStateManager.Instance.inventoryItems)
+        {
+            if (id.StartsWith(prefix))
+                return id;
+        }
+        return null;
+    }
+
+    private bool HasInInventory(string itemID)
+    {
+        if (InventoryManager.Instance != null)
+            return InventoryManager.Instance.HasItem(itemID);
+
+        return GameStateManager.Instance.HasItem(itemID);
+    }
+
+    private void HideNearbyText()
+    {
+        if (floatingTextManager != null)
+            floatingTextManager.HideAll();
+    }
+
+    private void Unlock(bool consumeItem)
     {
         isUnlocked = true;
+        playerNearby = false;
+        HideNearbyText();
 
-        if (GameStateManager.Instance != null)
+        if (consumeItem && GameStateManager.Instance != null)
             GameStateManager.Instance.UseItem(requiredItemID);  // U¿yj (usuñ) klucz
 
-        if (InventoryManager.Instance != null)
+        if (consumeItem && InventoryManager.Instance != null)
             InventoryManager.Instance.RemoveItem(requiredItemID); // Usuñ z ekwipunku
 
         // Zmieñ sprite na openSprite

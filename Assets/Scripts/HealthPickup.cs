@@ -32,21 +32,39 @@ public class HealthPickup : MonoBehaviour
         audioSource.volume = volume;
     }
 
+    private bool pickedUp = false;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
+        TryPickup(other);
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        TryPickup(other);
+    }
+
+    private void TryPickup(Collider2D other)
+    {
+        if (pickedUp) return;
+
         if (other.CompareTag("Player"))
         {
 
             Player playerScript = other.GetComponent<Player>();
             if (playerScript != null)
             {
+                if (playerScript.currentHealth >= playerScript.maxHealth)
+                    return;
+
+                pickedUp = true;
                 playerScript.Heal(healAmount);  // zak³adam ¿e masz tak¹ metodê
                 if (!string.IsNullOrEmpty(heartID) && GameStateManager.Instance != null)
                 {
                     GameStateManager.Instance.CollectItem(heartID);
                     Debug.Log($"[GameState] Zebrano serduszko: {heartID}");
                 }
-                if (pickupSound != null)
+                if (pickupSound != null && audioSource != null)
                     audioSource.Play();
 
                 // Ukryj sprite i collider ¿eby nie da³o siê podnosiæ wielokrotnie
@@ -54,7 +72,7 @@ public class HealthPickup : MonoBehaviour
                 GetComponent<Collider2D>().enabled = false;
 
                 // Zniszcz obiekt po czasie trwania dŸwiêku
-                Destroy(gameObject, pickupSound.length);
+                Destroy(gameObject, pickupSound != null ? pickupSound.length : 0f);
             }
         }
     }

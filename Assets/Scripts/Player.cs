@@ -14,9 +14,11 @@ public class Player : Mover
     public GameObject deathPanel;
 
     [SerializeField] private GameObject inventoryUI;
-    private bool isInventoryOpen = false;
     private float horizontalMove;
     private float verticalMove;
+    private bool isDead = false;
+
+    public GameObject InventoryUI => inventoryUI;
 
     protected override void Start()
     {
@@ -47,25 +49,29 @@ public class Player : Mover
 
         if (healthBar == null)
         {
-            healthBar = FindObjectOfType<HealthBar>();
+            healthBar = FindAnyObjectByType<HealthBar>();
             if (healthBar == null)
                 Debug.LogWarning("Nie znaleziono HealthBar w scenie!");
         }
 
-        healthBar.SetMaxHealth(maxHealth);
-        healthBar.SetHealth(currentHealth);
+        isDead = false;
+
+        if (healthBar != null)
+        {
+            healthBar.SetMaxHealth(maxHealth);
+            healthBar.SetHealth(currentHealth);
+        }
 
         if (deathPanel != null)
             deathPanel.SetActive(false);
 
-        Time.timeScale = 1f;
-        isInventoryOpen = false;
+        PauseLock.Clear();
         canMove = true;
     }
 
     private void Update()
     {
-        if (deathPanel != null && deathPanel.activeSelf)
+        if (isDead || (deathPanel != null && deathPanel.activeSelf))
         {
             canMove = false;
             return;
@@ -74,6 +80,10 @@ public class Player : Mover
         {
             canMove = true;
         }
+
+        PauseLock.Set("inventory", IsInventoryShown());
+        if (PauseLock.IsLocked("pause") || PauseLock.IsLocked("note"))
+            return;
 
         if (!canMove)
             return;
@@ -85,13 +95,13 @@ public class Player : Mover
         UpdateMotor(new Vector3(horizontalMove, verticalMove, 0));
 
         if (Input.GetKeyDown(KeyCode.I))
-            ToggleInventory();
+            ToggleInventoryPanel("info_and_items");
 
         if (Input.GetKeyDown(KeyCode.P))
             UseSpeedPotionIfAvailable();
 
         if (Input.GetKeyDown(KeyCode.N))
-            ToggleInvNotes();
+            ToggleInventoryPanel("collected_notes");
 
         if (Input.GetKeyDown(KeyCode.O))
         {
@@ -119,11 +129,16 @@ public class Player : Mover
 
     public void TakeDamage(int damage)
     {
+        if (isDead) return;
+
         currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
+        if (healthBar != null) healthBar.SetHealth(currentHealth);
 
         if (currentHealth <= 0)
+        {
             Die();
+            return;
+        }
 
         animator.SetTrigger("TakeDamage");
     }
@@ -139,6 +154,7 @@ public class Player : Mover
 
     void Die()
     {
+        isDead = true;
         Debug.Log("Gracz zmarł!");
         if (deathPanel != null)
             deathPanel.SetActive(true);
@@ -147,36 +163,36 @@ public class Player : Mover
         canMove = false;
     }
 
-    void ToggleInventory()
+    bool IsInventoryShown()
     {
-        isInventoryOpen = !isInventoryOpen;
+        if (inventoryUI == null || !inventoryUI.activeSelf)
+            return false;
 
-        if (inventoryUI != null)
-        {
-            inventoryUI.SetActive(isInventoryOpen);
-
-            Transform infoPanel = inventoryUI.transform.Find("info_and_items");
-            if (infoPanel != null)
-                infoPanel.gameObject.SetActive(isInventoryOpen);
-        }
-
-        Time.timeScale = isInventoryOpen ? 0f : 1f;
+        return IsPanelActive("info_and_items") || IsPanelActive("collected_notes");
     }
 
-    void ToggleInvNotes()
+    bool IsPanelActive(string panelName)
     {
-        isInventoryOpen = !isInventoryOpen;
+        Transform panel = inventoryUI.transform.Find(panelName);
+        return panel != null && panel.gameObject.activeSelf;
+    }
 
-        if (inventoryUI != null)
+    void ToggleInventoryPanel(string panelName)
+    {
+        if (inventoryUI == null)
+            return;
+
+        bool closing = inventoryUI.activeSelf && IsPanelActive(panelName);
+        inventoryUI.SetActive(!closing);
+
+        foreach (string name in new[] { "info_and_items", "collected_notes" })
         {
-            inventoryUI.SetActive(isInventoryOpen);
-
-            Transform notesPanel = inventoryUI.transform.Find("collected_notes");
-            if (notesPanel != null)
-                notesPanel.gameObject.SetActive(isInventoryOpen);
+            Transform panel = inventoryUI.transform.Find(name);
+            if (panel != null)
+                panel.gameObject.SetActive(!closing && name == panelName);
         }
 
-        Time.timeScale = isInventoryOpen ? 0f : 1f;
+        PauseLock.Set("inventory", !closing);
     }
 
     void UseSpeedPotionIfAvailable()

@@ -24,15 +24,15 @@ public class SessionManager : MonoBehaviour
     public void StartNewGame()
     {
         sessionActive = true;
-        GameStateManager.Instance?.ResetState();
-        InventoryManager.Instance?.ResetInventory();
-        Player.Instance?.ResetPlayerState();
+        if (GameStateManager.Instance != null) GameStateManager.Instance.ResetState();
+        if (InventoryManager.Instance != null) InventoryManager.Instance.ResetInventory();
+        if (Player.Instance != null) Player.Instance.ResetPlayerState();
 
         GameManager.Instance.experience = 0;
         GameManager.Instance.canTeleport = true;
         GameManager.Instance.enterFromTag = "";
 
-        GameObject.Destroy(GameManager.Instance.player?.gameObject);
+        if (GameManager.Instance.player != null) Destroy(GameManager.Instance.player.gameObject);
 
         // Rozpocznij coroutine
         StartCoroutine(LoadNewGame());
