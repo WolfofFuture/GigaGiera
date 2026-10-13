@@ -28,6 +28,7 @@ public class InteractableObject : MonoBehaviour
     private bool isUnlocked = false;
 
     private bool playerNearby = false;
+    private InputKind shownPromptKind;
     private string configuredItemID;
     private FloatingTextManager floatingTextManager;
 
@@ -72,7 +73,8 @@ public class InteractableObject : MonoBehaviour
         if (other.CompareTag("Player") && !isUnlocked)
         {
             playerNearby = true;
-            floatingTextManager.Show("Press E to interact", 24, Color.white,
+            shownPromptKind = GameInput.LastUsed;
+            floatingTextManager.Show("Press " + GameInput.Prompt(GameAction.Interact) + " to interact", 24, Color.white,
                 transform.position + Vector3.up * 1.5f, Vector3.zero, 60f);
             Debug.Log($"{gameObject.name}: Wyœwietlam komunikat 'Press E to interact'");
         }
@@ -96,7 +98,14 @@ public class InteractableObject : MonoBehaviour
 
     private void Update()
     {
-        if (playerNearby && Input.GetKeyDown(KeyCode.E))
+        if (playerNearby && !isUnlocked && floatingTextManager != null && shownPromptKind != GameInput.LastUsed)
+        {
+            shownPromptKind = GameInput.LastUsed;
+            floatingTextManager.Show("Press " + GameInput.Prompt(GameAction.Interact) + " to interact", 24, Color.white,
+                transform.position + Vector3.up * 1.5f, Vector3.zero, 60f);
+        }
+
+        if (playerNearby && GameInput.Pressed(GameAction.Interact))
         {
             Debug.Log($"{gameObject.name}: Gracz nacisn¹³ E - próba interakcji.");
             TryInteract();

@@ -88,22 +88,23 @@ public class Player : Mover
         if (!canMove)
             return;
 
-        horizontalMove = Input.GetAxisRaw("Horizontal");
-        verticalMove = Input.GetAxisRaw("Vertical");
+        Vector2 moveInput = GameInput.Move;
+        horizontalMove = moveInput.x;
+        verticalMove = moveInput.y;
         animator.SetFloat("X Speed", Mathf.Abs(horizontalMove));
         animator.SetFloat("Y Speed", Mathf.Abs(verticalMove));
         UpdateMotor(new Vector3(horizontalMove, verticalMove, 0));
 
-        if (Input.GetKeyDown(KeyCode.I))
+        if (GameInput.Pressed(GameAction.Inventory))
             ToggleInventoryPanel("info_and_items");
 
-        if (Input.GetKeyDown(KeyCode.P))
+        if (GameInput.Pressed(GameAction.SpeedPotion))
             UseSpeedPotionIfAvailable();
 
-        if (Input.GetKeyDown(KeyCode.N))
+        if (GameInput.Pressed(GameAction.Notes))
             ToggleInventoryPanel("collected_notes");
 
-        if (Input.GetKeyDown(KeyCode.O))
+        if (GameInput.Pressed(GameAction.HealPotion))
         {
             InventoryManager inventory = InventoryManager.Instance;
             if (inventory != null && inventory.itemIDs != null)

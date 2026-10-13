@@ -14,10 +14,6 @@ public class FloatingTextManager : MonoBehaviour
         foreach (FloatingText txt in floatingTexts)
             txt.UpdateFloatingText();
 
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            Show("Testowy tekst", 30, Color.yellow, Camera.main.transform.position + Vector3.forward * 2, Vector3.up * 10f, 3f);
-        }
     }
 
     public void Show(string msg, int fontSize, Color color, Vector3 positionIgnored, Vector3 motion, float duration)

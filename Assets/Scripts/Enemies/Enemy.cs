@@ -36,7 +36,8 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        Player foundPlayer = FindAnyObjectByType<Player>();
+        player = foundPlayer != null ? foundPlayer.transform : null;
         animator = GetComponent<Animator>();
         bodyCollider = GetComponent<Collider2D>();
         wallMask = LayerMask.GetMask("Blocking");
@@ -70,6 +71,7 @@ public class Enemy : MonoBehaviour
     {
         if (isDead) return;
         if (!playerInRoom) return;
+        if (player == null) return;
         Vector3 scale = transform.localScale;
         if (player.position.x > transform.position.x)
         {

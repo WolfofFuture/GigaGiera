@@ -10,6 +10,7 @@ public class GameStateManager : MonoBehaviour
     public HashSet<string> usedItems = new HashSet<string>();
     public HashSet<string> destroyedObjects = new HashSet<string>();
     public HashSet<string> defeatedEnemies = new HashSet<string>();
+    public HashSet<string> collectedNotes = new HashSet<string>();
 
     private void Awake()
     {
@@ -68,6 +69,12 @@ public class GameStateManager : MonoBehaviour
 
     public bool IsEnemyDefeated(string enemyID) => defeatedEnemies.Contains(enemyID);
 
+    public void MarkNoteCollected(string inventoryName)
+    {
+        if (!string.IsNullOrEmpty(inventoryName))
+            collectedNotes.Add(inventoryName);
+    }
+
     public void ResetState()
     {
         collectedItems.Clear();
@@ -75,6 +82,7 @@ public class GameStateManager : MonoBehaviour
         usedItems.Clear();
         destroyedObjects.Clear();
         defeatedEnemies.Clear();
+        collectedNotes.Clear();
         Debug.Log("[GameState] Stan gry zresetowany.");
     }
 }

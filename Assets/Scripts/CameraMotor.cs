@@ -7,6 +7,11 @@ public class CameraMotor : MonoBehaviour
     public float boundY = 0.05f;
     private static CameraMotor instance; //so camera doesnt dissapear
 
+    public static CameraMotor Instance
+    {
+        get { return instance; }
+    }
+
     private void Awake()
     {
         if (instance != null)

@@ -11,7 +11,11 @@ public class MainMenu : MonoBehaviour
     private void Start()
     {
         if (continueButton != null)
-            continueButton.interactable = SessionManager.Instance != null && SessionManager.Instance.IsSessionActive();
+            continueButton.interactable = SessionManager.Instance != null && SessionManager.Instance.CanContinue();
+
+        GameObject startButton = GameObject.Find("START");
+        if (startButton != null)
+            GameInput.Select(startButton);
     }
 
     public void PlayGame()

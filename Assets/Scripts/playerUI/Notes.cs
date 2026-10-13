@@ -26,6 +26,8 @@ public class NoteCollectable : MonoBehaviour
     {
         if (!other.CompareTag("Player")) return;
 
+        GameStateManager.Instance.MarkNoteCollected(inventoryName);
+
         // 🔹 Zapisz jako zebrana
         if (!string.IsNullOrEmpty(noteID))
         {

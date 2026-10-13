@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5613153676366820956}
   m_Layer: 0
   m_Name: key_1
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 3939666455612298804}
   m_Layer: 0
   m_Name: PickupSound
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

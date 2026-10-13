@@ -44,9 +44,15 @@ public class GameManager : MonoBehaviour
     }
 
 
+    public void ClearPlayerRef()
+    {
+        currentPlayer = null;
+    }
+
     public void RespawnPlayer()
     {
-        currentPlayer = GameObject.FindGameObjectWithTag("Player");
+        Player foundPlayer = FindAnyObjectByType<Player>();
+        currentPlayer = foundPlayer != null ? foundPlayer.gameObject : null;
 
         if (currentPlayer == null)
         {

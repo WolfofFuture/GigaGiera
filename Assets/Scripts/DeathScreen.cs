@@ -1,4 +1,6 @@
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class DeathWatcher : MonoBehaviour
@@ -28,14 +30,34 @@ public class DeathWatcher : MonoBehaviour
             deathShown = true;
             isDead = true;
             deathPanel.SetActive(true);
+            SetupDeathButton();
         }
+    }
+
+    private void SetupDeathButton()
+    {
+        Button button = deathPanel.GetComponentInChildren<Button>(true);
+        if (button == null)
+            return;
+
+        string label = SaveSystem.Exists() ? "Load last save" : "Back to menu";
+
+        Text legacyText = button.GetComponentInChildren<Text>(true);
+        if (legacyText != null)
+            legacyText.text = label;
+
+        TMP_Text tmpText = button.GetComponentInChildren<TMP_Text>(true);
+        if (tmpText != null)
+            tmpText.text = label;
+
+        GameInput.Select(button.gameObject);
     }
 
     public void BackToMenu()
     {
-        if (GameManager.Instance != null)
+        if (SessionManager.Instance != null)
         {
-            GameManager.Instance.ResetGame();
+            SessionManager.Instance.RespawnAfterDeath();
         }
         else
         {

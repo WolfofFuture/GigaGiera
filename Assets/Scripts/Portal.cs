@@ -15,7 +15,7 @@ public class Portal : MonoBehaviour
     {
         if (GameManager.Instance != null && GameManager.Instance.enterFromTag == myTag)
         {
-            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            Player player = FindAnyObjectByType<Player>();
             if (player != null)
             {
                 player.transform.position = transform.position;
@@ -41,7 +41,7 @@ public class Portal : MonoBehaviour
 
     private void PlaceAtArrival(Scene scene)
     {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        Player player = FindAnyObjectByType<Player>();
         if (player == null)
             return;
 
