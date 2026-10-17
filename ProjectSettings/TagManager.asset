@@ -65,14 +65,17 @@ TagManager:
   - name: Actor
     uniqueID: 3714418593
     locked: 0
+  - name: Enemy
+    uniqueID: 1763496183
+    locked: 0
   - name: Wall_bottom
     uniqueID: 2937659843
     locked: 0
+  - name: Lesser VOID
+    uniqueID: 1906957807
+    locked: 0
   - name: Wall_topper
     uniqueID: 513356631
-    locked: 0
-  - name: Enemy
-    uniqueID: 1763496183
     locked: 0
   - name: Wall_side
     uniqueID: 4084101857
