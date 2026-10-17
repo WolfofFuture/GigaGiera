@@ -14,7 +14,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Wall_topper
   - Weapon
   - Blocking
   - Actor
@@ -59,14 +59,23 @@ TagManager:
   - name: Weapon
     uniqueID: 3237212243
     locked: 0
+  - name: Deco
+    uniqueID: 481228493
+    locked: 0
   - name: Actor
     uniqueID: 3714418593
+    locked: 0
+  - name: Enemy
+    uniqueID: 1763496183
     locked: 0
   - name: Wall_bottom
     uniqueID: 2937659843
     locked: 0
-  - name: Enemy
-    uniqueID: 1763496183
+  - name: Lesser VOID
+    uniqueID: 1906957807
+    locked: 0
+  - name: Wall_topper
+    uniqueID: 513356631
     locked: 0
   - name: Wall_side
     uniqueID: 4084101857
@@ -77,5 +86,9 @@ TagManager:
   - name: BossRoom
     uniqueID: 2711138363
     locked: 0
+  - name: VOID
+    uniqueID: 3603739613
+    locked: 0
   m_RenderingLayers:
   - Default
+  m_MigratedRenderPipelines: []
