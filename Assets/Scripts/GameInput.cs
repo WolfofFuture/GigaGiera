@@ -43,13 +43,17 @@ public static class GameInput
 
     public static Vector2 Move
     {
-        get { return move != null ? move.ReadValue<Vector2>() : Vector2.zero; }
+        get
+        {
+            Vector2 v = move != null ? move.ReadValue<Vector2>() : Vector2.zero;
+            return v.sqrMagnitude > 0.04f ? v : TouchInput.Move;
+        }
     }
 
     public static bool Pressed(GameAction action)
     {
         InputAction a = Get(action);
-        return a != null && a.WasPressedThisFrame();
+        return (a != null && a.WasPressedThisFrame()) || TouchInput.Pressed(action);
     }
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
@@ -129,6 +133,9 @@ public static class GameInput
 
         InputAction action = obj as InputAction;
         if (action == null || action.activeControl == null)
+            return;
+
+        if (action.actionMap != null)
             return;
 
         // Drazek pada zawsze ma lekki dryf (np. po puszczeniu klawisza akcja ruchu przelicza sie z drazka),
