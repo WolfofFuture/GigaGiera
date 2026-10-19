@@ -24,6 +24,11 @@ public static class PauseLock
         Time.timeScale = locks.Count > 0 ? 0f : 1f;
     }
 
+    public static bool AnyLocked
+    {
+        get { return locks.Count > 0; }
+    }
+
     public static bool IsLocked(string key)
     {
         return locks.Contains(key);

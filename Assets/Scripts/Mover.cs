@@ -14,6 +14,9 @@ public abstract class Mover : Fighter
     // Now public so Player mo¿e kontrolowaæ ruch
     public bool canMove = true;
 
+    // Gdy true, postac nie odwraca sie w strone ruchu (np. w trakcie zamachu mieczem).
+    public bool lockFacing = false;
+
     protected virtual void Start()
     {
         boxCollider = GetComponent<BoxCollider2D>();
@@ -33,10 +36,13 @@ public abstract class Mover : Fighter
         moveDelta = new Vector3(input.x * xSpeed, input.y * ySpeed, 0);
 
         // Swap sprite direction
-        if (moveDelta.x > 0)
-            transform.localScale = Vector3.one;
-        else if (moveDelta.x < 0)
-            transform.localScale = new Vector3(-1, 1, 1);
+        if (!lockFacing)
+        {
+            if (moveDelta.x > 0)
+                transform.localScale = Vector3.one;
+            else if (moveDelta.x < 0)
+                transform.localScale = new Vector3(-1, 1, 1);
+        }
 
         // add push vector if any
         moveDelta += pushDirection;

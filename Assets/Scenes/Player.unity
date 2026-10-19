@@ -3832,7 +3832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de8ef7e1941bf2a4ba498864ba09cfe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 100
+  damage: 10
   attackRange: 0.3
   attackCooldown: 1
   swingSound: {fileID: 8300000, guid: 722d7843e4a03bc4b90beef7c1e26be9, type: 3}

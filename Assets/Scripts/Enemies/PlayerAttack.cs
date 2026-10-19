@@ -39,6 +39,8 @@ public class PlayerAttack : MonoBehaviour
     private Vector3 restPosition;
     private Quaternion restRotation;
     private bool swinging;
+    private float swingFacing = 1f;
+    private Mover swingMover;
 
     // smuga
     private SpriteRenderer trailRenderer;
@@ -128,6 +130,8 @@ public class PlayerAttack : MonoBehaviour
 
     void OnDestroy()
     {
+        if (swingMover != null)
+            swingMover.lockFacing = false;
         if (trailRenderer != null)
             Destroy(trailRenderer.gameObject);
         if (trailSprite != null)
@@ -141,6 +145,14 @@ public class PlayerAttack : MonoBehaviour
     {
         swinging = true;
         HashSet<Enemy> alreadyHit = new HashSet<Enemy>();
+
+        // Kierunek ciosu jest ustalany na poczatku zamachu i trzymany do konca,
+        // zeby szybka zmiana kierunku ruchu nie przerzucala luku na druga strone.
+        Transform swingOwner = transform.parent != null ? transform.parent : transform;
+        swingFacing = swingOwner.lossyScale.x < 0f ? -1f : 1f;
+        swingMover = swingOwner.GetComponent<Mover>();
+        if (swingMover != null)
+            swingMover.lockFacing = true;
 
         if (trailFade != null)
         {
@@ -194,6 +206,8 @@ public class PlayerAttack : MonoBehaviour
 
         transform.localPosition = restPosition;
         transform.localRotation = restRotation;
+        if (swingMover != null)
+            swingMover.lockFacing = false;
         swinging = false;
     }
 
@@ -225,7 +239,7 @@ public class PlayerAttack : MonoBehaviour
     {
         Transform owner = transform.parent != null ? transform.parent : transform;
         Vector3 pivot = owner.TransformPoint(pivotOffset);
-        float facing = owner.lossyScale.x < 0f ? -1f : 1f;
+        float facing = swingFacing;
 
         float minAngle = Mathf.Min(previousAngle, currentAngle) - hitMarginAngle;
         float maxAngle = Mathf.Max(previousAngle, currentAngle) + hitMarginAngle;
