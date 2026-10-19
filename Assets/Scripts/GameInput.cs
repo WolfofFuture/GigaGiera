@@ -206,6 +206,31 @@ public static class GameInput
         return "";
     }
 
+
+    // Wbudowane akcje UI trzymamy sami. Nie uzywamy AssignDefaultActions(), bo gdy w projekcie sa przypisane
+    // "project-wide actions", podpina ono menu do nich i w buildzie WebGL menu przestaje reagowac.
+    private static DefaultInputActions uiActions;
+
+    private static void AssignUiActions(InputSystemUIInputModule module)
+    {
+        if (uiActions == null)
+            uiActions = new DefaultInputActions();
+
+        uiActions.UI.Enable();
+
+        module.actionsAsset = uiActions.asset;
+        module.point = InputActionReference.Create(uiActions.UI.Point);
+        module.leftClick = InputActionReference.Create(uiActions.UI.Click);
+        module.middleClick = InputActionReference.Create(uiActions.UI.MiddleClick);
+        module.rightClick = InputActionReference.Create(uiActions.UI.RightClick);
+        module.scrollWheel = InputActionReference.Create(uiActions.UI.ScrollWheel);
+        module.move = InputActionReference.Create(uiActions.UI.Navigate);
+        module.submit = InputActionReference.Create(uiActions.UI.Submit);
+        module.cancel = InputActionReference.Create(uiActions.UI.Cancel);
+        module.trackedDevicePosition = InputActionReference.Create(uiActions.UI.TrackedDevicePosition);
+        module.trackedDeviceOrientation = InputActionReference.Create(uiActions.UI.TrackedDeviceOrientation);
+    }
+
     // Menu ma sie dac obslugiwac padem, wiec zamieniamy stary modul wejscia UI na modul nowego Input System.
     public static void EnsureUIModule()
     {
@@ -221,7 +246,7 @@ public static class GameInput
                 Object.Destroy(old);
 
             InputSystemUIInputModule module = es.gameObject.AddComponent<InputSystemUIInputModule>();
-            module.AssignDefaultActions();
+            AssignUiActions(module);
         }
     }
 
