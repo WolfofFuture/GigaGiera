@@ -39,16 +39,16 @@ The game was created by a team of 4 people.
 ## Gameplay Preview :desktop_computer:
 
 ### Main Menu
-
+<img src="https://github.com/WolfofFuture/GigaGiera/blob/main/ReadMeAssets/main_menu_gif.gif"  width="500" />
 
 ### First level rooms
-
+<img src="https://github.com/WolfofFuture/GigaGiera/blob/main/ReadMeAssets/first_level_ex_rooms_gif.gif"  width="500" />
 
 ### Door opening and bombs
-
+<img src="https://github.com/WolfofFuture/GigaGiera/blob/main/ReadMeAssets/doors_and_bombs_gif.gif"  width="500" />
 
 ### Inventory and storyline notes
-
+<img src="https://github.com/WolfofFuture/GigaGiera/blob/main/ReadMeAssets/inventory_gif.gif"  width="500" />
 
 ---
 
